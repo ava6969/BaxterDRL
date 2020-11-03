@@ -35,8 +35,13 @@ class BaxterGym(gym.GoalEnv):
         self.max_valid_pos_y, self.min_valid_pos_y = 0.5, 0.2
 
         # constraints
-        constraints = {"left_s0" : (-1.70167993878, -1.70167993878, 1.5, 50),
-                        ""}
+        constraints = {"left_s0" : (-1.70167993878, 1.70167993878, 1.5, 50),
+                        "left_s1" : (-2.147, 1.047, 1.5, 50),
+                        "left_e0" : (-3.05417993878, 3.05417993878, 1.5, 50),
+                        "left_e1" : (-0.05, 2.618, 1.5, 50),
+                        "left_w0" : (-3.059, 3.059, 4.0, 15),
+                        "left_w1" : (-1.57079632679, 2.094, 4.0, 15),
+                        "left_w2" : (-3.059, 3.059, 4.0, 15)}
 
 
       
@@ -64,10 +69,31 @@ class BaxterGym(gym.GoalEnv):
         self.np_random, seed = seeding.np_random(seed)
         return [seed]
 
+    def preprocess_obs(self, state):
+        obs_joint_angle_list = []
+        for (lower, upper, _, _), action in zip(constraints.values(), state["j_angle"]):
+            obs_joint_angle_list.append(np.clip(action, lower, upper))
+
+        obs_joint_velocity_list = []
+        for (_, _, velocity, _), action in zip(constraints.values(), state["j_vel"]):
+            obs_joint_velocity_list.append(np.clip(action, -velocity, velocity))
+
+        obs_oint_end_effector = np.clip(state["ee_p"], self.min_joint_pos, self.max_joint_pos)
+
+        obs_joint_gripper = np.clip(state["g_pos"], 0, 1)
+        
+        
+        return obs_joint_angle_list, obs_joint_velocity_list, obs_joint_end_effector, obs_joint_gripper
     def step(self, action):
 
-        t_action, g_action = np.clip(action[0], self.action_space[0].low, self.action_space[0].high), 
-                            np.clip(action[1], self.action_space[1].low, self.action_space[1].high)
+        t_action = action[0]
+        g_action = np.clip(action[1], self.action_space[1].low, self.action_space[1].high)
+
+        torque_list = []
+        for (_, _, _, torque), action in zip(constraints.values(), t_action):
+            torque_list.append(np.clip(action, -torque, torque))
+
+
 
         self.sim.set_torque_actions(t_action, g_action[0])
         self.sim.step() # step into gazebo
