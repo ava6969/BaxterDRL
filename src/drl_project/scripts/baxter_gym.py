@@ -109,8 +109,9 @@ class BaxterGym(gym.Env):
     def set_torque_client(self, t_action, g_action):
         rospy.wait_for_service('set_torque')
         try:
+            req = SetTorqueRequest(t_action, g_action)
             set_torque = rospy.ServiceProxy('set_torque', SetTorque)
-            set_torque()
+            set_torque(req)
         except rospy.ServiceException as e:
             print("set_torque failed: ", e)
 
