@@ -155,8 +155,10 @@ class GazeboConnection():
         response = ResetResponse()
         return response
     
-    def spawn_blocks(self, block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
+    def spawn_blocks(self, b_p=[0.6725, 0.1265, 0.7825],
                     block_reference_frame="world"):
+        
+        block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=b_p[2]))
         # Get Models' Path
         model_path = rospkg.RosPack().get_path('baxter_sim_examples')+"/models/"
         # Load Block URDF
@@ -177,11 +179,13 @@ class GazeboConnection():
         return response
 
 
-    def load_gazebo_models(self,table_pose=Pose(position=Point(x=0.75, y=0.5, z=0.0)),
+    def load_gazebo_models(self,t_p=[0.75, 0.5, 0.0],
                     table_reference_frame="world",
-                    block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
+                    b_p=[0.6725, 0.1265, 0.7825],
                     block_reference_frame="world"):
 
+        table_pose = Pose(position=Point(x=t_p[0],y=t_p[1],z=t_p[2]))
+        block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=b_p[2]))
         # Get Models' Path
         model_path = rospkg.RosPack().get_path('baxter_sim_examples')+"/models/"
         # Load Table SDF
@@ -234,6 +238,17 @@ def main():
     rospy.init_node("gazebo_conn")
     sim = GazeboConnection("left")
     delete_gazebo_models = rospy.Service('delete_gazebo_models', DeleteGazeboModels, sim.delete_gazebo_models)
+
+    get_obs_ = rospy.Service('get_obs', GetObs, sim.get_obs_)
+    
+    load_gazebo_models = rospy.Service('load_gazebo_models', LoadGazeboModels, sim.load_gazebo_models)
+    
+    reset = rospy.Service('reset', Reset, sim.reset)
+    
+    set_torque = rospy.Service('set_torque', SetTorque, sim.set_torque)
+    
+    spawn_blocks = rospy.Service('spawn_blocks', SpawnBlocks, sim.spawn_blocks)
+    
     rospy.spin()
 
 
