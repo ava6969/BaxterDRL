@@ -56,11 +56,11 @@ class GazeboConnection():
         rospy.wait_for_service(ns, 5.0)
         # verify robot is enabled
         print("Getting robot state... ")
-        #self._rs = baxter_interface.RobotEnable(baxter_interface.CHECK_VERSION)
-        #self._init_state = self._rs.state().enabled
+        self._rs = baxter_interface.RobotEnable(baxter_interface.CHECK_VERSION)
+        self._init_state = self._rs.state().enabled
         print("Enabling robot... ")
         #self.pre_proc_sub = rospy.Subscriber("/preproc",JointState,self.update_state)
-        #self._rs.enable()
+        self._rs.enable()
         self.block_state = []
         self.overhead_orientation = Quaternion(
                         x=-0.0249590815779,
@@ -69,31 +69,31 @@ class GazeboConnection():
                         w=0.00486450832011)
 
     def set_torque(self, req):
-        t_actions, g_actions = req.t_value, req.g_value
         rospy.loginfo("set torque called")
+        t_actions, g_actions = req.t_value, req.g_value
         torque_dict = {k:v for k, v in zip(self._limb._joint_names, t_actions)}
         self._limb.set_joint_torques(torque_dict)
-        self._gripper.command_position(g_actions*100)
-        rospy.sleep(1)
+        self._gripper.command_position(g_actions)
+        #rospy.sleep(1)
         response = SetTorqueResponse()
         return response
 
     def get_obs_(self, req):
         obs = []
+        rospy.loginfo("get observation called")
         obs.extend(self._limb.joint_angles().values()) # "j_angle"
         obs.extend(self._limb.joint_velocities().values()) # j_vel
         ee = self._limb.endpoint_pose().values()[0]
 
         obs.extend([ee.x, ee.y, ee.z]) # ee_p
         #print("ep vel", self._limb.endpoint_velocity()) provide velocities as state to see if it imporves
-        obs.append(self._gripper.position() / 100) # g_pos
+        obs.append(self._gripper.position() / 100) # gripper_pos
         response = GetObsResponse(obs)
         return response
 
     def reset(self, req):
         # Wait for the All Clear from emulator startup
         rospy.wait_for_message("/robot/sim/started", Empty)
-
         starting_joint_angles = {'left_w0': 0.6699952259595108,
                                 'left_w1': 1.030009435085784,
                                 'left_w2': -0.4999997247485215,
@@ -104,8 +104,8 @@ class GazeboConnection():
         self.move_to_start(starting_joint_angles)
 
         # An orientation for gripper fingers to be overhead and parallel to the obj
-
-        self._approach(Pose(position=Point(x=0.35, y=0.5, z=-0.129), orientation=self.overhead_orientation))
+        # set to center if needed
+        #self._approach(Pose(position=Point(x=0.35, y=0.5, z=-0.129), orientation=self.overhead_orientation))
         response = ResetResponse()
         return response
     
@@ -181,9 +181,9 @@ class GazeboConnection():
             delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
             if OnlyBlocks:
                 resp_delete = delete_model("block")
-                return
-            resp_delete = delete_model("cafe_table")
-            resp_delete = delete_model("block")
+            else:
+                resp_delete = delete_model("cafe_table")
+                resp_delete = delete_model("block")
         except rospy.ServiceException as e:
             rospy.loginfo("Delete Model service call failed:ee {0}".format(e))
         
@@ -245,9 +245,7 @@ def main():
     sim = GazeboConnection("left")
   
     delete_gazebo_models = rospy.Service('delete_gazebo_models', DeleteGazeboModels, sim.delete_gazebo_models)
-    
     get_obs_ = rospy.Service('get_obs', GetObs, sim.get_obs_)
-    
     load_gazebo_models = rospy.Service('load_gazebo_models', LoadGazeboModels, sim.load_gazebo_models)
     
     reset = rospy.Service('reset', Reset, sim.reset)

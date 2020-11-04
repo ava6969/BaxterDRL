@@ -1,20 +1,20 @@
 
 "use strict";
 
-let LoadGazeboModels = require('./LoadGazeboModels.js')
-let Reset = require('./Reset.js')
-let SetTorque = require('./SetTorque.js')
+let SpawnBlocks = require('./SpawnBlocks.js')
+let GetObs = require('./GetObs.js')
 let DeleteGazeboModels = require('./DeleteGazeboModels.js')
 let AddTwoInts = require('./AddTwoInts.js')
-let GetObs = require('./GetObs.js')
-let SpawnBlocks = require('./SpawnBlocks.js')
+let Reset = require('./Reset.js')
+let LoadGazeboModels = require('./LoadGazeboModels.js')
+let SetTorque = require('./SetTorque.js')
 
 module.exports = {
-  LoadGazeboModels: LoadGazeboModels,
-  Reset: Reset,
-  SetTorque: SetTorque,
+  SpawnBlocks: SpawnBlocks,
+  GetObs: GetObs,
   DeleteGazeboModels: DeleteGazeboModels,
   AddTwoInts: AddTwoInts,
-  GetObs: GetObs,
-  SpawnBlocks: SpawnBlocks,
+  Reset: Reset,
+  LoadGazeboModels: LoadGazeboModels,
+  SetTorque: SetTorque,
 };
