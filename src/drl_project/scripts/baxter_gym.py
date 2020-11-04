@@ -145,6 +145,10 @@ class BaxterGym(gym.Env):
         try:
             delete_gazebo_models = rospy.ServiceProxy('delete_gazebo_models', SpawnBlocks)
             delete_gazebo_models(blockOnly)
+
+            req = DeleteGazeboModelsRequest(blockOnly)
+            delete_gazebo_models = rospy.ServiceProxy('delete_gazebo_models', DeleteGazeboModels)
+            delete_gazebo_models(req)
         except rospy.ServiceException as e:
             print("delete_gazebo_models failed: ", e)
 
@@ -155,6 +159,10 @@ class BaxterGym(gym.Env):
         try:
             spawn_blocks = rospy.ServiceProxy('spawn_blocks', SpawnBlocks)
             spawn_blocks(self.goal)
+
+            req = SpawnBlocks(t_action, g_action)
+            spawn_blocks = rospy.ServiceProxy('spawn_blocks', SpawnBlocks)
+            spawn_blocks(req)
         except rospy.ServiceException as e:
             print("spawn_blocks failed: ", e)
        
