@@ -3,6 +3,6 @@ prefix=/home/dewe/ros_ws/devel
 Name: drl_project
 Description: Description of drl_project
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/dewe/ros_ws/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: actionlib message_runtime baxter_core_msgs std_msgs baxter_interface control_msgs cv_bridge dynamic_reconfigure rospy sensor_msgs trajectory_msgs xacro

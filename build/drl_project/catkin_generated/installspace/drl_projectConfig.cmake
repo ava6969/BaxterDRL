@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(drl_project_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(drl_project_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dewe/ros_ws/install/lib;/home/dewe/ros_ws/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/dewe/ros_ws/install/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(drl_project_EXPORTED_TARGETS "")
+set(drl_project_EXPORTED_TARGETS "drl_project_generate_messages_cpp;drl_project_generate_messages_eus;drl_project_generate_messages_lisp;drl_project_generate_messages_nodejs;drl_project_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${drl_project_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${drl_project_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "actionlib;message_runtime;baxter_core_msgs;std_msgs;baxter_interface;control_msgs;cv_bridge;dynamic_reconfigure;rospy;sensor_msgs;trajectory_msgs;xacro")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND drl_project_EXPORTED_TARGETS ${${drl_project_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "drl_project-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${drl_project_DIR}/${extra})

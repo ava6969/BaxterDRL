@@ -32,6 +32,11 @@ import time
 import baxter_interface
 from gazebo_msgs.msg import LinkStates
 
+
+
+
+
+
 class GazeboConnection():
     def __init__(self, limb, hover_distance = 0.15, verbose=True):
         self._limb_name = limb # string
@@ -40,17 +45,17 @@ class GazeboConnection():
         self._limb = baxter_interface.Limb(limb)
         self._gripper = baxter_interface.Gripper(limb)
         self.obj_sub = rospy.Subscriber("/gazebo/link_states", LinkStates, self.ls_callback)
-        
+
         ns = "ExternalTools/" + limb + "/PositionKinematicsNode/IKService"
         self._iksvc = rospy.ServiceProxy(ns, SolvePositionIK)
         rospy.wait_for_service(ns, 5.0)
         # verify robot is enabled
         print("Getting robot state... ")
-        self._rs = baxter_interface.RobotEnable(baxter_interface.CHECK_VERSION)
-        self._init_state = self._rs.state().enabled
+        #self._rs = baxter_interface.RobotEnable(baxter_interface.CHECK_VERSION)
+        #self._init_state = self._rs.state().enabled
         print("Enabling robot... ")
         #self.pre_proc_sub = rospy.Subscriber("/preproc",JointState,self.update_state)
-        self._rs.enable()
+        #self._rs.enable()
         self.block_state = []
         self.overhead_orientation = Quaternion(
                         x=-0.0249590815779,
@@ -59,21 +64,18 @@ class GazeboConnection():
                         w=0.00486450832011)
 
     def set_torque_actions(self, t_actions, g_actions):
-
         torque_dict = {k:v for k, v in zip(self._limb._joint_names, t_actions)}
         self._limb.set_joint_torques(torque_dict)
         self._gripper.command_position(g_actions*100)
         rospy.sleep(1)
 
     def get_obs_(self):
-        
         obs = {}
         obs["j_angle"]  = self._limb.joint_angles().values()
         obs["j_vel"] =  self._limb.joint_velocities().values()
         obs["ee_p"] = self._limb.endpoint_pose().values
         #print("ep vel", self._limb.endpoint_velocity()) provide velocities as state to see if it imporves
         obs["g_pos"] = self._gripper.position() / 100
-
         return obs
 
     def step(self):
@@ -111,38 +113,6 @@ class GazeboConnection():
     def gripper_open(self):
         self._gripper.open()
         rospy.sleep(1.0)
-    
-    def ik_request(self, pose):
-        hdr = Header(stamp=rospy.Time.now(), frame_id='base')
-        ikreq = SolvePositionIKRequest()
-        ikreq.pose_stamp.append(PoseStamped(header=hdr, pose=pose))
-        try:
-            resp = self._iksvc(ikreq)
-        except (rospy.ServiceException, rospy.ROSException), e:
-            rospy.logerr("Service call failed: %s" % (e,))
-            return False
-        # Check if result valid, and type of seed ultimately used to get solution
-        # convert rospy's string representation of uint8[]'s to int's
-        resp_seeds = struct.unpack('<%dB' % len(resp.result_type), resp.result_type)
-        limb_joints = {}
-        if (resp_seeds[0] != resp.RESULT_INVALID):
-            seed_str = {
-                        ikreq.SEED_USER: 'User Provided Seed',
-                        ikreq.SEED_CURRENT: 'Current Joint Angles',
-                        ikreq.SEED_NS_MAP: 'Nullspace Setpoints',
-                       }.get(resp_seeds[0], 'None')
-            if self._verbose:
-                print("IK Solution SUCCESS - Valid Joint Solution Found from Seed Type: {0}".format(
-                         (seed_str)))
-            # Format solution into Limb API-compatible dictionary
-            limb_joints = dict(zip(resp.joints[0].name, resp.joints[0].position))
-            if self._verbose:
-                print("IK Joint Solution:\n{0}".format(limb_joints))
-                print("------------------")
-        else:
-            rospy.logerr("INVALID POSE - No Valid Joint Solution Found.")
-            return False
-        return limb_joints
 
     def gripper_close(self):
         self._gripper.close()
@@ -178,6 +148,25 @@ class GazeboConnection():
 
         self._approach(Pose(position=Point(x=0.35, y=0.5, z=-0.129), orientation=self.overhead_orientation))
     
+    def spawn_blocks(self, block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
+                    block_reference_frame="world"):
+        # Get Models' Path
+        model_path = rospkg.RosPack().get_path('baxter_sim_examples')+"/models/"
+        # Load Block URDF
+        block_xml = ''
+        with open (model_path + "block/model.urdf", "r") as block_file:
+            block_xml=block_file.read().replace('\n', '')
+
+        # Spawn Block URDF
+        rospy.wait_for_service('/gazebo/spawn_urdf_model')
+        try:
+            spawn_urdf = rospy.ServiceProxy('/gazebo/spawn_urdf_model', SpawnModel)
+            resp_urdf = spawn_urdf("block", block_xml, "/",
+                                block_pose, block_reference_frame)
+        except rospy.ServiceException as e:
+            rospy.logerr("Spawn URDF service call failed: {0}".format(e))
+
+
     def load_gazebo_models(self,table_pose=Pose(position=Point(x=0.75, y=0.5, z=0.0)),
                     table_reference_frame="world",
                     block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
@@ -199,7 +188,7 @@ class GazeboConnection():
             spawn_sdf = rospy.ServiceProxy('/gazebo/spawn_sdf_model', SpawnModel)
             resp_sdf = spawn_sdf("cafe_table", table_xml, "/",
                                 table_pose, table_reference_frame)
-        except rospy.ServiceException, e:
+        except rospy.ServiceException as e:
             rospy.logerr("Spawn SDF service call failed: {0}".format(e))
         # Spawn Block URDF
         rospy.wait_for_service('/gazebo/spawn_urdf_model')
@@ -207,19 +196,22 @@ class GazeboConnection():
             spawn_urdf = rospy.ServiceProxy('/gazebo/spawn_urdf_model', SpawnModel)
             resp_urdf = spawn_urdf("block", block_xml, "/",
                                 block_pose, block_reference_frame)
-        except rospy.ServiceException, e:
+        except rospy.ServiceException as e:
             rospy.logerr("Spawn URDF service call failed: {0}".format(e))
 
-    def delete_gazebo_models(self):
+    def delete_gazebo_models(self, OnlyBlocks=False):
         # This will be called on ROS Exit, deleting Gazebo models
         # Do not wait for the Gazebo Delete Model service, since
         # Gazebo should already be running. If the service is not
         # available since Gazebo has been killed, it is fine to error out
         try:
             delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
+            if OnlyBlocks:
+                resp_delete = delete_model("block")
+                return
             resp_delete = delete_model("cafe_table")
             resp_delete = delete_model("block")
-        except rospy.ServiceException, e:
+        except rospy.ServiceException as e:
             rospy.loginfo("Delete Model service call failed: {0}".format(e))
 
 def test():

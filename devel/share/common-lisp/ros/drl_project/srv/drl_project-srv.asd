@@ -1,0 +1,21 @@
+
+(cl:in-package :asdf)
+
+(defsystem "drl_project-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "AddTwoInts" :depends-on ("_package_AddTwoInts"))
+    (:file "_package_AddTwoInts" :depends-on ("_package"))
+    (:file "DeleteGazeboModels" :depends-on ("_package_DeleteGazeboModels"))
+    (:file "_package_DeleteGazeboModels" :depends-on ("_package"))
+    (:file "GetObs" :depends-on ("_package_GetObs"))
+    (:file "_package_GetObs" :depends-on ("_package"))
+    (:file "LoadGazeboModels" :depends-on ("_package_LoadGazeboModels"))
+    (:file "_package_LoadGazeboModels" :depends-on ("_package"))
+    (:file "Reset" :depends-on ("_package_Reset"))
+    (:file "_package_Reset" :depends-on ("_package"))
+    (:file "SetTorque" :depends-on ("_package_SetTorque"))
+    (:file "_package_SetTorque" :depends-on ("_package"))
+    (:file "SpawnBlocks" :depends-on ("_package_SpawnBlocks"))
+    (:file "_package_SpawnBlocks" :depends-on ("_package"))
+  ))

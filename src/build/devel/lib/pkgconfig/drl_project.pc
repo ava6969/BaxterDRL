@@ -1,0 +1,8 @@
+prefix=/home/dewe/ros_ws/src/build/devel
+
+Name: drl_project
+Description: Description of drl_project
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
