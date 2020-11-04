@@ -62,20 +62,22 @@ class BaxterGym(gym.Env):
         torque_space = spaces.Box(self.max_torque, self.min_torque,
                                          shape=(7, ), dtype='float32') # adjust later for range
         #self.reward_range = (-1, 0)
-        gripper_space = spaces.Box(0, 1, (1,))
-        self.action_space = spaces.Tuple((torque_space, gripper_space))
+        gripper_space = spaces.Box(0, 100, (1,))
+        #self.action_space = spaces.Tuple((torque_space, gripper_space))
+        self.action_space = spaces.Box(-1, 1, (8,))
+
         joint_pos_space = spaces.Box(self.min_joint_pos, self.max_joint_pos, shape=(7, ), dtype='float32')
         joint_vel_space = spaces.Box(self.min_joint_vel, self.max_joint_vel, shape=(7, ), dtype='float32')
+        ee_space = spaces.Box(-np.inf, np.inf, (3,))
         self.goal_space = spaces.Box(np.array([self.min_valid_pos_x, self.min_valid_pos_y]), 
                                      np.array([self.max_valid_pos_x, self.max_valid_pos_y]), 
-                                        shape=(2,), dtype='float32')
+                                     dtype='float32')
                 
-        ee_space = spaces.Box(0, 1, (1,))
-        self.observation_space = spaces.Tuple((joint_pos_space, joint_vel_space, self.goal_space, ee_space))
+        self.observation_space = spaces.Box(-4, 4, (20,))
+        #self.observation_space = spaces.Tuple((joint_pos_space, joint_vel_space, ee_space, gripper_space, self.goal_space ))
         self.goal = self._sample_goal() # initial sample goal
         self.load_gazebo_models_client() # load only baxter and table
         rospy.loginfo("Baxter Gym Created Successfully")
-
 
 
     def seed(self, seed=None):
@@ -83,24 +85,25 @@ class BaxterGym(gym.Env):
         return [seed]
 
     def preprocess_obs(self, state):
-        obs_joint_angle_list = []
-        for (lower, upper, _, _), action in zip(self.constraints.values(), state["j_angle"]):
-            obs_joint_angle_list.append(np.clip(action, lower, upper))
+        # obs_joint_angle_list = []
+        # for (lower, upper, _, _), action in zip(self.constraints.values(), state["j_angle"]): # 7
+        #     obs_joint_angle_list.append(np.clip(action, lower, upper))
 
-        obs_joint_velocity_list = []
-        for (_, _, velocity, _), action in zip(self.constraints.values(), state["j_vel"]):
-            obs_joint_velocity_list.append(np.clip(action, -velocity, velocity))
+        # obs_joint_velocity_list = []
+        # for (_, _, velocity, _), action in zip(self.constraints.values(), state["j_vel"]): # 7
+        #     obs_joint_velocity_list.append(np.clip(action, -velocity, velocity))
 
-        obs_joint_end_effector = np.clip(state["ee_p"], self.min_joint_pos, self.max_joint_pos)
-        obs_joint_gripper = np.clip(state["g_pos"], 0, 1)
-        
-        return obs_joint_angle_list, obs_joint_velocity_list, obs_joint_end_effector, obs_joint_gripper
+        # obs_joint_end_effector = state["ee_p"] # 3
+
+        # obs_joint_gripper = state["goal_p"]
+        #           7 dim           7 dim           3 dim           2 dim - z is fixed
+        return state["j_angle"], state["j_vel"], state["ee_p"], state["g_p"]
     
     # clients
     def load_gazebo_models_client(self):
         rospy.wait_for_service('load_gazebo_models')
         try:
-            load_gazebo_models = rospy.ServiceProxy('load_gazebo_models', LoadGazeboModels)
+            load_gazebo_models = rospy.ServiceProxy('load_gazebo_models', LoadGazeboModels, persistent=True)
             req = LoadGazeboModelsRequest([0.75, 0.5, 0.0], "world", [0.6725, 0.1265, 0.7825], "world")
             load_gazebo_models(req)
         except rospy.ServiceException as e:
@@ -110,7 +113,7 @@ class BaxterGym(gym.Env):
         rospy.wait_for_service('set_torque')
         try:
             req = SetTorqueRequest(t_action, g_action)
-            set_torque = rospy.ServiceProxy('set_torque', SetTorque)
+            set_torque = rospy.ServiceProxy('set_torque', SetTorque, persistent=True)
             set_torque(req)
         except rospy.ServiceException as e:
             print("set_torque failed: ", e)
@@ -118,15 +121,16 @@ class BaxterGym(gym.Env):
     def get_obs_client(self):
         rospy.wait_for_service('get_obs')
         try:
-            get_obs = rospy.ServiceProxy('get_obs', GetObs)
-            _obs = get_obs()
-            assert len(_obs) == 16
+            get_obs = rospy.ServiceProxy('get_obs', GetObs, persistent=True)
+            _obs = get_obs().obs
+            assert len(_obs) == 18
+
             obs = {}
             obs["j_angle"] = _obs[:7]
             obs["j_vel"] = _obs[7:14]
-            obs["ee_p"] = _obs[15]
-            obs["g_pos"] = _obs[16]
-            return obs
+            obs["ee_p"] = _obs[14:17]
+            obs["g_pos"] = _obs[17]
+            return obs, _obs
 
         except rospy.ServiceException as e:
             print("set_torque failed: ", e)
@@ -134,7 +138,7 @@ class BaxterGym(gym.Env):
     def reset_client(self):
         rospy.wait_for_service('reset')
         try:
-            reset = rospy.ServiceProxy('reset', SpawnBlocks)
+            reset = rospy.ServiceProxy('reset', Reset, persistent=True)
             reset()
         except rospy.ServiceException as e:
             print("reset failed: ", e)
@@ -143,11 +147,8 @@ class BaxterGym(gym.Env):
     def delete_gazebo_models_client(self, blockOnly):
         rospy.wait_for_service('delete_gazebo_models')
         try:
-            delete_gazebo_models = rospy.ServiceProxy('delete_gazebo_models', SpawnBlocks)
-            delete_gazebo_models(blockOnly)
-
             req = DeleteGazeboModelsRequest(blockOnly)
-            delete_gazebo_models = rospy.ServiceProxy('delete_gazebo_models', DeleteGazeboModels)
+            delete_gazebo_models = rospy.ServiceProxy('delete_gazebo_models', DeleteGazeboModels,  persistent=True)
             delete_gazebo_models(req)
         except rospy.ServiceException as e:
             print("delete_gazebo_models failed: ", e)
@@ -157,39 +158,45 @@ class BaxterGym(gym.Env):
     def spawn_blocks_client(self):
         rospy.wait_for_service('spawn_blocks')
         try:
-            spawn_blocks = rospy.ServiceProxy('spawn_blocks', SpawnBlocks)
-            spawn_blocks(self.goal)
-
-            req = SpawnBlocks(t_action, g_action)
-            spawn_blocks = rospy.ServiceProxy('spawn_blocks', SpawnBlocks)
+            req = SpawnBlocksRequest(self.goal, "world")
+            spawn_blocks = rospy.ServiceProxy('spawn_blocks', SpawnBlocks,  persistent=True)
             spawn_blocks(req)
         except rospy.ServiceException as e:
             print("spawn_blocks failed: ", e)
        
     def step(self, action):
 
-        t_action = action[0]
-        g_action = np.clip(action[1], self.action_space[1].low, self.action_space[1].high)
+        print("raw action: ", action)
+        t_action = action[:7]
+        g_action = action[1]*50.0 + 50.0# -1*50 + 50 = 0 1*50 + 50 = 100
 
         torque_list = []
         for (_, _, _, torque), action in zip(self.constraints.values(), t_action):
-            torque_list.append(np.clip(action, -torque, torque))
+            torque_list.append(torque * action)
+        print("unnorm actions: ", torque_list, g_action)
+        self.set_torque_client(torque_list, g_action)
 
-        self.set_torque_client(t_action, g_action[0])
-        # step
-        obs = self.get_obs_client()
-        np_obs = np.array([obs["j_angle"], obs["j_vel"], obs["ee_p"], obs["g_pos"]]) # represents 1d obsrvation for network
+        obs, obs_raw = self.get_obs_client()
+        np_obs = np.array(obs_raw, np.float)
+        np_obs = np.append(np_obs, self.goal[0])
+        np_obs = np.append(np_obs, self.goal[1])
+        
         # helper function for magnitude of error
         mag_2 = lambda x_pos, g_pos : math.sqrt(math.pow(x_pos[0] - g_pos[0],2) + 
-                                                    math.pow(x_pos[1] - g_pos[1],2) +
-                                                    math.pow(x_pos[2] - g_pos[2],2))
+                                                    math.pow(x_pos[1] - g_pos[1],2))
+      
+        mag_obs = mag_2(obs["ee_p"], self.goal)
+        print("diff goal - ee", mag_obs)
+        done = mag_obs < 0.05 # in m
+        excess_torque_penalty = math.sqrt(torque_list[0]*torque_list[0] + torque_list[1]*torque_list[1] + 
+                                torque_list[2]*torque_list[2] + torque_list[3]*torque_list[3] + torque_list[4]*torque_list[4] + 
+                                torque_list[5]*torque_list[5] + torque_list[6]*torque_list[6])
 
-        done = mag_2(obs["ee_p"], self.goal) < 0.05 # in m
-        excess_torque_penalty = math.sqrt(action[0]*action[0] + action[1]*action[1] + 
-                                action[2]*action[2] + action[3]*action[3] + action[4]*action[4] + 
-                                action[5]*action[5] + action[6]*action[6])
+        print("torque penalty: ", excess_torque_penalty)
 
         reward = - mag_2(self.goal, obs["ee_p"]) - self.c_a * excess_torque_penalty
+        print("reward: ", reward)
+        print("done ", done)
 
         return np_obs, reward, done, {}
 
@@ -213,10 +220,14 @@ class BaxterGym(gym.Env):
         # spawn block at goal location
         self.spawn_blocks_client()
 
-        obs = self.get_obs_client()
-        obs = self.preprocess_obs(obs)
-        np_obs = np.array([obs[0], obs[1], obs[2], obs[3]]).flatten()
-        return np_obs
+        # np_obs = np.array([obs_raw, self.goal[0], slef.goals[1]]).flatten()
+        #np_obs = np.array([obs["j_angle"], obs["j_vel"], obs["ee_p"], obs["g_pos"], self.goal])
+        _, obs_raw = self.get_obs_client()
+        obs = np.array(obs_raw, np.float)
+        obs = np.append(obs, self.goal[0])
+        obs = np.append(obs, self.goal[1])
+
+        return obs
 
     def _sample_goal(self):
         """Samples a new goal and returns it.
@@ -234,9 +245,9 @@ class BaxterGym(gym.Env):
 def main():
     rospy.init_node("baxter_gym")
     # Wait for the All Clear from emulator startup
-
     env = BaxterGym()
-    #check_env(env)
+    check_env(env)
+    # env.close()
     rospy.spin()
 
 if __name__ == "__main__":
