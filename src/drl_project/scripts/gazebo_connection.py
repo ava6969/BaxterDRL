@@ -177,12 +177,13 @@ class GazeboConnection():
         return response
 
 
-    def load_gazebo_models(self,table_pose=Pose(position=Point(x=0.75, y=0.5, z=0.0)),
+    def load_gazebo_models(self,t_p=[0.75, 0.5, 0.0],
                     table_reference_frame="world",
                     block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
                     block_reference_frame="world"):
 
         # Get Models' Path
+        table_pose = Pose(position=Point(x=t_p[0], y=t_p[1], z=t_p[2]))
         model_path = rospkg.RosPack().get_path('baxter_sim_examples')+"/models/"
         # Load Table SDF
         table_xml = ''
@@ -225,7 +226,7 @@ class GazeboConnection():
             resp_delete = delete_model("cafe_table")
             resp_delete = delete_model("block")
         except rospy.ServiceException as e:
-            rospy.loginfo("Delete Model service call failed: {0}".format(e))
+            rospy.loginfo("Delete Model service call failed:ee {0}".format(e))
         
         response = DeleteGazeboModelsResponse()
         return response

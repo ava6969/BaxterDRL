@@ -32,6 +32,16 @@ import time
 import baxter_interface
 from gazebo_msgs.msg import LinkStates
 
+
+from drl_project.srv import (DeleteGazeboModels,DeleteGazeboModelsResponse,
+                            GetObs, GetObsResponse,
+                            LoadGazeboModels, LoadGazeboModelsResponse,
+                            Reset, ResetResponse,
+                            SetTorque, SetTorqueResponse,
+                            SpawnBlocks, SpawnBlocksResponse  )
+
+
+
 class GazeboConnection():
     def __init__(self, limb, hover_distance = 0.15, verbose=True):
         self._limb_name = limb # string
@@ -59,26 +69,24 @@ class GazeboConnection():
                         w=0.00486450832011)
 
     def set_torque_actions(self, t_actions, g_actions):
+        rospy.loginfo("set torque called")
         torque_dict = {k:v for k, v in zip(self._limb._joint_names, t_actions)}
         self._limb.set_joint_torques(torque_dict)
         self._gripper.command_position(g_actions*100)
         rospy.sleep(1)
+        response = SetTorqueResponse()
+        return response
 
     def get_obs_(self):
-        obs = {}
-        obs["j_angle"]  = self._limb.joint_angles().values()
-        obs["j_vel"] =  self._limb.joint_velocities().values()
-        obs["ee_p"] = self._limb.endpoint_pose().values
+        obs = []
+        obs.extend(self._limb.joint_angles().values()) # "j_angle"
+        obs.extend(self._limb.joint_velocities().values()) # j_vel
+        obs.append(self._limb.endpoint_pose().values()) # ee_p
         #print("ep vel", self._limb.endpoint_velocity()) provide velocities as state to see if it imporves
-        obs["g_pos"] = self._gripper.position() / 100
-        return obs
+        obs.append(self._gripper.position() / 100) # g_pos
+        response = GetObsResponse(obs)
+        return response
 
-    def step(self):
-        """
-        define what step really means in terms of time steps and execuation in gazebo
-        """
-        pass
-        
 
     def ls_callback(self, msg):
         # get object infor from gazebo
@@ -91,6 +99,7 @@ class GazeboConnection():
             self.block_state = [msg.pose[-1].position, msg.pose[-1].orientation, msg.twist[-1].linear, msg.twist[-1].angular]
         else:
             self.block_state = []
+
     def move_to_start(self, start_angles=None):
         print("Moving the {0} arm to start pose...".format(self._limb_name))
         if not start_angles:
@@ -100,6 +109,7 @@ class GazeboConnection():
         # self._gripper.
         rospy.sleep(1.0)
         print("Running. Ctrl-c to quit")
+
     def _guarded_move_to_joint_position(self, joint_angles):
         if joint_angles:
             self._limb.move_to_joint_positions(joint_angles)
@@ -142,6 +152,8 @@ class GazeboConnection():
         # An orientation for gripper fingers to be overhead and parallel to the obj
 
         self._approach(Pose(position=Point(x=0.35, y=0.5, z=-0.129), orientation=self.overhead_orientation))
+        response = ResetResponse()
+        return response
     
     def spawn_blocks(self, block_pose=Pose(position=Point(x=0.6725, y=0.1265, z=0.7825)),
                     block_reference_frame="world"):
@@ -160,6 +172,9 @@ class GazeboConnection():
                                 block_pose, block_reference_frame)
         except rospy.ServiceException as e:
             rospy.logerr("Spawn URDF service call failed: {0}".format(e))
+
+        response = SpawnBlocksResponse()
+        return response
 
 
     def load_gazebo_models(self,table_pose=Pose(position=Point(x=0.75, y=0.5, z=0.0)),
@@ -193,6 +208,9 @@ class GazeboConnection():
                                 block_pose, block_reference_frame)
         except rospy.ServiceException as e:
             rospy.logerr("Spawn URDF service call failed: {0}".format(e))
+        
+        response = LoadGazeboModelsResponse()
+        return response
 
     def delete_gazebo_models(self, OnlyBlocks=False):
         # This will be called on ROS Exit, deleting Gazebo models
@@ -207,28 +225,17 @@ class GazeboConnection():
             resp_delete = delete_model("cafe_table")
             resp_delete = delete_model("block")
         except rospy.ServiceException as e:
-            rospy.loginfo("Delete Model service call failed: {0}".format(e))
+            rospy.loginfo("Delete Model service call failed:ee {0}".format(e))
+        
+        response = DeleteGazeboModelsResponse()
+        return response
 
-def test():
+def main():
     rospy.init_node("gazebo_conn")
-    # Wait for the All Clear from emulator startup
-    limb = 'left'
-    hover_distance = 0.15 # meters
-    sim = GazeboConnection(limb, hover_distance=hover_distance)
-    # sim.load_gazebo_models()
-    # # Remove models from the scene on shutdown
-    # rospy.on_shutdown(sim.delete_gazebo_models)
-    # sim.reset()
-
-    
-    while not rospy.is_shutdown():
-        # pose = Pose(position=Point(x=random.uniform(0.80, 0.40) , y=random.uniform(0.5, 0.2), z=-0.129))
-        # sim._approach(pose)
-        print(sim._limb._joint_angle)
-        # x = input("enter ratio")
-        # sim._gripper.command_position(position=float(x)*100.0)
-        pass
+    sim = GazeboConnection("left")
+    delete_gazebo_models = rospy.Service('delete_gazebo_models', DeleteGazeboModels, sim.delete_gazebo_models)
+    rospy.spin()
 
 
 if __name__ == "__main__":
-    test()
+    main()

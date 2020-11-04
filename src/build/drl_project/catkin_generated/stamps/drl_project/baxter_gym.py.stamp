@@ -98,7 +98,7 @@ class BaxterGym(gym.Env):
 
 
         self.sim.set_torque_actions(t_action, g_action[0])
-        self.sim.step() # step into gazebo
+        #self.sim.step() # step into gazebo
         obs = self.sim.get_obs()
         np_obs = np.array([obs["j_angle"], obs["j_vel"], obs["ee_p"], obs["g_pos"]]) # represents 1d obsrvation for network
         # helper function for magnitude of error

@@ -15,7 +15,13 @@ from geometry_msgs.msg import (
     Point,
     Quaternion,
 )
-from gazebo_connection import GazeboConnection
+
+from drl_project.srv import (DeleteGazeboModels,
+                            GetObs, 
+                            LoadGazeboModels, 
+                            Reset, 
+                            SetTorque, 
+                            SpawnBlocks  )
 
 def goal_distance(goal_a, goal_b):
     assert goal_a.shape == goal_b.shape
@@ -65,8 +71,9 @@ class BaxterGym(gym.Env):
         ee_space = spaces.Box(0, 1, (1,))
         self.observation_space = spaces.Tuple((joint_pos_space, joint_vel_space, self.goal_space, ee_space))
 
-        self.sim = GazeboConnection()
-        self.sim.load_gazebo_models() # load only baxter and table
+        self.load_gazebo_models_client() # load only baxter and table
+
+
 
     def seed(self, seed=None):
         self.np_random, seed = seeding.np_random(seed)
@@ -85,7 +92,67 @@ class BaxterGym(gym.Env):
         obs_joint_gripper = np.clip(state["g_pos"], 0, 1)
         
         return obs_joint_angle_list, obs_joint_velocity_list, obs_joint_end_effector, obs_joint_gripper
+    
+    # clients
+    def load_gazebo_models_client(self):
+        rospy.wait_for_service('load_gazebo_models')
+        try:
+            load_gazebo_models = rospy.ServiceProxy('load_gazebo_models', LoadGazeboModels)
+            load_gazebo_models()
+        except rospy.ServiceException as e:
+            print("Load gazebo failed: ", e)
 
+    def set_torque_client(self, t_action, g_action):
+        rospy.wait_for_service('set_torque')
+        try:
+            set_torque = rospy.ServiceProxy('set_torque', SetTorque)
+            set_torque()
+        except rospy.ServiceException as e:
+            print("set_torque failed: ", e)
+
+    def get_obs_client(self):
+        rospy.wait_for_service('get_obs')
+        try:
+            get_obs = rospy.ServiceProxy('get_obs', GetObs)
+            _obs = get_obs()
+            assert len(_obs) == 16
+            obs = {}
+            obs["j_angle"] = _obs[:7]
+            obs["j_vel"] = _obs[7:14]
+            obs["ee_p"] = _obs[15]
+            obs["g_pos"] = _obs[16]
+            return obs
+
+        except rospy.ServiceException as e:
+            print("set_torque failed: ", e)
+
+    def reset_client():
+        rospy.wait_for_service('reset')
+        try:
+            reset = rospy.ServiceProxy('reset', SpawnBlocks)
+            reset()
+        except rospy.ServiceException as e:
+            print("reset failed: ", e)
+
+    # delete only blocks
+    def delete_gazebo_models_client(self, blockOnly):
+        rospy.wait_for_service('delete_gazebo_models')
+        try:
+            delete_gazebo_models = rospy.ServiceProxy('delete_gazebo_models', SpawnBlocks)
+            delete_gazebo_models(blockOnly)
+        except rospy.ServiceException as e:
+            print("delete_gazebo_models failed: ", e)
+
+        
+    # spawn block at goal location  
+    def spawn_blocks_client(self):
+        rospy.wait_for_service('spawn_blocks')
+        try:
+            spawn_blocks = rospy.ServiceProxy('spawn_blocks', SpawnBlocks)
+            spawn_blocks(self.goal)
+        except rospy.ServiceException as e:
+            print("spawn_blocks failed: ", e)
+       
     def step(self, action):
 
         t_action = action[0]
@@ -95,11 +162,9 @@ class BaxterGym(gym.Env):
         for (_, _, _, torque), action in zip(self.constraints.values(), t_action):
             torque_list.append(np.clip(action, -torque, torque))
 
-
-
-        self.sim.set_torque_actions(t_action, g_action[0])
-        #self.sim.step() # step into gazebo
-        obs = self.sim.get_obs()
+        self.set_torque_client(t_action, g_action[0])
+        # step
+        obs = self.get_obs_client()
         np_obs = np.array([obs["j_angle"], obs["j_vel"], obs["ee_p"], obs["g_pos"]]) # represents 1d obsrvation for network
         # helper function for magnitude of error
         mag_2 = lambda x_pos, g_pos : math.sqrt(math.pow(x_pos[0] - g_pos[0],2) + 
@@ -125,16 +190,17 @@ class BaxterGym(gym.Env):
         # @todo
 
         # reset baxter
-        self.sim.reset()
+        self.reset_client()
 
         # delete only blocks
-        self.sim.delete_gazebo_models(True)
+        self.delete_gazebo_models_client(True)
+
         self.goal = self._sample_goal().copy()
         
         # spawn block at goal location
-        self.sim.spawn_blocks(block_pose=Pose(position=Point(x=self.goal[0], y=self.goal[1], z=self.goal[2])))
+        self.spawn_blocks_client()
 
-        obs = self.sim.get_obs_()
+        obs = self.get_obs_client()
         obs = self.preprocess_obs(obs)
         np_obs = np.array([obs[0], obs[1], obs[2], obs[3]]).flatten()
         return np_obs
@@ -151,18 +217,16 @@ class BaxterGym(gym.Env):
         return goal.copy()
 
     def close(self):
-        self.sim.delete_model()
+        self.delete_gazebo_models_client(False)
 
 
-def test_env(self):
+def main(self):
     rospy.init_node("baxter_gym")
     # Wait for the All Clear from emulator startup
-    limb = 'left'
-    hover_distance = 0.15 # meters
     env = BaxterGym()
     check_env(env)
     while not rospy.is_shutdown():
         pass
 
 if __name__ == "__main__":
-    test_env()
+    main()
