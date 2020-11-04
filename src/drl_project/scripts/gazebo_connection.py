@@ -68,7 +68,7 @@ class GazeboConnection():
                         z=0.00737916180073,
                         w=0.00486450832011)
 
-    def set_torque_actions(self, t_actions, g_actions):
+    def set_torque(self, t_actions, g_actions):
         rospy.loginfo("set torque called")
         torque_dict = {k:v for k, v in zip(self._limb._joint_names, t_actions)}
         self._limb.set_joint_torques(torque_dict)
@@ -155,9 +155,11 @@ class GazeboConnection():
         response = ResetResponse()
         return response
     
-    def spawn_blocks(self, b_p=[0.6725, 0.1265, 0.7825],
-                    block_reference_frame="world"):
+    def spawn_blocks(self, req ):
         
+        b_p , block_reference_frame =  req
+        # b_p = [0.6725, 0.1265, 0.7825],
+        # block_reference_frame = "world"
         block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=b_p[2]))
         # Get Models' Path
         model_path = rospkg.RosPack().get_path('baxter_sim_examples')+"/models/"
@@ -178,12 +180,10 @@ class GazeboConnection():
         response = SpawnBlocksResponse()
         return response
 
-
-    def load_gazebo_models(self,t_p=[0.75, 0.5, 0.0],
-                    table_reference_frame="world",
-                    b_p=[0.6725, 0.1265, 0.7825],
-                    block_reference_frame="world"):
-
+    def load_gazebo_models(self, req ):
+        
+        t_p, table_reference_frame, b_p, block_reference_frame = req.table_pose, req.table_reference_frame, \
+                                                                    req.block_pose, req.block_reference_frame
         table_pose = Pose(position=Point(x=t_p[0],y=t_p[1],z=t_p[2]))
         block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=b_p[2]))
         # Get Models' Path
@@ -217,11 +217,12 @@ class GazeboConnection():
         response = LoadGazeboModelsResponse()
         return response
 
-    def delete_gazebo_models(self, OnlyBlocks=False):
+    def delete_gazebo_models(self, req):
         # This will be called on ROS Exit, deleting Gazebo models
         # Do not wait for the Gazebo Delete Model service, since
         # Gazebo should already be running. If the service is not
         # available since Gazebo has been killed, it is fine to error out
+        OnlyBlocks = req.OnlyBlocks
         try:
             delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
             if OnlyBlocks:
@@ -239,7 +240,7 @@ def main():
     rospy.init_node("gazebo_conn")
     sim = GazeboConnection("left")
     delete_gazebo_models = rospy.Service('delete_gazebo_models', DeleteGazeboModels, sim.delete_gazebo_models)
-
+    
     get_obs_ = rospy.Service('get_obs', GetObs, sim.get_obs_)
     
     load_gazebo_models = rospy.Service('load_gazebo_models', LoadGazeboModels, sim.load_gazebo_models)

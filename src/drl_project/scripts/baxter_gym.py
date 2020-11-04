@@ -16,12 +16,12 @@ from geometry_msgs.msg import (
     Quaternion,
 )
 
-from drl_project.srv import (DeleteGazeboModels,
-                            GetObs, 
-                            LoadGazeboModels, 
-                            Reset, 
-                            SetTorque, 
-                            SpawnBlocks  )
+from drl_project.srv import (DeleteGazeboModels, DeleteGazeboModelsRequest,
+                            GetObs, GetObsRequest,
+                            LoadGazeboModels, LoadGazeboModelsRequest,
+                            Reset, ResetRequest,
+                            SetTorque, SetTorqueRequest,
+                            SpawnBlocks, SpawnBlocksRequest  )
 
 def goal_distance(goal_a, goal_b):
     assert goal_a.shape == goal_b.shape
@@ -33,7 +33,7 @@ class BaxterGym(gym.Env):
 
     def __init__(self):
         self.seed()
-        self.goal = self._sample_goal() # initial sample goal
+   
 
         # hyperparams
         self.c_a = 10e-3 # regularization term
@@ -66,12 +66,15 @@ class BaxterGym(gym.Env):
         self.action_space = spaces.Tuple((torque_space, gripper_space))
         joint_pos_space = spaces.Box(self.min_joint_pos, self.max_joint_pos, shape=(7, ), dtype='float32')
         joint_vel_space = spaces.Box(self.min_joint_vel, self.max_joint_vel, shape=(7, ), dtype='float32')
-        self.goal_space = spaces.Box([self.min_valid_pos_x, self.min_valid_pos_y], [self.max_valid_pos_x, self.max_valid_pos_y], 
-                                        shape=(1, 1), dtype='float32')
+        self.goal_space = spaces.Box(np.array([self.min_valid_pos_x, self.min_valid_pos_y]), 
+                                     np.array([self.max_valid_pos_x, self.max_valid_pos_y]), 
+                                        shape=(2,), dtype='float32')
+                
         ee_space = spaces.Box(0, 1, (1,))
         self.observation_space = spaces.Tuple((joint_pos_space, joint_vel_space, self.goal_space, ee_space))
-
+        self.goal = self._sample_goal() # initial sample goal
         self.load_gazebo_models_client() # load only baxter and table
+        rospy.loginfo("Baxter Gym Created Successfully")
 
 
 
@@ -98,7 +101,8 @@ class BaxterGym(gym.Env):
         rospy.wait_for_service('load_gazebo_models')
         try:
             load_gazebo_models = rospy.ServiceProxy('load_gazebo_models', LoadGazeboModels)
-            load_gazebo_models()
+            req = LoadGazeboModelsRequest([0.75, 0.5, 0.0], "world", [0.6725, 0.1265, 0.7825], "world")
+            load_gazebo_models(req)
         except rospy.ServiceException as e:
             print("Load gazebo failed: ", e)
 
@@ -126,7 +130,7 @@ class BaxterGym(gym.Env):
         except rospy.ServiceException as e:
             print("set_torque failed: ", e)
 
-    def reset_client():
+    def reset_client(self):
         rospy.wait_for_service('reset')
         try:
             reset = rospy.ServiceProxy('reset', SpawnBlocks)
@@ -208,9 +212,7 @@ class BaxterGym(gym.Env):
     def _sample_goal(self):
         """Samples a new goal and returns it.
         """
-        
-        goal = self.goal_space.sample() + self.np_random.uniform(-self.u_bound_goal, self.u_bound_goal, size=3)
-
+        goal = self.goal_space.sample() + self.np_random.uniform(-self.u_bound_goal, self.u_bound_goal, size=2)
         # adding extra noise to goal
         # if self.target_in_the_air and self.np_random.uniform() < 0.5:
         #     goal[2] += self.np_random.uniform(0, 0.45)
@@ -220,13 +222,13 @@ class BaxterGym(gym.Env):
         self.delete_gazebo_models_client(False)
 
 
-def main(self):
+def main():
     rospy.init_node("baxter_gym")
     # Wait for the All Clear from emulator startup
+
     env = BaxterGym()
-    check_env(env)
-    while not rospy.is_shutdown():
-        pass
+    #check_env(env)
+    rospy.spin()
 
 if __name__ == "__main__":
     main()
