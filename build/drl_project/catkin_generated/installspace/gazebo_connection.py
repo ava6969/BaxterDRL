@@ -71,7 +71,10 @@ class GazeboConnection():
     def set_torque(self, req):
         rospy.loginfo("set torque called")
         t_actions, g_actions = req.t_value, req.g_value
-        torque_dict = {k:v for k, v in zip(self._limb._joint_names, t_actions)}
+        torque_dict = {k:v for k, v in zip(self._limb.joint_names(), t_actions)}
+        
+        print(torque_dict)
+
         self._limb.set_joint_torques(torque_dict)
         self._gripper.command_position(g_actions)
         #rospy.sleep(1)
@@ -80,7 +83,7 @@ class GazeboConnection():
 
     def get_obs_(self, req):
         obs = []
-        rospy.loginfo("get observation called")
+        print("get observation called")
         obs.extend(self._limb.joint_angles().values()) # "j_angle"
         obs.extend(self._limb.joint_velocities().values()) # j_vel
         ee = self._limb.endpoint_pose().values()[0]
@@ -217,6 +220,7 @@ class GazeboConnection():
             self._limb.move_to_joint_positions(joint_angles)
         else:
             rospy.logerr("No Joint Angles provided for move_to_joint_positions. Staying put.")
+
     def gripper_open(self):
         self._gripper.open()
         rospy.sleep(1.0)

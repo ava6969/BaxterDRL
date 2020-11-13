@@ -1,0 +1,29 @@
+Using  cuda:0
+/home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[INFO] [1605108028.835960, 91965.032000]: Baxter Gym Created Successfully
+NAF(
+  (head_1): Linear(in_features=21, out_features=150, bias=True)
+  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_1): Linear(in_features=150, out_features=100, bias=True)
+  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_2): Linear(in_features=100, out_features=50, bias=True)
+  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (action_values): Linear(in_features=50, out_features=8, bias=True)
+  (value): Linear(in_features=50, out_features=1, bias=True)
+  (matrix_entries): Linear(in_features=50, out_features=36, bias=True)
+)
+Using Regular Experience Replay
+Episode 0	Frame 299 	Average Score: -247.40Episode 0	Frame 299	Average Score: -247.40
+Episode 1	Frame 599 	Average Score: -260.55Episode 2	Frame 899 	Average Score: -288.40Episode 3	Frame 1199 	Average Score: -282.34Episode 4	Frame 1499 	Average Score: -298.64Episode 5	Frame 1799 	Average Score: -297.53Episode 6	Frame 2099 	Average Score: -292.02Episode 7	Frame 2399 	Average Score: -297.00Episode 8	Frame 2699 	Average Score: -293.83Episode 9	Frame 2999 	Average Score: -286.62Episode 10	Frame 3299 	Average Score: -291.77Episode 11	Frame 3599 	Average Score: -286.04Episode 12	Frame 3899 	Average Score: -288.64Episode 13	Frame 4199 	Average Score: -285.00Episode 14	Frame 4499 	Average Score: -281.23Episode 15	Frame 4799 	Average Score: -277.20Episode 16	Frame 5099 	Average Score: -276.98Episode 17	Frame 5399 	Average Score: -273.95Episode 18	Frame 5699 	Average Score: -278.80Episode 19	Frame 5999 	Average Score: -277.83Episode 20	Frame 6299 	Average Score: -275.41Episode 21	Frame 6599 	Average Score: -272.52Episode 22	Frame 6899 	Average Score: -273.73Episode 23	Frame 7199 	Average Score: -273.11Episode 24	Frame 7212 	Average Score: -262.30Episode 25	Frame 7217 	Average Score: -252.25Episode 26	Frame 7228 	Average Score: -243.00Episode 27	Frame 7528 	Average Score: -244.67Episode 28	Frame 7828 	Average Score: -245.24Episode 29	Frame 8128 	Average Score: -246.28Episode 30	Frame 8428 	Average Score: -245.13Traceback (most recent call last):
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 147, in <module>
+    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 37, in run
+    next_state, reward, done, _ = env.step(action)
+  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 189, in step
+    rospy.sleep(self.running_step) # figure out what running step
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/timer.py", line 166, in sleep
+    raise rospy.exceptions.ROSInterruptException("ROS shutdown request")
+rospy.exceptions.ROSInterruptException: ROS shutdown request

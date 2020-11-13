@@ -102,6 +102,7 @@ e7506e3c98c389a6b5fc3f475ac4fde3 devel/include/drl_project/GetObs.h
 ded843bd45d453f8997d53f2387d345a devel/include/drl_project/Reset.h
 22343f8f6b6e6127b82ce5c56f1b34eb devel/include/drl_project/SetTorque.h
 33403e3682b3359192bfa628035f25b8 devel/include/drl_project/SpawnBlocks.h
+293df270ac80200023036b83f89758ed devel/include/openai_ros/RLExperimentInfo.h
 8a183967872f5a3ab552d1aa734df8f6 devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
 cf000c97f9f04e49931a8ddc8a2c963e devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
 334ec5bfffb77bb03175a4bad4886ebe devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
@@ -149,6 +150,8 @@ f25d36f84201825be851626ab6ca0496 devel/lib/python2.7/dist-packages/drl_project/s
 2b8f371eff2535453defae82572f2efc devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
 ef3887560ff7742ac42ea2687ae9d686 devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py
 5208647bfd5b9cde1e41a5461593d65a devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py
+abd9521f90d054e472e6ab1f10ab4457 devel/lib/python2.7/dist-packages/openai_ros/msg/_RLExperimentInfo.py
+abaef8bfed5beab8f4a106f8b0809b08 devel/lib/python2.7/dist-packages/openai_ros/msg/__init__.py
 5ba44e3b488c48428afd7c71cba2d7ff devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp
 e3c1244a5aaf785180b3031e27749b97 devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp
 7122981549e034ca0357d8b824645060 devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp
@@ -192,6 +195,7 @@ b85473150041cbe169331f893de97f9e devel/share/common-lisp/ros/drl_project/srv/Loa
 0812fc31cd04bfbc03c198dbebc6b09a devel/share/common-lisp/ros/drl_project/srv/Reset.lisp
 94f067ca627e9e3a813e49d39e98d3aa devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp
 57292d6dde34538c8ae59b4071e4a50f devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp
+48f238f8f1ba9fbc131490d9dd3bcf11 devel/share/common-lisp/ros/openai_ros/msg/RLExperimentInfo.lisp
 20d964835263e9a6082c93c34fbb70ea devel/share/gennodejs/ros/baxter_core_msgs/msg/AnalogIOState.js
 b6cdf343f4b67e7b6f0e2ec05a6e8c95 devel/share/gennodejs/ros/baxter_core_msgs/msg/AnalogIOStates.js
 1bcc1c8bfd1570486e0899b7c26c771c devel/share/gennodejs/ros/baxter_core_msgs/msg/AnalogOutputCommand.js
@@ -235,6 +239,7 @@ b3158582008211ed53457b0480a6c62f devel/share/gennodejs/ros/drl_project/srv/LoadG
 567e244d2fa0e1607212372eae4df172 devel/share/gennodejs/ros/drl_project/srv/Reset.js
 a091e9d1153bddc729a73243475c7d84 devel/share/gennodejs/ros/drl_project/srv/SetTorque.js
 a0d264ad51c234936f8ca0d61fabb163 devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js
+eac67b6fb530498f3a52e55492699914 devel/share/gennodejs/ros/openai_ros/msg/RLExperimentInfo.js
 675354f4f840c9c59b92489961447002 devel/share/roseus/ros/baxter_core_msgs/manifest.l
 65d32ffe6cff78dd35b64b4aa1cbe5ac devel/share/roseus/ros/baxter_core_msgs/msg/AnalogIOState.l
 2f05164c17aa4974c880ad2c56212f38 devel/share/roseus/ros/baxter_core_msgs/msg/AnalogIOStates.l
@@ -281,6 +286,8 @@ e36d8fa0ae8ad4d08344a822c0a1432e devel/share/roseus/ros/drl_project/srv/LoadGaze
 bb197be884bac3bb7fe39d304085a67e devel/share/roseus/ros/drl_project/srv/Reset.l
 ba0ba348f02dc1302d22895d0559b8f5 devel/share/roseus/ros/drl_project/srv/SetTorque.l
 04f4675b90ddf5d6bc77ef3b7e00e029 devel/share/roseus/ros/drl_project/srv/SpawnBlocks.l
+43996e39c95b76d6c96a7dfcee9867b5 devel/share/roseus/ros/openai_ros/manifest.l
+617d2e9ac8e29754e44362e4488d09ed devel/share/roseus/ros/openai_ros/msg/RLExperimentInfo.l
 10add0939676d1cf23373d9214d1f954 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts
 0b748a86ecccbecd51978c26c9f99f11 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModels
 0b38f33bdaf4817b697181c9b8fab330 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_GetObs
@@ -293,3 +300,9 @@ fd8b6d795788690329e5f79916b47529 drl_project/CMakeFiles/_drl_project_generate_me
 0a6b1e9e4be71b152d25e105ba798c80 drl_project/CMakeFiles/drl_project_generate_messages_lisp
 0a6b1e9e4be71b152d25e105ba798c80 drl_project/CMakeFiles/drl_project_generate_messages_nodejs
 0a6b1e9e4be71b152d25e105ba798c80 drl_project/CMakeFiles/drl_project_generate_messages_py
+95598a62f0752032638d335b616e7aae openai_/openai_ros/openai_ros/CMakeFiles/_openai_ros_generate_messages_check_deps_RLExperimentInfo
+13c3b17c185307fba386b9089e09507b openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_cpp
+13c3b17c185307fba386b9089e09507b openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_eus
+13c3b17c185307fba386b9089e09507b openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_lisp
+13c3b17c185307fba386b9089e09507b openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_nodejs
+13c3b17c185307fba386b9089e09507b openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_py

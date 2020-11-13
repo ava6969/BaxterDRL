@@ -1,0 +1,1233 @@
+Using  cuda:0
+/home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[INFO] [1605100076.555100, 0.000000]: Baxter Gym Created Successfully
+NAF(
+  (head_1): Linear(in_features=21, out_features=150, bias=True)
+  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_1): Linear(in_features=150, out_features=100, bias=True)
+  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_2): Linear(in_features=100, out_features=50, bias=True)
+  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (action_values): Linear(in_features=50, out_features=8, bias=True)
+  (value): Linear(in_features=50, out_features=1, bias=True)
+  (matrix_entries): Linear(in_features=50, out_features=36, bias=True)
+)
+Using Prioritized Experience Replay
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+saved model at episode 0 with mean_100_rew 0
+Episode 0	Frame 299 	Average Score: -279.55Episode 0	Frame 299	Average Score: -279.55
+Episode 1	Frame 599 	Average Score: -275.52Episode 2	Frame 899 	Average Score: -297.98Episode 3	Frame 1199 	Average Score: -286.92Episode 4	Frame 1499 	Average Score: -292.98Episode 5	Frame 1799 	Average Score: -288.79Episode 6	Frame 2099 	Average Score: -291.33Episode 7	Frame 2399 	Average Score: -289.92Episode 8	Frame 2699 	Average Score: -289.46Episode 9	Frame 2999 	Average Score: -280.63Episode 10	Frame 3299 	Average Score: -286.85Episode 11	Frame 3599 	Average Score: -278.72Episode 12	Frame 3899 	Average Score: -276.33Episode 13	Frame 4199 	Average Score: -273.04Episode 14	Frame 4499 	Average Score: -269.04Episode 15	Frame 4799 	Average Score: -270.75Episode 16	Frame 5099 	Average Score: -272.40Episode 17	Frame 5399 	Average Score: -270.13Episode 18	Frame 5699 	Average Score: -274.22Episode 19	Frame 5999 	Average Score: -274.19Episode 20	Frame 6299 	Average Score: -271.79Episode 21	Frame 6599 	Average Score: -266.27Episode 22	Frame 6899 	Average Score: -265.00Episode 23	Frame 7199 	Average Score: -264.51Episode 24	Frame 7499 	Average Score: -263.13Episode 25	Frame 7799 	Average Score: -260.59Episode 26	Frame 8099 	Average Score: -262.13Episode 27	Frame 8399 	Average Score: -261.30Episode 28	Frame 8699 	Average Score: -261.73Episode 29	Frame 8999 	Average Score: -263.09Episode 30	Frame 9299 	Average Score: -263.94Episode 31	Frame 9599 	Average Score: -261.66Episode 32	Frame 9899 	Average Score: -261.87Episode 33	Frame 10199 	Average Score: -261.26Episode 34	Frame 10499 	Average Score: -262.27Episode 35	Frame 10799 	Average Score: -261.06Episode 36	Frame 11099 	Average Score: -261.53Episode 37	Frame 11399 	Average Score: -260.28Episode 38	Frame 11405 	Average Score: -253.63Episode 39	Frame 11705 	Average Score: -254.51Episode 40	Frame 12005 	Average Score: -253.36Episode 41	Frame 12305 	Average Score: -253.33Episode 42	Frame 12605 	Average Score: -252.02Episode 43	Frame 12905 	Average Score: -250.30Episode 44	Frame 13205 	Average Score: -251.12Episode 45	Frame 13505 	Average Score: -252.71Episode 46	Frame 13805 	Average Score: -251.25Episode 47	Frame 14105 	Average Score: -250.19Episode 48	Frame 14405 	Average Score: -251.31Episode 49	Frame 14705 	Average Score: -249.34Episode 50	Frame 15005 	Average Score: -250.08Episode 51	Frame 15305 	Average Score: -250.03Episode 52	Frame 15605 	Average Score: -250.64Episode 53	Frame 15905 	Average Score: -250.42Episode 54	Frame 16205 	Average Score: -250.20Episode 55	Frame 16505 	Average Score: -250.64Episode 56	Frame 16805 	Average Score: -249.70Episode 57	Frame 17105 	Average Score: -248.63Episode 58	Frame 17405 	Average Score: -247.72Episode 59	Frame 17705 	Average Score: -247.17Episode 60	Frame 18005 	Average Score: -248.24Episode 61	Frame 18305 	Average Score: -248.79Episode 62	Frame 18605 	Average Score: -249.09Episode 63	Frame 18905 	Average Score: -249.85Episode 64	Frame 19205 	Average Score: -250.22Episode 65	Frame 19505 	Average Score: -248.99Episode 66	Frame 19805 	Average Score: -249.83Episode 67	Frame 20105 	Average Score: -250.31Episode 68	Frame 20405 	Average Score: -249.20Episode 69	Frame 20705 	Average Score: -249.65Episode 70	Frame 20723 	Average Score: -246.21Episode 71	Frame 21023 	Average Score: -246.11Episode 72	Frame 21323 	Average Score: -246.03Episode 73	Frame 21623 	Average Score: -246.61Episode 74	Frame 21923 	Average Score: -246.94Episode 75	Frame 22223 	Average Score: -247.68Episode 76	Frame 22523 	Average Score: -248.35Episode 77	Frame 22823 	Average Score: -248.06Episode 78	Frame 23123 	Average Score: -248.74Episode 79	Frame 23423 	Average Score: -248.91Episode 80	Frame 23723 	Average Score: -249.87Episode 81	Frame 24023 	Average Score: -250.72Episode 82	Frame 24323 	Average Score: -250.47Episode 83	Frame 24623 	Average Score: -249.88Episode 84	Frame 24923 	Average Score: -249.62Episode 85	Frame 25223 	Average Score: -248.28Episode 86	Frame 25523 	Average Score: -249.12Episode 87	Frame 25823 	Average Score: -248.84Episode 88	Frame 26123 	Average Score: -249.59Episode 89	Frame 26423 	Average Score: -249.65Episode 90	Frame 26723 	Average Score: -249.76Episode 91	Frame 27023 	Average Score: -249.86Episode 92	Frame 27323 	Average Score: -249.33Episode 93	Frame 27623 	Average Score: -249.28Episode 94	Frame 27923 	Average Score: -248.95Episode 95	Frame 28223 	Average Score: -248.82Episode 96	Frame 28523 	Average Score: -248.34Episode 97	Frame 28823 	Average Score: -248.44Episode 98	Frame 29123 	Average Score: -248.51Episode 99	Frame 29423 	Average Score: -248.07saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+saved model at episode 100 with mean_100_rew -248.07422358237946
+Episode 100	Frame 29723 	Average Score: -247.60Episode 100	Frame 29723	Average Score: -247.60
+Episode 101	Frame 30023 	Average Score: -247.44Episode 102	Frame 30323 	Average Score: -246.31Episode 103	Frame 30623 	Average Score: -246.06Episode 104	Frame 30923 	Average Score: -245.59Episode 105	Frame 31223 	Average Score: -245.73Episode 106	Frame 31523 	Average Score: -245.76Episode 107	Frame 31823 	Average Score: -245.39Episode 108	Frame 32123 	Average Score: -244.91Episode 109	Frame 32423 	Average Score: -245.96Episode 110	Frame 32723 	Average Score: -245.95Episode 111	Frame 33023 	Average Score: -245.88Episode 112	Frame 33024 	Average Score: -243.41Episode 113	Frame 33324 	Average Score: -244.01Episode 114	Frame 33624 	Average Score: -245.19Episode 115	Frame 33924 	Average Score: -245.00Episode 116	Frame 34224 	Average Score: -245.83Episode 117	Frame 34524 	Average Score: -245.79Episode 118	Frame 34824 	Average Score: -244.13Episode 119	Frame 35124 	Average Score: -244.01Episode 120	Frame 35424 	Average Score: -244.60Episode 121	Frame 35724 	Average Score: -246.26Episode 122	Frame 36024 	Average Score: -246.19Episode 123	Frame 36324 	Average Score: -246.27Episode 124	Frame 36624 	Average Score: -246.23Episode 125	Frame 36924 	Average Score: -246.89Episode 126	Frame 37224 	Average Score: -246.81Episode 127	Frame 37524 	Average Score: -247.42Episode 128	Frame 37824 	Average Score: -246.87Episode 129	Frame 38124 	Average Score: -245.86Episode 130	Frame 38424 	Average Score: -245.61Episode 131	Frame 38724 	Average Score: -245.52Episode 132	Frame 38725 	Average Score: -242.83Episode 133	Frame 39025 	Average Score: -242.31Episode 134	Frame 39029 	Average Score: -239.36Episode 135	Frame 39329 	Average Score: -239.20Episode 136	Frame 39629 	Average Score: -238.48Episode 137	Frame 39929 	Average Score: -239.18Episode 138	Frame 40229 	Average Score: -240.62Episode 139	Frame 40529 	Average Score: -240.38Episode 140	Frame 40829 	Average Score: -240.38Episode 141	Frame 41129 	Average Score: -239.70Episode 142	Frame 41429 	Average Score: -240.68Episode 143	Frame 41729 	Average Score: -240.94Episode 144	Frame 42029 	Average Score: -240.54Episode 145	Frame 42329 	Average Score: -240.22Episode 146	Frame 42629 	Average Score: -241.04Episode 147	Frame 42929 	Average Score: -241.97Episode 148	Frame 43229 	Average Score: -241.54Episode 149	Frame 43529 	Average Score: -241.85Episode 150	Frame 43829 	Average Score: -241.07Episode 151	Frame 44129 	Average Score: -242.01Episode 152	Frame 44429 	Average Score: -241.33Episode 153	Frame 44729 	Average Score: -240.48Episode 154	Frame 45029 	Average Score: -240.10Episode 155	Frame 45329 	Average Score: -239.25Episode 156	Frame 45629 	Average Score: -239.72Episode 157	Frame 45929 	Average Score: -240.14Episode 158	Frame 46229 	Average Score: -239.60Episode 159	Frame 46529 	Average Score: -239.59Episode 160	Frame 46829 	Average Score: -238.48Episode 161	Frame 47129 	Average Score: -238.20Episode 162	Frame 47429 	Average Score: -237.28Episode 163	Frame 47729 	Average Score: -236.34Episode 164	Frame 48029 	Average Score: -236.54Episode 165	Frame 48329 	Average Score: -237.73Episode 166	Frame 48629 	Average Score: -237.51Episode 167	Frame 48929 	Average Score: -236.45Episode 168	Frame 49229 	Average Score: -236.36Episode 169	Frame 49529 	Average Score: -235.97Episode 170	Frame 49829 	Average Score: -238.66Episode 171	Frame 50129 	Average Score: -238.46Episode 172	Frame 50429 	Average Score: -237.80Episode 173	Frame 50729 	Average Score: -237.04Episode 174	Frame 51029 	Average Score: -237.10Episode 175	Frame 51329 	Average Score: -236.84Episode 176	Frame 51629 	Average Score: -235.87Episode 177	Frame 51929 	Average Score: -236.51Episode 178	Frame 52229 	Average Score: -236.47Episode 179	Frame 52529 	Average Score: -236.23Episode 180	Frame 52829 	Average Score: -235.37Episode 181	Frame 53129 	Average Score: -234.32Episode 182	Frame 53429 	Average Score: -235.04Episode 183	Frame 53729 	Average Score: -235.33Episode 184	Frame 54029 	Average Score: -236.42Episode 185	Frame 54030 	Average Score: -235.08Episode 186	Frame 54330 	Average Score: -234.26Episode 187	Frame 54630 	Average Score: -233.23Episode 188	Frame 54930 	Average Score: -232.98Episode 189	Frame 54941 	Average Score: -230.45Episode 190	Frame 55241 	Average Score: -229.98Episode 191	Frame 55541 	Average Score: -230.72Episode 192	Frame 55841 	Average Score: -231.73Episode 193	Frame 56141 	Average Score: -231.35Episode 194	Frame 56441 	Average Score: -231.00Episode 195	Frame 56449 	Average Score: -228.64Episode 196	Frame 56749 	Average Score: -228.36Episode 197	Frame 57049 	Average Score: -228.49Episode 198	Frame 57349 	Average Score: -228.12Episode 199	Frame 57649 	Average Score: -229.14saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+saved model at episode 200 with mean_100_rew -229.1408058169969
+Episode 200	Frame 57949 	Average Score: -228.48Episode 200	Frame 57949	Average Score: -228.48
+Episode 201	Frame 58249 	Average Score: -228.06Episode 202	Frame 58549 	Average Score: -228.15Episode 203	Frame 58849 	Average Score: -229.00Episode 204	Frame 59149 	Average Score: -228.43Episode 205	Frame 59449 	Average Score: -227.70Episode 206	Frame 59749 	Average Score: -227.19Episode 207	Frame 60049 	Average Score: -226.90Episode 208	Frame 60349 	Average Score: -226.57Episode 209	Frame 60649 	Average Score: -226.68Episode 210	Frame 60949 	Average Score: -225.86Episode 211	Frame 61249 	Average Score: -226.29Episode 212	Frame 61253 	Average Score: -226.30Episode 213	Frame 61553 	Average Score: -225.74Episode 214	Frame 61853 	Average Score: -224.72Episode 215	Frame 62153 	Average Score: -223.81Episode 216	Frame 62453 	Average Score: -222.30Episode 217	Frame 62753 	Average Score: -222.61Episode 218	Frame 63053 	Average Score: -223.52Episode 219	Frame 63353 	Average Score: -223.63Episode 220	Frame 63653 	Average Score: -223.77Episode 221	Frame 63953 	Average Score: -223.81Episode 222	Frame 64253 	Average Score: -224.05Episode 223	Frame 64553 	Average Score: -224.08Episode 224	Frame 64853 	Average Score: -224.48Episode 225	Frame 65153 	Average Score: -224.39Episode 226	Frame 65453 	Average Score: -223.71Episode 227	Frame 65753 	Average Score: -223.17Episode 228	Frame 66053 	Average Score: -223.63Episode 229	Frame 66353 	Average Score: -223.93Episode 230	Frame 66653 	Average Score: -223.28Episode 231	Frame 66953 	Average Score: -223.74Episode 232	Frame 67253 	Average Score: -225.69Episode 233	Frame 67553 	Average Score: -226.63Episode 234	Frame 67853 	Average Score: -228.65Episode 235	Frame 68153 	Average Score: -229.99Episode 236	Frame 68453 	Average Score: -230.21Episode 237	Frame 68753 	Average Score: -229.39Episode 238	Frame 69053 	Average Score: -229.97Episode 239	Frame 69353 	Average Score: -229.65Episode 240	Frame 69653 	Average Score: -230.34Episode 241	Frame 69953 	Average Score: -231.14Episode 242	Frame 70253 	Average Score: -232.15Episode 243	Frame 70553 	Average Score: -232.64Episode 244	Frame 70853 	Average Score: -232.08Episode 245	Frame 71153 	Average Score: -230.85Episode 246	Frame 71453 	Average Score: -231.51Episode 247	Frame 71753 	Average Score: -231.41Episode 248	Frame 72053 	Average Score: -231.22Episode 249	Frame 72353 	Average Score: -231.85Episode 250	Frame 72653 	Average Score: -232.34Episode 251	Frame 72953 	Average Score: -230.11Episode 252	Frame 73253 	Average Score: -229.54Episode 253	Frame 73553 	Average Score: -230.27Episode 254	Frame 73853 	Average Score: -231.10Episode 255	Frame 74153 	Average Score: -232.33Episode 256	Frame 74453 	Average Score: -232.17Episode 257	Frame 74753 	Average Score: -232.67Episode 258	Frame 74754 	Average Score: -231.26Episode 259	Frame 75054 	Average Score: -231.67Episode 260	Frame 75080 	Average Score: -229.71Episode 261	Frame 75380 	Average Score: -229.80Episode 262	Frame 75680 	Average Score: -230.17Episode 263	Frame 75980 	Average Score: -231.08Episode 264	Frame 76280 	Average Score: -231.02Episode 265	Frame 76580 	Average Score: -231.22Episode 266	Frame 76880 	Average Score: -230.63Episode 267	Frame 77180 	Average Score: -231.72Episode 268	Frame 77480 	Average Score: -232.32Episode 269	Frame 77539 	Average Score: -230.11Episode 270	Frame 77839 	Average Score: -229.46Episode 271	Frame 78139 	Average Score: -230.30Episode 272	Frame 78439 	Average Score: -231.60Episode 273	Frame 78739 	Average Score: -231.79Episode 274	Frame 79039 	Average Score: -231.82Episode 275	Frame 79339 	Average Score: -231.27Episode 276	Frame 79639 	Average Score: -232.67Episode 277	Frame 79939 	Average Score: -231.88Episode 278	Frame 80239 	Average Score: -231.70Episode 279	Frame 80539 	Average Score: -231.64Episode 280	Frame 80839 	Average Score: -231.68Episode 281	Frame 81139 	Average Score: -231.96Episode 282	Frame 81439 	Average Score: -231.22Episode 283	Frame 81739 	Average Score: -230.82Episode 284	Frame 82039 	Average Score: -229.95Episode 285	Frame 82339 	Average Score: -231.85Episode 286	Frame 82639 	Average Score: -232.00Episode 287	Frame 82939 	Average Score: -233.61Episode 288	Frame 83239 	Average Score: -233.36Episode 289	Frame 83539 	Average Score: -235.15Episode 290	Frame 83839 	Average Score: -235.28Episode 291	Frame 84139 	Average Score: -234.26Episode 292	Frame 84439 	Average Score: -233.64Episode 293	Frame 84739 	Average Score: -234.08Episode 294	Frame 85039 	Average Score: -234.86Episode 295	Frame 85339 	Average Score: -237.15Episode 296	Frame 85639 	Average Score: -238.17Episode 297	Frame 85939 	Average Score: -238.10Episode 298	Frame 86239 	Average Score: -238.53Episode 299	Frame 86539 	Average Score: -237.50saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+saved model at episode 300 with mean_100_rew -237.503136120381
+Episode 300	Frame 86839 	Average Score: -238.70Episode 300	Frame 86839	Average Score: -238.70
+Traceback (most recent call last):
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 143, in <module>
+    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 36, in run
+    next_state, reward, done, _ = env.step(action)
+  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 187, in step
+    self.gazebo.unpauseSim()
+  File "/home/dewe/ros_ws/src/drl_project/scripts/gazebo_connection.py", line 23, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 159, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

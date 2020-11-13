@@ -1,0 +1,1334 @@
+Using  cuda:0
+/home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[INFO] [1605099847.489099, 0.000000]: Baxter Gym Created Successfully
+NAF(
+  (head_1): Linear(in_features=21, out_features=150, bias=True)
+  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_1): Linear(in_features=150, out_features=100, bias=True)
+  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_2): Linear(in_features=100, out_features=50, bias=True)
+  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (action_values): Linear(in_features=50, out_features=8, bias=True)
+  (value): Linear(in_features=50, out_features=1, bias=True)
+  (matrix_entries): Linear(in_features=50, out_features=36, bias=True)
+)
+Using Prioritized Experience Replay
+torque penalty:  0.7296970445860022
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7207178442322212
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7174776985233092
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7388037858193007
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5348063806531959
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6591405785373536
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8804127659954459
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6509281008166593
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.714208526835208
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7864527202607298
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.4481423483880115
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8203762922301878
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7445675201076228
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8103256843357624
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6719447769189247
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.721699945696439
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7108926475635973
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5960470031233578
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7400026415286205
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7340647008661408
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6130622532725531
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6637538464742292
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6854011471203392
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5659344685833767
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8248726818501347
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8713453302692153
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6294603983261725
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8248505627165166
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7621074073194664
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9528958015309238
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7377591092941833
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7872074932027978
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6343491800430756
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7447928510740189
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6979369128788442
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6859401913342831
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7274306207182162
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7873490360315393
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.3869414643151788
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8090682199155933
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5322314805965539
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7176695533419265
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7095357117974734
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7508396386744467
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7251786138120037
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7287142009381548
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7483535499673005
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7660245082651735
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5170013076433346
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9311765162886997
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6200382548915149
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9139520045082061
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7939994802583403
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6984893951487099
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.4536313506923763
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.74418701839184
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8847702414931061
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6708296972360488
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8311266228234662
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7407761546794384
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8036728456653272
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7944926899058051
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8229639463424503
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9524847787811342
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5697600272636385
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.741697360007894
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.647664471833505
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.39914996532788866
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0216148695394505
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8353029619275997
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6711088633506033
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5719874272405803
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7791567013900084
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.830174578432179
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7695285106397317
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8661651607181509
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.738951394553052
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8082321724035505
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5312740639934692
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9075437724970868
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7561161029396446
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7559984221465375
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8050320381909097
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6364009308517661
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5696016145177035
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7783232513229085
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7401594106496918
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8331171606385721
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8550631036728147
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.32507569026557476
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0024725741200196
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7685687402171455
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8789719862467241
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8397800942668653
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5868810076961788
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7613763740703386
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7937651477557554
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.577011697487194
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6783006905839416
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6128818931444755
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5925321133319758
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8908964681248073
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9225001782205877
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6699362399729732
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7520142263550516
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.794136374111625
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5674834844294891
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6995079909161842
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8961117019196172
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8197650014660957
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7462940938500812
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.633992033099332
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.759533135540951
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7357494619744261
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8553652976333871
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8121800869514121
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5841637718862842
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5664615957349122
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7622155832369538
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7175939998763368
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7319795683557192
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8814733771620378
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7180329874257191
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.4639471650374686
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6872103924774333
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7666694744250319
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7533100849077592
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6904937602956157
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5225594503748858
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6431221852955367
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6589374049493566
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5296115078790379
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.747236308388995
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.551705890349705
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9444132198644914
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5001737591275314
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.732903953810637
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9094558644748991
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5964647558907747
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7924029778912646
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9459080988451184
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9523421915846363
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9089751443155207
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.771390799285145
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8427598093347968
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9689723390472368
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6624709333012099
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0230515047795516
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9103196406394368
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6601530461936974
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8536695716205387
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0331989159885913
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9652454379127001
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9470595846339976
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9761769706716106
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8665346697573102
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.745374151996213
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8203138813758503
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.008124827595356
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9615565967448972
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9237348628968788
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8227505251108668
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0310651079448656
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8914456631618226
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9890069402783964
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.974599973561287
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6993338368548646
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0210316332327707
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0331989159885913
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0216253979963221
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9321356049084959
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8973478129271066
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7725599947811996
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9801535755421052
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7961077095524093
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7664459501953752
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7640847976453746
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6516963193254226
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0234297982284377
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7751536089129123
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0129654480691879
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8165049586900142
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9739835828378126
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9450864263556682
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9298066265423484
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7030320655354708
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0283321380134849
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8800581709601504
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0311647124493861
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0087014908424379
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.915211452784463
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9623761173329181
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9158629080068578
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.2983992361480265
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8193481573491329
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7709789795686425
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0187060640483687
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7910057053753845
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8974182985924606
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7927582018945631
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0331989159885913
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9808061395966715
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0162463291509196
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9013732279661991
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.894917681364503
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8613560970572012
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0281121234350754
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8457730266893663
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9956846294539073
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8983810835047941
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9106124309642316
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7147104267521744
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7516868828249273
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8869054169862629
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9727860912368128
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0170307529255482
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8769433538342029
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9051419286389821
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9523460650341758
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8718611983033374
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8503647215932771
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7370677219611436
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0162272793080167
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9019363756935687
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0177707009963652
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6747469544908686
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.890833402600682
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8766388548564268
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9844376306701059
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5798828137518094
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8831354348384135
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7619533504179549
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.870712445484342
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9959589711193698
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9094866332281965
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9090302198305672
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7217895841140078
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0331989159885913
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.592625023916781
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8056728289611325
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5745240370941285
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9389501816363236
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8511865097823755
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9008671937255427
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8296400966407077
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8167579805727029
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9282263961910536
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6680911465942359
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.592423236359808
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0237424727935516
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0269912723830308
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7868564662290577
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7866355186574243
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.812629781226337
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6729872042124838
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.931724276683609
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8154642660686673
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7728212313862727
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8731048252775575
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.018176115280634
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9460680062188115
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0265809579211973
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9603171275892453
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8168542734943388
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6820693375403003
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7954867299332053
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9610320777892419
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9303131805000763
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7377505979534942
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7705548968253976
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9046179042552632
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7987454654214245
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0260036878776257
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0034969269012826
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6102778478250981
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7267412431120046
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8466919397900736
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.6457237285292955
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8796363297450941
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0174080541757586
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0331989159885913
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9188527532285996
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8896318930477399
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.014016968714552
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0223176378969776
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7603999809920585
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8865628344696895
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0195780900348212
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9346212577697949
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9152462670239996
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0331989159885913
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8412679553256776
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8493899407941414
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0295622134944455
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.8808957577875406
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7995539433939101
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.5580178833393118
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.9228267419671334
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  1.0254568307352674
+saved model at episode 0 with mean_100_rew 0
+torque penalty:  0.7829949581638751
+Episode 0	Frame 299 	Average Score: -475.08Episode 0	Frame 299	Average Score: -475.08
+torque penalty:  0.855295951390882
+torque penalty:  0.984186584952833
+torque penalty:  0.9044776809929911
+torque penalty:  1.0331989159885913
+torque penalty:  0.9618439935874261
+torque penalty:  1.0331989159885913
+torque penalty:  0.9388651747130592
+torque penalty:  0.7604183631772512
+torque penalty:  0.9407589487991841
+torque penalty:  0.968519166352163
+torque penalty:  0.9049735854507936
+torque penalty:  0.8092340709064317
+torque penalty:  0.860590419651824
+torque penalty:  0.9011678721264335
+torque penalty:  0.9151218667117722
+torque penalty:  0.7709573395244158
+torque penalty:  1.0234856832724881
+torque penalty:  0.996515910184913
+torque penalty:  0.905351061281222
+torque penalty:  0.9624018677050625
+torque penalty:  0.9074145389117979
+torque penalty:  0.8157218974616423
+torque penalty:  0.9215223554229269
+torque penalty:  0.8610754279590966
+torque penalty:  0.7366832699532097
+torque penalty:  0.772727741258962
+torque penalty:  0.9014096408784874
+torque penalty:  1.0246412272966772
+torque penalty:  0.845113955477634
+torque penalty:  0.9398761558631172
+torque penalty:  0.6919373242129282
+torque penalty:  0.7895973087294283
+torque penalty:  0.7437390571151904
+torque penalty:  0.7566959526201745
+torque penalty:  1.0237782278422136
+torque penalty:  0.9119304249835998
+torque penalty:  0.927659121097066
+torque penalty:  0.8123833892877564
+torque penalty:  0.7958028192862046
+torque penalty:  1.0331989159885913
+torque penalty:  0.9426493586624909
+torque penalty:  0.7584791703590282
+torque penalty:  0.9096872009782615
+torque penalty:  0.808192193472096
+torque penalty:  1.0256007687251836
+torque penalty:  0.7727360323532244
+torque penalty:  1.0228586364522385
+torque penalty:  0.9410472076941302
+torque penalty:  0.9562934440362392
+torque penalty:  0.6431664938034989
+torque penalty:  0.9073772633330144
+torque penalty:  0.7972803714743494
+torque penalty:  1.0249632769931325
+torque penalty:  0.9117553605395291
+torque penalty:  0.8514450692356584
+torque penalty:  0.872353384732528
+torque penalty:  0.9444019796947397
+torque penalty:  0.8683525179577545
+torque penalty:  0.8143014079854524
+torque penalty:  1.023346011863677
+torque penalty:  0.8033670993947503
+torque penalty:  0.8333490581365257
+torque penalty:  0.9196439959431961
+torque penalty:  0.9519019694615162
+torque penalty:  0.9697660243868846
+torque penalty:  1.0281241713551774
+torque penalty:  1.0242987872241118
+torque penalty:  0.910091437743893
+torque penalty:  0.7859599027460277
+torque penalty:  0.8821561710968732
+torque penalty:  0.8624968524411246
+torque penalty:  0.8465225594111072
+torque penalty:  0.9067521450829028
+torque penalty:  0.7442578735897755
+torque penalty:  0.9986732892879627
+torque penalty:  0.9287343120388485
+torque penalty:  1.0209376288310188
+torque penalty:  1.0259480220329595
+torque penalty:  0.7758649643020731
+torque penalty:  0.7396312434780155
+torque penalty:  0.892789974994381
+torque penalty:  0.8703768733407362
+torque penalty:  0.8972017966168763
+torque penalty:  0.9610663326207101
+torque penalty:  0.8362080873045745
+torque penalty:  0.7807224605524448
+torque penalty:  1.0136241995709974
+torque penalty:  1.032405846868113
+torque penalty:  0.877256725798998
+torque penalty:  0.775864300486402
+torque penalty:  0.9758581051245139
+torque penalty:  0.8478038606735482
+torque penalty:  0.853369381530301
+torque penalty:  1.0331989159885913
+torque penalty:  0.7557793913270388
+torque penalty:  1.0271378007134846
+torque penalty:  0.9606014383719298
+torque penalty:  1.005887438652419
+torque penalty:  0.8923595336057772
+torque penalty:  0.7041716294582018
+torque penalty:  0.889342569298412
+torque penalty:  0.8949673239663899
+torque penalty:  0.9318152148894681
+torque penalty:  0.8200482948360375
+torque penalty:  0.8186248811762099
+torque penalty:  0.8980287371228833
+torque penalty:  0.8937767826882792
+torque penalty:  1.0254449353779953
+torque penalty:  0.9076616481785
+torque penalty:  1.022763468589761
+torque penalty:  0.9337965997139408
+torque penalty:  0.9391125271703087
+torque penalty:  0.8957701822817404
+torque penalty:  1.02465722030433
+torque penalty:  0.9405560347710394
+torque penalty:  0.8875377789021951
+torque penalty:  0.8203008614685909
+torque penalty:  0.9422160432618004
+torque penalty:  0.8154174684699008
+torque penalty:  0.9415302782564479
+torque penalty:  1.0331989159885913
+torque penalty:  1.0188550454500844
+torque penalty:  0.92458547904108
+torque penalty:  0.7066133531630492
+torque penalty:  0.9814029828299041
+torque penalty:  0.9351619407149278
+torque penalty:  0.9585645186499758
+torque penalty:  0.9370183954520108
+torque penalty:  0.9656149243086379
+torque penalty:  0.6968311638439445
+torque penalty:  1.0166737905768641
+torque penalty:  0.8244985531924732
+torque penalty:  0.9008886868897633
+torque penalty:  0.8822840612340929
+torque penalty:  0.8928428358026704
+torque penalty:  0.6428959818150176
+torque penalty:  0.8983018192475034
+torque penalty:  1.0228408797175998
+torque penalty:  0.6143002264667906
+torque penalty:  1.0130888247478622
+torque penalty:  0.8388776346741773
+torque penalty:  0.9730529397456265
+torque penalty:  0.9320216503472232
+torque penalty:  0.6393312578489938
+torque penalty:  0.9156032097304142
+torque penalty:  1.0266927105405297
+torque penalty:  0.84224780523864
+torque penalty:  1.0228080580480647
+torque penalty:  0.8481503558271435
+torque penalty:  1.002045841643835
+torque penalty:  0.8647316675908207
+torque penalty:  0.7416660080494399
+torque penalty:  0.9210628311750185
+torque penalty:  0.9047501934442105
+torque penalty:  1.0312313631176206
+torque penalty:  1.0302529370880964
+torque penalty:  1.0279905246327148
+torque penalty:  0.9729761783606479
+torque penalty:  0.8765906497431829
+torque penalty:  0.9515104838000855
+torque penalty:  0.9057578205983232
+torque penalty:  1.0286025853690768
+torque penalty:  0.6463962331522123
+torque penalty:  0.7688387568665107
+torque penalty:  0.7409504743015397
+torque penalty:  0.9050376319609913
+torque penalty:  0.6384685859084179
+torque penalty:  1.0331989159885913
+torque penalty:  0.7880983356130926
+torque penalty:  0.8968930468394922
+torque penalty:  0.8987057339312611
+torque penalty:  0.7899823300428388
+torque penalty:  0.7465438927784629
+torque penalty:  0.9701543128688849
+torque penalty:  0.9864231003970042
+torque penalty:  0.9033809209132387
+torque penalty:  0.8609720152068141
+torque penalty:  0.9372075282397119
+torque penalty:  0.8286059662080512
+torque penalty:  0.9207332502612342
+torque penalty:  0.7345999077377264
+torque penalty:  0.914586913439173
+torque penalty:  1.0331989159885913
+torque penalty:  1.0241967755274182
+torque penalty:  0.7742944858270198
+torque penalty:  0.7621315901407423
+torque penalty:  0.6722622372105633
+torque penalty:  0.9272727781872453
+torque penalty:  0.9079933095708037
+torque penalty:  0.9007080540386574
+torque penalty:  1.0117303464157197
+torque penalty:  1.0224412575395772
+torque penalty:  1.0174193327811416
+torque penalty:  1.0031983588337017
+torque penalty:  0.5782656000429066
+torque penalty:  0.9316605304532035
+torque penalty:  0.9086146006401319
+torque penalty:  0.8990023394562521
+torque penalty:  0.5783438721300379
+torque penalty:  0.9113007280849857
+torque penalty:  0.6255065453531276
+torque penalty:  0.937685136343933
+torque penalty:  0.8741930388440199
+torque penalty:  1.0284756443326768
+torque penalty:  0.8827971895067718
+torque penalty:  0.7785629877657614
+torque penalty:  0.8619732043626275
+torque penalty:  0.9037466456969839
+torque penalty:  0.9048509443678586
+torque penalty:  0.9231085330002846
+torque penalty:  0.7777375888506137
+torque penalty:  0.9565239126988727
+torque penalty:  0.6209990389277974
+torque penalty:  0.9006709126553589
+torque penalty:  1.0331989159885913
+torque penalty:  1.0331989159885913
+torque penalty:  0.8890318605842582
+torque penalty:  0.9527484516608153
+torque penalty:  0.9635693214443296
+torque penalty:  0.8813523969565591
+torque penalty:  0.8882591935104941
+torque penalty:  0.919481285743324
+torque penalty:  0.9174944270151517
+torque penalty:  0.8945212802098855
+torque penalty:  0.9782031201529969
+torque penalty:  0.7782060630729963
+torque penalty:  0.9129534946510524
+torque penalty:  0.9052119351322443
+torque penalty:  0.7428972915709461
+torque penalty:  0.8845545316454191
+torque penalty:  0.7336938737872606
+torque penalty:  0.8904571386198914
+torque penalty:  0.9209342813376538
+torque penalty:  0.8210600084964902
+torque penalty:  0.9949679516794142
+torque penalty:  1.0071613676706637
+torque penalty:  1.0331989159885913
+torque penalty:  0.8426328721777524
+torque penalty:  0.8302400933537374
+torque penalty:  0.7375654906094511
+torque penalty:  0.9135734770433073
+torque penalty:  0.9939388842470349
+torque penalty:  0.7957334640701835
+torque penalty:  0.7865582929924655
+torque penalty:  1.012953940575323
+torque penalty:  1.0331989159885913
+torque penalty:  0.9069610743338204
+torque penalty:  1.0226648939415381
+torque penalty:  0.9113622390446484
+torque penalty:  1.0161156445513462
+torque penalty:  0.9141407164678469
+torque penalty:  0.9810219547468095
+torque penalty:  0.8830229536879945
+torque penalty:  0.7947282786452177
+torque penalty:  0.8547351068743007
+torque penalty:  0.9891491680615176
+torque penalty:  1.022281158318612
+torque penalty:  0.7667704567972726
+torque penalty:  0.6977085194163671
+torque penalty:  0.9205931405846058
+torque penalty:  0.8029443315457955
+torque penalty:  0.8955090182525374
+torque penalty:  0.9047291745436562
+torque penalty:  0.9265519052519465
+torque penalty:  0.9445491857631982
+torque penalty:  0.9724379600196151
+torque penalty:  0.9382424533565003
+torque penalty:  0.8945774517351716
+torque penalty:  0.7387983757191617
+torque penalty:  1.0272593115036783
+torque penalty:  0.9161165794239808
+torque penalty:  0.89489631365731
+torque penalty:  0.6444888381016898
+torque penalty:  0.9821133278063355
+torque penalty:  1.0248361861275759
+torque penalty:  1.0051496063337546
+torque penalty:  0.9978523713084907
+torque penalty:  0.9293941160077273
+torque penalty:  1.0263767771490968
+torque penalty:  0.9670923661512414
+torque penalty:  1.0320103807355308
+torque penalty:  0.847032107249401
+torque penalty:  1.0228292347828667
+torque penalty:  1.0260374245268353
+torque penalty:  0.9714645322407832
+torque penalty:  1.0323164299707772
+torque penalty:  0.8149210606137015
+torque penalty:  0.7652034452936536
+torque penalty:  0.7326803412363385
+torque penalty:  0.9070768048187074
+torque penalty:  1.020557187336237
+torque penalty:  0.7012394710842191
+torque penalty:  0.9526531813756867
+torque penalty:  1.0201280479004968
+torque penalty:  0.9188166451131358
+torque penalty:  1.03051991192517
+torque penalty:  1.0258948158697854
+torque penalty:  0.91612837122759
+torque penalty:  0.8946304665916089
+torque penalty:  0.8631197347643611
+Episode 1	Frame 599 	Average Score: -503.99torque penalty:  0.9467773264050858
+torque penalty:  1.0238959024959506
+torque penalty:  0.9358135371294668
+torque penalty:  0.7912630197373544
+torque penalty:  0.8389124490511382
+torque penalty:  0.9613264797357514
+torque penalty:  1.0118447417526277
+torque penalty:  0.9547367165063919
+torque penalty:  1.0238421351155103
+torque penalty:  1.0331989159885913
+torque penalty:  0.994692618144306
+torque penalty:  1.0223822227285109
+torque penalty:  0.9952202687986856
+torque penalty:  1.019721621159668
+torque penalty:  0.9005458924990255
+torque penalty:  1.0226841063866587
+torque penalty:  1.0331989159885913
+torque penalty:  0.7411310170250098
+torque penalty:  1.0237296392125403
+torque penalty:  0.8463356955032822
+torque penalty:  0.6424820688431959
+torque penalty:  0.9264959004313157
+torque penalty:  0.9789943811132559
+torque penalty:  0.8250407692836301
+torque penalty:  1.023002211327503
+torque penalty:  0.6631935712301721
+torque penalty:  0.8871742349666442
+torque penalty:  0.8614320061867465
+torque penalty:  0.8117171189410161
+torque penalty:  1.0266649289361245
+torque penalty:  1.0264473072197806
+torque penalty:  0.9931286348748684
+torque penalty:  0.7834907428005643
+torque penalty:  0.8929055438623997
+torque penalty:  0.8723465766111407
+torque penalty:  0.8169502112220418
+torque penalty:  0.7801396156421562
+torque penalty:  0.897605140428642
+torque penalty:  0.7449798493248759
+torque penalty:  1.022259577183632
+torque penalty:  0.9267968070058078
+torque penalty:  0.9473053884942993
+torque penalty:  0.9092983367320864
+torque penalty:  1.0198680941843694
+torque penalty:  0.570407209143163
+torque penalty:  0.8703753181757873
+torque penalty:  0.913010952531171
+torque penalty:  0.8992168555220375
+torque penalty:  0.8968434108223662
+torque penalty:  0.9719329830158419
+torque penalty:  0.7640851869610605
+torque penalty:  0.852057628300236
+torque penalty:  0.9158035878872529
+torque penalty:  0.7790240411751487
+torque penalty:  1.0204634071798586
+torque penalty:  0.6754851679823607
+torque penalty:  1.0331989159885913
+torque penalty:  0.945785641361114
+torque penalty:  0.926027564281795
+torque penalty:  0.9080595849557918
+torque penalty:  1.0222679703922553
+torque penalty:  0.9847144626746783
+torque penalty:  0.987784406313415
+torque penalty:  1.0170026084813564
+torque penalty:  0.8993858866738426
+torque penalty:  1.0222542259688483
+torque penalty:  0.7956842049344489
+torque penalty:  0.9954809421549223
+torque penalty:  0.9602359523736371
+torque penalty:  0.8503577065595428
+torque penalty:  0.918421843916157
+torque penalty:  0.8857729143625419
+torque penalty:  0.7891718503404576
+torque penalty:  1.0278508128434198
+torque penalty:  0.8820143170837864
+torque penalty:  1.0210226400367264
+torque penalty:  0.8833930914956384
+torque penalty:  0.8540396823622453
+torque penalty:  0.7144869074007434
+torque penalty:  0.883801596659735
+torque penalty:  0.5353304082711238
+torque penalty:  0.897197335982728
+torque penalty:  0.9687518289393401
+torque penalty:  0.8609072473011729
+torque penalty:  0.8247505094955898
+torque penalty:  0.7055323584964289
+torque penalty:  0.9371505446863813
+torque penalty:  0.7821500666113177
+torque penalty:  0.8460730747533799
+torque penalty:  0.7897241275662863
+torque penalty:  0.9227117599733683
+torque penalty:  0.9298471884487941
+torque penalty:  1.0235237124044765
+torque penalty:  1.0331989159885913
+torque penalty:  0.9498316557770278
+torque penalty:  0.9544066878515706
+torque penalty:  0.7382247909172468
+torque penalty:  0.9055006939352795
+torque penalty:  0.9057862240534661
+torque penalty:  0.6753222947935664
+torque penalty:  0.9598741281309822
+torque penalty:  0.7679610659187052
+torque penalty:  1.0204081601097874
+torque penalty:  1.0331989159885913
+torque penalty:  1.0331989159885913
+torque penalty:  0.9017865139675023
+torque penalty:  0.9655689392372729
+torque penalty:  0.514161043419657
+torque penalty:  0.9891469139560682
+torque penalty:  0.9252592826784115
+torque penalty:  0.8863086850223519
+torque penalty:  0.8582071165093322
+torque penalty:  0.804979180601364
+torque penalty:  1.0303546098422875
+torque penalty:  0.9640403166963052
+torque penalty:  0.832720866937465
+torque penalty:  0.8323095807528358
+torque penalty:  0.9728454797929982
+torque penalty:  0.8375039842103665
+torque penalty:  0.8589446212471845
+torque penalty:  0.8851789591304952
+torque penalty:  0.8549512132607405
+torque penalty:  0.7882075569731473
+torque penalty:  1.027658902150614
+torque penalty:  0.6109775159019794
+torque penalty:  0.9568594670132619
+torque penalty:  1.0331989159885913
+torque penalty:  0.8209924712232564
+torque penalty:  0.9271585971584422
+torque penalty:  0.898872323040749
+torque penalty:  0.6795303922828062
+torque penalty:  0.9050931679071075
+torque penalty:  0.6918752954844771
+torque penalty:  0.872704221448042
+torque penalty:  1.0264645276028705
+torque penalty:  0.7978105941169155
+torque penalty:  1.0250205314443779
+torque penalty:  0.7593988562671126
+torque penalty:  0.8238884230930508
+torque penalty:  0.8874284840643485
+torque penalty:  1.0277594779158934
+torque penalty:  0.963503426958211
+torque penalty:  1.0127558187476242
+torque penalty:  0.8782951292530478
+torque penalty:  0.8752114055142555
+torque penalty:  0.6320004950245369
+torque penalty:  1.028662884497951
+torque penalty:  0.7268796374756802
+torque penalty:  0.8209356164992956
+torque penalty:  1.0284458427384908
+torque penalty:  0.9414599588111523
+torque penalty:  0.8188061299908441
+torque penalty:  0.911765261544785
+torque penalty:  1.022252957380681
+torque penalty:  0.9310257555410855
+torque penalty:  1.0226450620038425
+torque penalty:  0.926878737067696
+torque penalty:  0.8242077808186771
+torque penalty:  0.8579514775921875
+torque penalty:  0.8999730749613346
+torque penalty:  0.8012868831693467
+torque penalty:  0.669811314083454
+torque penalty:  0.9481613398314613
+torque penalty:  0.938700954953125
+torque penalty:  0.885390150249918
+torque penalty:  1.0050478009419013
+torque penalty:  0.8991446411622386
+torque penalty:  0.8826311396419223
+torque penalty:  0.7666584264270783
+torque penalty:  0.8381016710946706
+torque penalty:  0.950016905215697
+torque penalty:  0.7183113940135826
+torque penalty:  0.8933436708327999
+torque penalty:  0.8952341480081336
+torque penalty:  0.9039460610126419
+torque penalty:  1.0188966564728608
+torque penalty:  0.8904363704464897
+torque penalty:  0.8943597633903143
+torque penalty:  0.756055322864718
+torque penalty:  0.6532179465361949
+torque penalty:  0.8947908614349805
+torque penalty:  0.9055441811844852
+torque penalty:  0.6498002005890104
+torque penalty:  0.865911563915817
+torque penalty:  0.8840451314149478
+torque penalty:  0.958617853819124
+torque penalty:  0.6460702736389206
+torque penalty:  0.9940851351406896
+torque penalty:  0.9639812375949868
+torque penalty:  0.8045177341781434
+torque penalty:  0.7933892798572626
+torque penalty:  0.9153193944336837
+torque penalty:  1.0287639593325326
+torque penalty:  0.8985109214772787
+torque penalty:  0.7085314663215105
+torque penalty:  1.0136851728018588
+torque penalty:  0.871742090987965
+torque penalty:  0.8890054751581437
+torque penalty:  0.6767538214196506
+torque penalty:  0.5251710196130991
+torque penalty:  0.7303791875197326
+torque penalty:  0.8596070672258285
+torque penalty:  0.8126140714178186
+torque penalty:  0.8770532412217419
+torque penalty:  0.9686900806821049
+torque penalty:  0.9091898275422817
+torque penalty:  0.948326352911524
+torque penalty:  0.8604669204446762
+torque penalty:  0.8085287942419476
+torque penalty:  0.8156774897599219
+torque penalty:  0.7675953691690249
+torque penalty:  0.9044223544876882
+torque penalty:  0.8305152328648512
+torque penalty:  0.9853469219410799
+torque penalty:  0.7366046022721632
+torque penalty:  0.8620076970884274
+torque penalty:  0.9042246948552198
+torque penalty:  1.0227639408587275
+torque penalty:  0.8703684257851549
+torque penalty:  0.7746188660463915
+torque penalty:  0.7576438054197391
+torque penalty:  1.0331989159885913
+torque penalty:  0.6939217170269518
+torque penalty:  0.8334993311242593
+torque penalty:  0.6652004651001631
+torque penalty:  1.0331989159885913
+torque penalty:  0.9047753016372605
+torque penalty:  0.698606234049297
+torque penalty:  0.8395198787335271
+torque penalty:  0.9200730449078012
+torque penalty:  1.0252241944814648
+torque penalty:  1.0331989159885913
+torque penalty:  0.8721214278049684
+torque penalty:  0.6280257272889255
+torque penalty:  0.8286771521042199
+torque penalty:  1.0152758554482961
+torque penalty:  0.8077674861408184
+torque penalty:  0.8803106912691963
+torque penalty:  0.7632233320269995
+torque penalty:  0.9256587569294638
+torque penalty:  0.9775297343153079
+torque penalty:  1.0128204454343768
+torque penalty:  0.9613745529598265
+torque penalty:  0.6088142188604151
+torque penalty:  1.0230178469765006
+torque penalty:  0.6427074857938346
+torque penalty:  1.0154054913889088
+torque penalty:  0.9353400412858216
+torque penalty:  1.0244769146372235
+torque penalty:  0.9077175044701392
+torque penalty:  1.0091773517653955
+torque penalty:  0.8957835235267496
+torque penalty:  1.0232738811916553
+torque penalty:  0.8685002051167754
+torque penalty:  1.0239549994327704
+torque penalty:  0.8726120937276796
+torque penalty:  0.8991195116915475
+torque penalty:  0.9843801175991889
+torque penalty:  0.7585174602548831
+torque penalty:  0.9056291120703271
+torque penalty:  1.0318493937207176
+torque penalty:  0.9091979424260416
+torque penalty:  1.0198831597903677
+torque penalty:  0.9071054413820823
+torque penalty:  0.9919465523871618
+torque penalty:  1.0223715712448382
+torque penalty:  0.8957163594572211
+torque penalty:  0.7587936944688957
+torque penalty:  0.7796799726837201
+torque penalty:  1.0331989159885913
+torque penalty:  1.0232435188799023
+torque penalty:  0.9140698018564531
+torque penalty:  1.0268616444813032
+torque penalty:  1.0331989159885913
+torque penalty:  0.9244264176800107
+torque penalty:  0.8858991559134016
+torque penalty:  1.0253778252568289
+torque penalty:  0.9313037674018365
+torque penalty:  1.0227501756039412
+torque penalty:  0.646708441605616
+torque penalty:  0.8292808766305142
+torque penalty:  0.9760946293332594
+torque penalty:  0.9149186872497425
+torque penalty:  1.0331989159885913
+torque penalty:  0.8167786068500494
+torque penalty:  0.9059623160346415
+torque penalty:  1.0304620893962233
+torque penalty:  0.42032735912377944
+torque penalty:  0.9248207992401625
+torque penalty:  0.8822303330675308
+torque penalty:  0.7628670102944501
+torque penalty:  0.9037007019378526
+torque penalty:  0.905368885308011
+torque penalty:  0.6573480185792223
+torque penalty:  0.6326784473083196
+torque penalty:  0.8422172982560507
+torque penalty:  0.8998790604909777
+torque penalty:  0.9434911154379136
+torque penalty:  0.9043240112067222
+torque penalty:  0.9003125800826571
+Episode 2	Frame 899 	Average Score: -521.94torque penalty:  0.938542564859907
+torque penalty:  0.7457878007637697
+torque penalty:  0.8145936767413557
+torque penalty:  1.0188347536574736
+torque penalty:  0.9044343568321418
+torque penalty:  0.9189813591860874
+torque penalty:  0.9561825592689968
+torque penalty:  0.8993347013476062
+torque penalty:  0.9095905382644963
+torque penalty:  0.8714107991966491
+torque penalty:  0.8866728924994641
+torque penalty:  0.8931421474971459
+torque penalty:  0.7853791573437822
+torque penalty:  0.7581282539050688
+torque penalty:  0.8813795627908751
+torque penalty:  0.9907980226828574
+torque penalty:  0.9543033700401401
+torque penalty:  0.773959108934145
+torque penalty:  0.7014185443674
+torque penalty:  0.8909972646523265
+torque penalty:  0.8625812667703515
+torque penalty:  1.0252694508044
+torque penalty:  0.9054364185517505
+torque penalty:  0.7995262445348773
+torque penalty:  0.9412337910833692
+torque penalty:  0.9012050610300361
+torque penalty:  1.0254080185019157
+torque penalty:  0.9840710850970174
+torque penalty:  0.9179298697726886
+torque penalty:  0.8105497917564328
+torque penalty:  0.8446852704425364
+torque penalty:  0.8924169342397795
+torque penalty:  0.41973335269209316
+torque penalty:  0.7269141113054193
+torque penalty:  0.8306175873260269
+torque penalty:  0.8812402291197945
+torque penalty:  0.9411015447720987
+torque penalty:  0.9787309991648758
+torque penalty:  0.745515917608988
+torque penalty:  0.9248297230657735
+torque penalty:  0.6850829306829257
+torque penalty:  1.0331989159885913
+torque penalty:  1.0101478161498134
+torque penalty:  0.8933827240533414
+torque penalty:  0.869749990455329
+torque penalty:  1.026177627579692
+torque penalty:  0.6916677917119918
+torque penalty:  0.9527893112603275
+torque penalty:  0.8605740948383482
+torque penalty:  0.9354099567511486
+torque penalty:  1.0128975888684602
+torque penalty:  0.913666348932326
+torque penalty:  0.9215642751763302
+torque penalty:  0.7756429953834131
+torque penalty:  0.8791304645482894
+torque penalty:  0.9041639164782649
+torque penalty:  0.9728720220500603
+torque penalty:  0.9360395219874381
+torque penalty:  0.9625942626265154
+torque penalty:  0.8841200014883925
+torque penalty:  0.6294122478875211
+torque penalty:  1.0331989159885913
+torque penalty:  0.7926405140245117
+torque penalty:  0.952945940971772
+torque penalty:  0.6852114082578544
+torque penalty:  1.0222591049502785
+torque penalty:  0.9070180123379227
+torque penalty:  0.9219582672843026
+torque penalty:  0.8823239464208942
+torque penalty:  0.5917291459403752
+torque penalty:  0.9669042556542404
+torque penalty:  0.7501964351709414
+torque penalty:  1.0331989159885913
+torque penalty:  0.8791670987214453
+torque penalty:  0.9126920056728333
+torque penalty:  0.916802166990137
+torque penalty:  1.0331989159885913
+torque penalty:  0.8954962211283121
+torque penalty:  0.754889900440945
+torque penalty:  0.8635032368588378
+torque penalty:  0.9287178525507929
+torque penalty:  0.8037958191516075
+torque penalty:  0.8162166576899194
+torque penalty:  0.9317460814986551
+torque penalty:  1.0234080600926192
+torque penalty:  0.8481825876815918
+torque penalty:  1.0310527128436249
+torque penalty:  0.8256852573876294
+torque penalty:  0.9136319977493521
+torque penalty:  0.9077717589469101
+torque penalty:  1.0119583837820239
+torque penalty:  0.9021339765313112
+torque penalty:  0.9799901991799083
+torque penalty:  0.7203271123421563
+torque penalty:  0.576868037272419
+torque penalty:  1.0120183670331142
+torque penalty:  1.0331989159885913
+torque penalty:  0.8973888962647817
+torque penalty:  0.9825359203795236
+torque penalty:  1.0331989159885913
+torque penalty:  0.9896554484028043
+torque penalty:  0.9096883830534424
+torque penalty:  0.911017809970982
+torque penalty:  0.7872046111677647
+torque penalty:  0.772024534680405
+torque penalty:  0.7896741605032842
+torque penalty:  0.7388526607378963
+set_torque failed:  service [/get_obs] returned no response
+Traceback (most recent call last):
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 143, in <module>
+    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 36, in run
+    next_state, reward, done, _ = env.step(action)
+  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 190, in step
+    obs, obs_raw = self.get_obs_client()
+TypeError: 'NoneType' object is not iterable

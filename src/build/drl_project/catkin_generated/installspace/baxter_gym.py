@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.7
+#!/usr/bin/env python3
 import os
 import copy
 import numpy as np
@@ -34,7 +34,6 @@ class BaxterGym(gym.Env):
     def __init__(self):
         self.seed()
    
-
         # hyperparams
         self.c_a = 10e-3 # regularization term
         self.u_bound_goal = 0.2 # sampled uniformaly and added to goal position 
@@ -48,7 +47,7 @@ class BaxterGym(gym.Env):
         self.max_joint_vel, self.min_joint_vel = 4, -4
         self.max_valid_pos_x, self.min_valid_pos_x = 0.80, 0.40
         self.max_valid_pos_y, self.min_valid_pos_y = 0.5, 0.2
-        
+        self.loopRate = rospy.Rate(10)
         # constraints
         self.constraints =   {"left_s0" : (-1.70167993878, 1.70167993878, 1.5, 50),
                         "left_s1" : (-2.147, 1.047, 1.5, 50),
@@ -76,7 +75,7 @@ class BaxterGym(gym.Env):
         self.observation_space = spaces.Box(-4, 4, (20,))
         #self.observation_space = spaces.Tuple((joint_pos_space, joint_vel_space, ee_space, gripper_space, self.goal_space ))
         self.goal = self._sample_goal() # initial sample goal
-        self.load_gazebo_models_client() # load only baxter and table
+        self.load_gazebo_models_client() # load table
         rospy.loginfo("Baxter Gym Created Successfully")
 
 
@@ -174,6 +173,7 @@ class BaxterGym(gym.Env):
         for (_, _, _, torque), action in zip(self.constraints.values(), t_action):
             torque_list.append(torque * action)
         print("unnorm actions: ", torque_list, g_action)
+
         self.set_torque_client(torque_list, g_action)
 
         obs, obs_raw = self.get_obs_client()
@@ -197,7 +197,7 @@ class BaxterGym(gym.Env):
         reward = - mag_2(self.goal, obs["ee_p"]) - self.c_a * excess_torque_penalty
         print("reward: ", reward)
         print("done ", done)
-
+        self.loopRate.sleep()
         return np_obs, reward, done, {}
 
     def reset(self):
@@ -248,7 +248,7 @@ def main():
     env = BaxterGym()
     check_env(env)
     # env.close()
-    rospy.spin()
+    #rospy.spin()
 
 if __name__ == "__main__":
     main()

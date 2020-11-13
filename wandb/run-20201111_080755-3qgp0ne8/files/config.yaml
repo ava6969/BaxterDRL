@@ -1,0 +1,52 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.12
+batch_size:
+  desc: null
+  value: 128
+env:
+  desc: null
+  value: BaxterGym-v0
+frames:
+  desc: null
+  value: 65000
+gamma:
+  desc: null
+  value: 0.99
+layer_size:
+  desc: null
+  value: 150
+learning_rate:
+  desc: null
+  value: 0.001
+max_episode:
+  desc: null
+  value: 5000
+mem:
+  desc: null
+  value: 100000
+n_updates:
+  desc: null
+  value: 3
+nstep:
+  desc: null
+  value: 1
+per:
+  desc: null
+  value: 1
+seed:
+  desc: null
+  value: 0
+tau:
+  desc: null
+  value: 0.001
+update_every:
+  desc: null
+  value: 1

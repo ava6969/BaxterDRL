@@ -48,6 +48,7 @@ d56f9653a2c86e9d583b704426ca8402 /home/dewe/ros_ws/devel/include/drl_project/Add
 6971e687e747db452ff0031aa4d402cc /home/dewe/ros_ws/devel/include/drl_project/Reset.h
 f7f3b3f2e90d06f3bbba958c2688a6c4 /home/dewe/ros_ws/devel/include/drl_project/SetTorque.h
 2d8a9ecf412b8a6f1ba71288495ba1f8 /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h
+520006a7bc4af8a7b9925224f7cdb7ad /home/dewe/ros_ws/devel/include/openai_ros/RLExperimentInfo.h
 0d3644a70f5d7606ddb400ed68e75cd0 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
 e1b2c3aed0ccdcf474e6acae9ac99254 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
 42be46a87519aa2347956d16f285607d /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
@@ -95,6 +96,8 @@ eb6c1aaffb90a110075939d72643d87e /home/dewe/ros_ws/devel/lib/python2.7/dist-pack
 1b49dc5f53a82f8ea530ddd5dd4e2abd /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
 1ca3eb8a98dd9cf8e8ab396b49cdf011 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py
 cb0d4d99bf6482558e75b4228201cb49 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py
+b72b6c5af74eadb6cb233d2faee27525 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/openai_ros/msg/_RLExperimentInfo.py
+01a08668f4d58898d70da177ea63ddaf /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/openai_ros/msg/__init__.py
 7d3f06f303aa661c8c11a01c232c60e2 /home/dewe/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp
 5863662878c530885a442fa1e8111163 /home/dewe/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp
 53082f72ecfa886e870464e0648fbd33 /home/dewe/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp
@@ -138,6 +141,7 @@ da6dcc69af672596248d55ce9fc15520 /home/dewe/ros_ws/devel/share/common-lisp/ros/b
 bee264524bef5d393137ee51f326fac1 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/Reset.lisp
 709058d15de42f171d455ca47e7a1292 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp
 fe0002dd0a078ec1e32932a901b8f9e5 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp
+00f3ac27a9c327e77f0afea278f1c151 /home/dewe/ros_ws/devel/share/common-lisp/ros/openai_ros/msg/RLExperimentInfo.lisp
 2ef96e1bfc0bd63f94058022fd584e0a /home/dewe/ros_ws/devel/share/gennodejs/ros/baxter_core_msgs/msg/AnalogIOState.js
 3a32911ecea85e99319137b8ebf9cb83 /home/dewe/ros_ws/devel/share/gennodejs/ros/baxter_core_msgs/msg/AnalogIOStates.js
 5c1d87175f490fab01a35c10b5787b59 /home/dewe/ros_ws/devel/share/gennodejs/ros/baxter_core_msgs/msg/AnalogOutputCommand.js
@@ -181,6 +185,7 @@ b50dc44087d6b69dd3301dcfce1b675e /home/dewe/ros_ws/devel/share/gennodejs/ros/drl
 35a540de3b54c53b02c81913606d20a1 /home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/Reset.js
 ccfb4b0ecdb1dc93e05e088e6626ab42 /home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/SetTorque.js
 78c1b641a1ab516155fbeb385e3c197c /home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js
+fc0316a7688c98bc23ec772d6b2feceb /home/dewe/ros_ws/devel/share/gennodejs/ros/openai_ros/msg/RLExperimentInfo.js
 2eb4fe338a33af9be7e938917e465a18 /home/dewe/ros_ws/devel/share/roseus/ros/baxter_core_msgs/manifest.l
 3ddb8e9c765b8a64132b85cc685e0319 /home/dewe/ros_ws/devel/share/roseus/ros/baxter_core_msgs/msg/AnalogIOState.l
 b9fc8b3c0740ad93aafcabac42eaba9d /home/dewe/ros_ws/devel/share/roseus/ros/baxter_core_msgs/msg/AnalogIOStates.l
@@ -227,6 +232,8 @@ aa04e6c7859409159abe494b97a85248 /home/dewe/ros_ws/devel/share/roseus/ros/drl_pr
 d3d222bceb9fb1761e41cd41c2b09cd1 /home/dewe/ros_ws/devel/share/roseus/ros/drl_project/srv/Reset.l
 6a200f43723c4df724bddf2896207f55 /home/dewe/ros_ws/devel/share/roseus/ros/drl_project/srv/SetTorque.l
 0f257b0cf47472304a00d6f6669cbcfe /home/dewe/ros_ws/devel/share/roseus/ros/drl_project/srv/SpawnBlocks.l
+431c1cfae25bb222d20a3b37c0d5a253 /home/dewe/ros_ws/devel/share/roseus/ros/openai_ros/manifest.l
+72b8f852ced5743b53b4238978f716bb /home/dewe/ros_ws/devel/share/roseus/ros/openai_ros/msg/RLExperimentInfo.l
 5ecc686f2228b20e5efc3ec000922679 CMakeFiles/clean_test_results
 d1af593dc651b8e27b46bcf077b9a5dc baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOState
 adb55bbdb07cbe764b9f2379d41684bb baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_AnalogIOStates
@@ -293,3 +300,9 @@ b0345fbb48dd58130fbb168c9ef9f3e2 drl_project/CMakeFiles/drl_project_generate_mes
 b0345fbb48dd58130fbb168c9ef9f3e2 drl_project/CMakeFiles/drl_project_generate_messages_lisp
 b0345fbb48dd58130fbb168c9ef9f3e2 drl_project/CMakeFiles/drl_project_generate_messages_nodejs
 b0345fbb48dd58130fbb168c9ef9f3e2 drl_project/CMakeFiles/drl_project_generate_messages_py
+3c9ba2322ca46efec80c6316190e4797 openai_/openai_ros/openai_ros/CMakeFiles/_openai_ros_generate_messages_check_deps_RLExperimentInfo
+0e6c047a50ab742f81f1f8edce44b9ab openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_cpp
+0e6c047a50ab742f81f1f8edce44b9ab openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_eus
+0e6c047a50ab742f81f1f8edce44b9ab openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_lisp
+0e6c047a50ab742f81f1f8edce44b9ab openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_nodejs
+0e6c047a50ab742f81f1f8edce44b9ab openai_/openai_ros/openai_ros/CMakeFiles/openai_ros_generate_messages_py
