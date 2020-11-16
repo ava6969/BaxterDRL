@@ -1,0 +1,2030 @@
+Using  cuda:0
+/home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[INFO] [1605409628.640653, 31469.990000]: Baxter Gym Created Successfully
+NAF(
+  (head_1): Linear(in_features=20, out_features=150, bias=True)
+  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_1): Linear(in_features=150, out_features=100, bias=True)
+  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_2): Linear(in_features=100, out_features=50, bias=True)
+  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (action_values): Linear(in_features=50, out_features=7, bias=True)
+  (value): Linear(in_features=50, out_features=1, bias=True)
+  (matrix_entries): Linear(in_features=50, out_features=28, bias=True)
+)
+Using Regular Experience Replay
+Reset: step counter - 0 , obs mag - 0
+
+Done: step counter - 0 , obs mag - 1.142365049028234
+
+Done: step counter - 1 , obs mag - 1.1429917911035574
+
+Done: step counter - 2 , obs mag - 1.1429917911035574
+
+Done: step counter - 3 , obs mag - 1.1435871250574827
+
+Done: step counter - 4 , obs mag - 1.1414545244268028
+
+Done: step counter - 5 , obs mag - 1.1414545244268028
+
+Done: step counter - 6 , obs mag - 1.1400105842210813
+
+Done: step counter - 7 , obs mag - 1.1400105842210813
+
+Done: step counter - 8 , obs mag - 1.140540025783869
+
+Done: step counter - 9 , obs mag - 1.140540025783869
+
+Done: step counter - 10 , obs mag - 1.139157552098073
+
+Done: step counter - 11 , obs mag - 1.139157552098073
+
+Done: step counter - 12 , obs mag - 1.1395436165032304
+
+Done: step counter - 13 , obs mag - 1.1395436165032304
+
+Done: step counter - 14 , obs mag - 1.139769493540042
+
+Done: step counter - 15 , obs mag - 1.1364265969395084
+
+Done: step counter - 16 , obs mag - 1.1364265969395084
+
+Done: step counter - 17 , obs mag - 1.140189071774944
+
+Done: step counter - 18 , obs mag - 1.140189071774944
+
+Done: step counter - 19 , obs mag - 1.1433096664936901
+
+Done: step counter - 20 , obs mag - 1.147553553293286
+
+Done: step counter - 21 , obs mag - 1.147553553293286
+
+Done: step counter - 22 , obs mag - 1.1499578316818002
+
+Done: step counter - 23 , obs mag - 1.1499578316818002
+
+Done: step counter - 24 , obs mag - 1.152030519942213
+
+Done: step counter - 25 , obs mag - 1.152030519942213
+
+Done: step counter - 26 , obs mag - 1.1539806921741382
+
+Done: step counter - 27 , obs mag - 1.1539806921741382
+
+Done: step counter - 28 , obs mag - 1.1566758301319087
+
+Done: step counter - 29 , obs mag - 1.1566758301319087
+
+Done: step counter - 30 , obs mag - 1.1644806898213171
+
+Done: step counter - 31 , obs mag - 1.1644806898213171
+
+Done: step counter - 32 , obs mag - 1.1743031741641703
+
+Done: step counter - 33 , obs mag - 1.1743031741641703
+
+Done: step counter - 34 , obs mag - 1.1744012119248626
+
+Done: step counter - 35 , obs mag - 1.1744012119248626
+
+Done: step counter - 36 , obs mag - 1.1788331863661576
+
+Done: step counter - 37 , obs mag - 1.1863290558107247
+
+Done: step counter - 38 , obs mag - 1.1863290558107247
+
+Done: step counter - 39 , obs mag - 1.1895285742874249
+
+Done: step counter - 40 , obs mag - 1.1895285742874249
+
+Done: step counter - 41 , obs mag - 1.1959337495279576
+
+Done: step counter - 42 , obs mag - 1.1959337495279576
+
+Done: step counter - 43 , obs mag - 1.2016979725560943
+
+Done: step counter - 44 , obs mag - 1.2016979725560943
+
+Done: step counter - 45 , obs mag - 1.203126630783966
+
+Done: step counter - 46 , obs mag - 1.203126630783966
+
+Done: step counter - 47 , obs mag - 1.229195646824702
+
+Done: step counter - 48 , obs mag - 1.2643644112708199
+
+Done: step counter - 49 , obs mag - 1.2643644112708199
+
+Done: step counter - 50 , obs mag - 1.300913163899065
+
+Done: step counter - 51 , obs mag - 1.300913163899065
+
+Done: step counter - 52 , obs mag - 1.3132951448136516
+
+Done: step counter - 53 , obs mag - 1.3132951448136516
+
+Done: step counter - 54 , obs mag - 1.3304846274379019
+
+Done: step counter - 55 , obs mag - 1.3304846274379019
+
+Done: step counter - 56 , obs mag - 1.3663266029133188
+
+Done: step counter - 57 , obs mag - 1.4019575985526795
+
+Done: step counter - 58 , obs mag - 1.4019575985526795
+
+Done: step counter - 59 , obs mag - 1.4160061799546864
+
+Done: step counter - 60 , obs mag - 1.4160061799546864
+
+Done: step counter - 61 , obs mag - 1.4212573527386145
+
+Done: step counter - 62 , obs mag - 1.4212573527386145
+
+Done: step counter - 63 , obs mag - 1.414670201975804
+
+Done: step counter - 64 , obs mag - 1.414670201975804
+
+Done: step counter - 65 , obs mag - 1.403758807928253
+
+Done: step counter - 66 , obs mag - 1.403758807928253
+
+Done: step counter - 67 , obs mag - 1.4004205385231228
+
+Done: step counter - 68 , obs mag - 1.4047716927939493
+
+Done: step counter - 69 , obs mag - 1.4047716927939493
+
+Done: step counter - 70 , obs mag - 1.4191376638916486
+
+Done: step counter - 71 , obs mag - 1.4191376638916486
+
+Done: step counter - 72 , obs mag - 1.464109882317109
+
+Done: step counter - 73 , obs mag - 1.464109882317109
+
+Done: step counter - 74 , obs mag - 1.479502796965252
+
+Done: step counter - 75 , obs mag - 1.4922364828967163
+
+Done: step counter - 76 , obs mag - 1.4922364828967163
+
+Done: step counter - 77 , obs mag - 1.5138589008935364
+
+Done: step counter - 78 , obs mag - 1.5138589008935364
+
+Done: step counter - 79 , obs mag - 1.552453089495809
+
+Done: step counter - 80 , obs mag - 1.552453089495809
+
+Done: step counter - 81 , obs mag - 1.5724204715261212
+
+Done: step counter - 82 , obs mag - 1.5724204715261212
+
+Done: step counter - 83 , obs mag - 1.5927048511213073
+
+Done: step counter - 84 , obs mag - 1.5995828352606984
+
+Done: step counter - 85 , obs mag - 1.5995828352606984
+
+Done: step counter - 86 , obs mag - 1.6047667436356658
+
+Done: step counter - 87 , obs mag - 1.6047667436356658
+
+Done: step counter - 88 , obs mag - 1.5988552398127307
+
+Done: step counter - 89 , obs mag - 1.5988552398127307
+
+Done: step counter - 90 , obs mag - 1.5867605306252983
+
+Done: step counter - 91 , obs mag - 1.5867605306252983
+
+Done: step counter - 92 , obs mag - 1.5953679249798591
+
+Done: step counter - 93 , obs mag - 1.5964746043229447
+
+Done: step counter - 94 , obs mag - 1.5964746043229447
+
+Done: step counter - 95 , obs mag - 1.5832225645248195
+
+Done: step counter - 96 , obs mag - 1.5832225645248195
+
+Done: step counter - 97 , obs mag - 1.5882918306492957
+
+Done: step counter - 98 , obs mag - 1.5882918306492957
+
+Done: step counter - 99 , obs mag - 1.5891864987409074
+
+Done: step counter - 100 , obs mag - 1.57038491857172
+
+Done: step counter - 101 , obs mag - 1.57038491857172
+
+Done: step counter - 102 , obs mag - 1.53923210576652
+
+Done: step counter - 103 , obs mag - 1.53923210576652
+
+Done: step counter - 104 , obs mag - 1.5249697794892285
+
+Done: step counter - 105 , obs mag - 1.5078826392543083
+
+Done: step counter - 106 , obs mag - 1.5078826392543083
+
+Done: step counter - 107 , obs mag - 1.5078826392543083
+
+Done: step counter - 108 , obs mag - 1.5049648510213438
+
+Done: step counter - 109 , obs mag - 1.5049648510213438
+
+Done: step counter - 110 , obs mag - 1.4817074124047749
+
+Done: step counter - 111 , obs mag - 1.4817074124047749
+
+Done: step counter - 112 , obs mag - 1.4581449491192273
+
+Done: step counter - 113 , obs mag - 1.4417083163184092
+
+Done: step counter - 114 , obs mag - 1.4417083163184092
+
+Done: step counter - 115 , obs mag - 1.4299605064688468
+
+Done: step counter - 116 , obs mag - 1.4299605064688468
+
+Done: step counter - 117 , obs mag - 1.4230828276027507
+
+Done: step counter - 118 , obs mag - 1.4230828276027507
+
+Done: step counter - 119 , obs mag - 1.4050351409178852
+
+Done: step counter - 120 , obs mag - 1.4080061994352493
+
+Done: step counter - 121 , obs mag - 1.4080061994352493
+
+Done: step counter - 122 , obs mag - 1.3767061941426786
+
+Done: step counter - 123 , obs mag - 1.3767061941426786
+
+Done: step counter - 124 , obs mag - 1.372004360129065
+
+Done: step counter - 125 , obs mag - 1.372004360129065
+
+Done: step counter - 126 , obs mag - 1.3686492086495385
+
+Done: step counter - 127 , obs mag - 1.3686492086495385
+
+Done: step counter - 128 , obs mag - 1.351181487445283
+
+Done: step counter - 129 , obs mag - 1.3449578397334618
+
+Done: step counter - 130 , obs mag - 1.336360284834169
+
+Done: step counter - 131 , obs mag - 1.3308422137286786
+
+Done: step counter - 132 , obs mag - 1.3328000240114115
+
+Done: step counter - 133 , obs mag - 1.3438185141939727
+
+Done: step counter - 134 , obs mag - 1.3438185141939727
+
+Done: step counter - 135 , obs mag - 1.3434047669294604
+
+Done: step counter - 136 , obs mag - 1.333968008635574
+
+Done: step counter - 137 , obs mag - 1.33107342164354
+
+Done: step counter - 138 , obs mag - 1.3291915633689595
+
+Done: step counter - 139 , obs mag - 1.3441993024346495
+
+Done: step counter - 140 , obs mag - 1.347685513644875
+
+Done: step counter - 141 , obs mag - 1.347685513644875
+
+Done: step counter - 142 , obs mag - 1.3558763344954508
+
+Done: step counter - 143 , obs mag - 1.3603307921476042
+
+Done: step counter - 144 , obs mag - 1.3691188002592005
+
+Done: step counter - 145 , obs mag - 1.364917216215239
+
+Done: step counter - 146 , obs mag - 1.364917216215239
+
+Done: step counter - 147 , obs mag - 1.3571034231425259
+
+Done: step counter - 148 , obs mag - 1.3578387689953693
+
+Done: step counter - 149 , obs mag - 1.3661219070380326
+
+Done: step counter - 150 , obs mag - 1.3690294796644484
+
+Done: step counter - 151 , obs mag - 1.3623092489817012
+
+Done: step counter - 152 , obs mag - 1.3623092489817012
+
+Done: step counter - 153 , obs mag - 1.3584109903443713
+
+Done: step counter - 154 , obs mag - 1.3720130422145362
+
+Done: step counter - 155 , obs mag - 1.3934046953363715
+
+Done: step counter - 156 , obs mag - 1.4013854190093928
+
+Done: step counter - 157 , obs mag - 1.4059363196049357
+
+Done: step counter - 158 , obs mag - 1.3954988313538275
+
+Done: step counter - 159 , obs mag - 1.3868126890812238
+
+Done: step counter - 160 , obs mag - 1.378536632963373
+
+Done: step counter - 161 , obs mag - 1.378536632963373
+
+Done: step counter - 162 , obs mag - 1.380712082449412
+
+Done: step counter - 163 , obs mag - 1.3765024736504121
+
+Done: step counter - 164 , obs mag - 1.3551704129343627
+
+Done: step counter - 165 , obs mag - 1.3310339358190704
+
+Done: step counter - 166 , obs mag - 1.3310339358190704
+
+Done: step counter - 167 , obs mag - 1.309795170858335
+
+Done: step counter - 168 , obs mag - 1.2712165430229374
+
+Done: step counter - 169 , obs mag - 1.2396706155625088
+
+Done: step counter - 170 , obs mag - 1.235236084676762
+
+Done: step counter - 171 , obs mag - 1.235236084676762
+
+Done: step counter - 172 , obs mag - 1.2320884261291205
+
+Done: step counter - 173 , obs mag - 1.2366799526312493
+
+Done: step counter - 174 , obs mag - 1.2428281865997586
+
+Done: step counter - 175 , obs mag - 1.259651672778407
+
+Done: step counter - 176 , obs mag - 1.259651672778407
+
+Done: step counter - 177 , obs mag - 1.274432715068955
+
+Done: step counter - 178 , obs mag - 1.2773730834011963
+
+Done: step counter - 179 , obs mag - 1.2762368129347432
+
+Done: step counter - 180 , obs mag - 1.272587603098903
+
+Done: step counter - 181 , obs mag - 1.2732555667041559
+
+Done: step counter - 182 , obs mag - 1.2732555667041559
+
+Done: step counter - 183 , obs mag - 1.2865757666045863
+
+Done: step counter - 184 , obs mag - 1.2846945772829177
+
+Done: step counter - 185 , obs mag - 1.281191285836409
+
+Done: step counter - 186 , obs mag - 1.2817924638602753
+
+Done: step counter - 187 , obs mag - 1.2777627793323658
+
+Done: step counter - 188 , obs mag - 1.2843824661686145
+
+Done: step counter - 189 , obs mag - 1.2843824661686145
+
+Done: step counter - 190 , obs mag - 1.2960502850781577
+
+Done: step counter - 191 , obs mag - 1.315002428047914
+
+Done: step counter - 192 , obs mag - 1.3323899943609157
+
+Done: step counter - 193 , obs mag - 1.3424859668383153
+
+Done: step counter - 194 , obs mag - 1.3611156607405135
+
+Done: step counter - 195 , obs mag - 1.3739474203744502
+
+Done: step counter - 196 , obs mag - 1.3739474203744502
+
+Done: step counter - 197 , obs mag - 1.375042058006452
+
+Done: step counter - 198 , obs mag - 1.3739761829128236
+
+Done: step counter - 199 , obs mag - 1.3651137139985035
+
+Done: step counter - 200 , obs mag - 1.3620882544536896
+
+Done: step counter - 201 , obs mag - 1.3728025375005988
+
+Done: step counter - 202 , obs mag - 1.382274318158404
+
+Done: step counter - 203 , obs mag - 1.382274318158404
+
+Done: step counter - 204 , obs mag - 1.382268748075
+
+Done: step counter - 205 , obs mag - 1.3809109798871528
+
+Done: step counter - 206 , obs mag - 1.3827929862994004
+
+Done: step counter - 207 , obs mag - 1.3842756819113249
+
+Done: step counter - 208 , obs mag - 1.3823653322101621
+
+Done: step counter - 209 , obs mag - 1.3883379435593488
+
+Done: step counter - 210 , obs mag - 1.3883379435593488
+
+Done: step counter - 211 , obs mag - 1.4062981367262999
+
+Done: step counter - 212 , obs mag - 1.422221077904322
+
+Done: step counter - 213 , obs mag - 1.436797299908136
+
+Done: step counter - 214 , obs mag - 1.4479228588463469
+
+Done: step counter - 215 , obs mag - 1.4479228588463469
+
+Done: step counter - 216 , obs mag - 1.4732612850820923
+
+Done: step counter - 217 , obs mag - 1.4902612816734682
+
+Done: step counter - 218 , obs mag - 1.5064242436202717
+
+Done: step counter - 219 , obs mag - 1.5156751936160742
+
+Done: step counter - 220 , obs mag - 1.5292842366461208
+
+Done: step counter - 221 , obs mag - 1.5349408618760654
+
+Done: step counter - 222 , obs mag - 1.5321280166766393
+
+Done: step counter - 223 , obs mag - 1.5321280166766393
+
+Done: step counter - 224 , obs mag - 1.51938825084273
+
+Done: step counter - 225 , obs mag - 1.5154129297024415
+
+Done: step counter - 226 , obs mag - 1.5141213594731078
+
+Done: step counter - 227 , obs mag - 1.5199208151933252
+
+Done: step counter - 228 , obs mag - 1.5140668554050514
+
+Done: step counter - 229 , obs mag - 1.5140668554050514
+
+Done: step counter - 230 , obs mag - 1.5022271509468534
+
+Done: step counter - 231 , obs mag - 1.492049310339771
+
+Done: step counter - 232 , obs mag - 1.5020687009912599
+
+Done: step counter - 233 , obs mag - 1.500119765992079
+
+Done: step counter - 234 , obs mag - 1.500119765992079
+
+Done: step counter - 235 , obs mag - 1.489945622559852
+
+Done: step counter - 236 , obs mag - 1.4834493920368486
+
+Done: step counter - 237 , obs mag - 1.4774236889908903
+
+Done: step counter - 238 , obs mag - 1.4662027604786967
+
+Done: step counter - 239 , obs mag - 1.4689692927945024
+
+Done: step counter - 240 , obs mag - 1.4689692927945024
+
+Done: step counter - 241 , obs mag - 1.4637363171646276
+
+Done: step counter - 242 , obs mag - 1.4581762727083365
+
+Done: step counter - 243 , obs mag - 1.4434359823702658
+
+Done: step counter - 244 , obs mag - 1.437550414504371
+
+Done: step counter - 245 , obs mag - 1.437550414504371
+
+Done: step counter - 246 , obs mag - 1.421328282610576
+
+Done: step counter - 247 , obs mag - 1.4045343631161478
+
+Done: step counter - 248 , obs mag - 1.3949702786524336
+
+Done: step counter - 249 , obs mag - 1.3836080247700202
+
+Done: step counter - 250 , obs mag - 1.3627720007639088
+
+Done: step counter - 251 , obs mag - 1.3627720007639088
+
+Done: step counter - 252 , obs mag - 1.3409651835317715
+
+Done: step counter - 253 , obs mag - 1.318523185525313
+
+Done: step counter - 254 , obs mag - 1.3117486245658243
+
+Done: step counter - 255 , obs mag - 1.2994307924441564
+
+Done: step counter - 256 , obs mag - 1.2994307924441564
+
+Done: step counter - 257 , obs mag - 1.303741488506986
+
+Done: step counter - 258 , obs mag - 1.308587991284741
+
+Done: step counter - 259 , obs mag - 1.2931484764282128
+
+Done: step counter - 260 , obs mag - 1.265282068542531
+
+Done: step counter - 261 , obs mag - 1.265282068542531
+
+Done: step counter - 262 , obs mag - 1.2355034593070844
+
+Done: step counter - 263 , obs mag - 1.209683293781871
+
+Done: step counter - 264 , obs mag - 1.197036245853254
+
+Done: step counter - 265 , obs mag - 1.176794953222122
+
+Done: step counter - 266 , obs mag - 1.1733050656629884
+
+Done: step counter - 267 , obs mag - 1.1733050656629884
+
+Done: step counter - 268 , obs mag - 1.1831367634462178
+
+Done: step counter - 269 , obs mag - 1.1897182074972126
+
+Done: step counter - 270 , obs mag - 1.1834343187834724
+
+Done: step counter - 271 , obs mag - 1.1906994908832658
+
+Done: step counter - 272 , obs mag - 1.2073755737145593
+
+Done: step counter - 273 , obs mag - 1.2073755737145593
+
+Done: step counter - 274 , obs mag - 1.2085173803566902
+
+Done: step counter - 275 , obs mag - 1.2034028431631358
+
+Done: step counter - 276 , obs mag - 1.2055330008576108
+
+Done: step counter - 277 , obs mag - 1.2164773037993257
+
+Done: step counter - 278 , obs mag - 1.2271307427246265
+
+Done: step counter - 279 , obs mag - 1.2271307427246265
+
+Done: step counter - 280 , obs mag - 1.2197256812684867
+
+Done: step counter - 281 , obs mag - 1.212189291235396
+
+Done: step counter - 282 , obs mag - 1.215893055183027
+
+Done: step counter - 283 , obs mag - 1.2220485561216141
+
+Done: step counter - 284 , obs mag - 1.2128187760883795
+
+Done: step counter - 285 , obs mag - 1.2128187760883795
+
+Done: step counter - 286 , obs mag - 1.2062796711007413
+
+Done: step counter - 287 , obs mag - 1.210170350789756
+
+Done: step counter - 288 , obs mag - 1.205169350581962
+
+Done: step counter - 289 , obs mag - 1.2121578943587759
+
+Done: step counter - 290 , obs mag - 1.209973969284543
+
+Done: step counter - 291 , obs mag - 1.209973969284543
+
+Done: step counter - 292 , obs mag - 1.1943975409096361
+
+Done: step counter - 293 , obs mag - 1.1821309471213293
+
+Done: step counter - 294 , obs mag - 1.16654400034792
+
+Done: step counter - 295 , obs mag - 1.1627933279468794
+
+Done: step counter - 296 , obs mag - 1.1627933279468794
+
+Done: step counter - 297 , obs mag - 1.153109403366991
+
+Done: step counter - 298 , obs mag - 1.1545230746492137
+
+Done: step counter - 299 , obs mag - 1.1807021207548984
+
+Episode 0	Frame 299 	Average Score: -430.75Episode 0	Frame 299	Average Score: -430.75
+Reset: step counter - 300 , obs mag - 1.1807021207548984
+
+
+Best model saved at episode 1 with mean_100_rew -430.7520951050199
+
+Done: step counter - 0 , obs mag - 0.8131543481066236
+
+Done: step counter - 1 , obs mag - 0.813736558898042
+
+Done: step counter - 2 , obs mag - 0.8146352416715196
+
+Done: step counter - 3 , obs mag - 0.8104352745517098
+
+Done: step counter - 4 , obs mag - 0.8104352745517098
+
+Done: step counter - 5 , obs mag - 0.8081222818490518
+
+Done: step counter - 6 , obs mag - 0.812125497916234
+
+Done: step counter - 7 , obs mag - 0.8204736297058877
+
+Done: step counter - 8 , obs mag - 0.8328806089058308
+
+Done: step counter - 9 , obs mag - 0.8328806089058308
+
+Done: step counter - 10 , obs mag - 0.8395903322368029
+
+Done: step counter - 11 , obs mag - 0.849871117985121
+
+Done: step counter - 12 , obs mag - 0.8563137293662819
+
+Done: step counter - 13 , obs mag - 0.8600736337840261
+
+Done: step counter - 14 , obs mag - 0.8595984306758699
+
+Done: step counter - 15 , obs mag - 0.8640852423635556
+
+Done: step counter - 16 , obs mag - 0.8640852423635556
+
+Done: step counter - 17 , obs mag - 0.8694350753990736
+
+Done: step counter - 18 , obs mag - 0.8836265653818722
+
+Done: step counter - 19 , obs mag - 0.8959548967790488
+
+Done: step counter - 20 , obs mag - 0.9043409252834532
+
+Done: step counter - 21 , obs mag - 0.9228306586551176
+
+Done: step counter - 22 , obs mag - 0.9438360482950087
+
+Done: step counter - 23 , obs mag - 0.9438360482950087
+
+Done: step counter - 24 , obs mag - 0.9613818961579155
+
+Done: step counter - 25 , obs mag - 0.9701084766710172
+
+Done: step counter - 26 , obs mag - 0.971255710119346
+
+Done: step counter - 27 , obs mag - 0.9650566561256904
+
+Done: step counter - 28 , obs mag - 0.9650566561256904
+
+Done: step counter - 29 , obs mag - 0.9654146261483557
+
+Done: step counter - 30 , obs mag - 0.9694452452131799
+
+Done: step counter - 31 , obs mag - 0.9701250869327428
+
+Done: step counter - 32 , obs mag - 0.9682774472952861
+
+Done: step counter - 33 , obs mag - 0.9668018093503736
+
+Done: step counter - 34 , obs mag - 0.9668018093503736
+
+Done: step counter - 35 , obs mag - 0.9610635170538269
+
+Done: step counter - 36 , obs mag - 0.9607248684942808
+
+Done: step counter - 37 , obs mag - 0.9512641749039787
+
+Done: step counter - 38 , obs mag - 0.9429337255311621
+
+Done: step counter - 39 , obs mag - 0.9429337255311621
+
+Done: step counter - 40 , obs mag - 0.9371209848550454
+
+Done: step counter - 41 , obs mag - 0.9315080012687325
+
+Done: step counter - 42 , obs mag - 0.9324335816179706
+
+Done: step counter - 43 , obs mag - 0.9263572034096927
+
+Done: step counter - 44 , obs mag - 0.9231002474911234
+
+Done: step counter - 45 , obs mag - 0.9250476388550232
+
+Done: step counter - 46 , obs mag - 0.934164298770803
+
+Done: step counter - 47 , obs mag - 0.9359243929558742
+
+Done: step counter - 48 , obs mag - 0.9359243929558742
+
+Done: step counter - 49 , obs mag - 0.9430507105674337
+
+Done: step counter - 50 , obs mag - 0.9456762369747237
+
+Done: step counter - 51 , obs mag - 0.9570555041780473
+
+Done: step counter - 52 , obs mag - 0.9673624343651427
+
+Done: step counter - 53 , obs mag - 0.9737487395317191
+
+Done: step counter - 54 , obs mag - 0.9737487395317191
+
+Done: step counter - 55 , obs mag - 0.9696846871930491
+
+Done: step counter - 56 , obs mag - 0.9640954578825468
+
+Done: step counter - 57 , obs mag - 0.9645439839827379
+
+Done: step counter - 58 , obs mag - 0.9540784439863652
+
+Done: step counter - 59 , obs mag - 0.9550129701124859
+
+Done: step counter - 60 , obs mag - 0.9550129701124859
+
+Done: step counter - 61 , obs mag - 0.9651179960112363
+
+Done: step counter - 62 , obs mag - 0.9597416360061292
+
+Done: step counter - 63 , obs mag - 0.9458468600635368
+
+Done: step counter - 64 , obs mag - 0.9195992458983951
+
+Done: step counter - 65 , obs mag - 0.8777418687718676
+
+Done: step counter - 66 , obs mag - 0.8777418687718676
+
+Done: step counter - 67 , obs mag - 0.8299220282671255
+
+Done: step counter - 68 , obs mag - 0.7922573508773035
+
+Done: step counter - 69 , obs mag - 0.7580919232444336
+
+Done: step counter - 70 , obs mag - 0.7370816881116175
+
+Done: step counter - 71 , obs mag - 0.7370816881116175
+
+Done: step counter - 72 , obs mag - 0.7051862654565054
+
+Done: step counter - 73 , obs mag - 0.6799965136037558
+
+Done: step counter - 74 , obs mag - 0.6711246593812942
+
+Done: step counter - 75 , obs mag - 0.6654373655578739
+
+Done: step counter - 76 , obs mag - 0.6706488823161741
+
+Done: step counter - 77 , obs mag - 0.6706488823161741
+
+Done: step counter - 78 , obs mag - 0.6954601389006554
+
+Done: step counter - 79 , obs mag - 0.7253373568680364
+
+Done: step counter - 80 , obs mag - 0.7529785881731245
+
+Done: step counter - 81 , obs mag - 0.7680711217195535
+
+Done: step counter - 82 , obs mag - 0.7741432001723766
+
+Done: step counter - 83 , obs mag - 0.7741432001723766
+
+Done: step counter - 84 , obs mag - 0.7976695715885153
+
+Done: step counter - 85 , obs mag - 0.8305839908935259
+
+Done: step counter - 86 , obs mag - 0.8640768303310051
+
+Done: step counter - 87 , obs mag - 0.8979609349932316
+
+Done: step counter - 88 , obs mag - 0.9369507612049552
+
+Done: step counter - 89 , obs mag - 0.9369507612049552
+
+Done: step counter - 90 , obs mag - 0.9634407631079058
+
+Done: step counter - 91 , obs mag - 0.9793646041842402
+
+Done: step counter - 92 , obs mag - 0.981211480237895
+
+Done: step counter - 93 , obs mag - 0.9779795343774011
+
+Done: step counter - 94 , obs mag - 0.9754035073490954
+
+Done: step counter - 95 , obs mag - 0.9754035073490954
+
+Done: step counter - 96 , obs mag - 0.9638420973209998
+
+Done: step counter - 97 , obs mag - 0.9578598757305721
+
+Done: step counter - 98 , obs mag - 0.9533092460435786
+
+Done: step counter - 99 , obs mag - 0.9440027775084735
+
+Done: step counter - 100 , obs mag - 0.9198038242479716
+
+Done: step counter - 101 , obs mag - 0.8890637240494933
+
+Done: step counter - 102 , obs mag - 0.8890637240494933
+
+Done: step counter - 103 , obs mag - 0.8607420872468414
+
+Done: step counter - 104 , obs mag - 0.8516630511430967
+
+Done: step counter - 105 , obs mag - 0.8722281899789295
+
+Done: step counter - 106 , obs mag - 0.885044665872284
+
+Done: step counter - 107 , obs mag - 0.885044665872284
+
+Done: step counter - 108 , obs mag - 0.8890218767748013
+
+Done: step counter - 109 , obs mag - 0.8747467544887958
+
+Done: step counter - 110 , obs mag - 0.8635882794514352
+
+Done: step counter - 111 , obs mag - 0.8677644271279309
+
+Done: step counter - 112 , obs mag - 0.8815929317029032
+
+Done: step counter - 113 , obs mag - 0.8863811266409077
+
+Done: step counter - 114 , obs mag - 0.8863811266409077
+
+Done: step counter - 115 , obs mag - 0.9032737453294891
+
+Done: step counter - 116 , obs mag - 0.9082862515423432
+
+Done: step counter - 117 , obs mag - 0.9231070865136275
+
+Done: step counter - 118 , obs mag - 0.9313550449223307
+
+Done: step counter - 119 , obs mag - 0.9313550449223307
+
+Done: step counter - 120 , obs mag - 0.9443326818786218
+
+Done: step counter - 121 , obs mag - 0.954254627788689
+
+Done: step counter - 122 , obs mag - 0.9638721416147712
+
+Done: step counter - 123 , obs mag - 0.9644656405986274
+
+Done: step counter - 124 , obs mag - 0.9584680438153071
+
+Done: step counter - 125 , obs mag - 0.9567363307796907
+
+Done: step counter - 126 , obs mag - 0.9567363307796907
+
+Done: step counter - 127 , obs mag - 0.9511848544727659
+
+Done: step counter - 128 , obs mag - 0.956645627601967
+
+Done: step counter - 129 , obs mag - 0.9610922833878156
+
+Done: step counter - 130 , obs mag - 0.9557584649381583
+
+Done: step counter - 131 , obs mag - 0.9557584649381583
+
+Done: step counter - 132 , obs mag - 0.9547078750436451
+
+Done: step counter - 133 , obs mag - 0.9602668591262883
+
+Done: step counter - 134 , obs mag - 0.9484606708839072
+
+Done: step counter - 135 , obs mag - 0.9362711832568545
+
+Done: step counter - 136 , obs mag - 0.9234820732485047
+
+Done: step counter - 137 , obs mag - 0.9154627827596751
+
+Done: step counter - 138 , obs mag - 0.9154627827596751
+
+Done: step counter - 139 , obs mag - 0.9182974038547481
+
+Done: step counter - 140 , obs mag - 0.9095891177961158
+
+Done: step counter - 141 , obs mag - 0.9060857165761255
+
+Done: step counter - 142 , obs mag - 0.8913753457490766
+
+Done: step counter - 143 , obs mag - 0.8894235517592778
+
+Done: step counter - 144 , obs mag - 0.8894235517592778
+
+Done: step counter - 145 , obs mag - 0.9009567559616471
+
+Done: step counter - 146 , obs mag - 0.9214611621808976
+
+Done: step counter - 147 , obs mag - 0.9432467655218445
+
+Done: step counter - 148 , obs mag - 0.9355952808319571
+
+Done: step counter - 149 , obs mag - 0.9133450337511101
+
+Done: step counter - 150 , obs mag - 0.8891834383789978
+
+Done: step counter - 151 , obs mag - 0.8891834383789978
+
+Done: step counter - 152 , obs mag - 0.8549258159706321
+
+Done: step counter - 153 , obs mag - 0.8238618953122872
+
+Done: step counter - 154 , obs mag - 0.7999487831230877
+
+Done: step counter - 155 , obs mag - 0.7801507974495583
+
+Done: step counter - 156 , obs mag - 0.7642246650037777
+
+Done: step counter - 157 , obs mag - 0.7642246650037777
+
+Done: step counter - 158 , obs mag - 0.7520714030466348
+
+Done: step counter - 159 , obs mag - 0.7355649249977174
+
+Done: step counter - 160 , obs mag - 0.721745639382992
+
+Done: step counter - 161 , obs mag - 0.727046738788392
+
+Done: step counter - 162 , obs mag - 0.727046738788392
+
+Done: step counter - 163 , obs mag - 0.7385812308104494
+
+Done: step counter - 164 , obs mag - 0.7244714392398998
+
+Done: step counter - 165 , obs mag - 0.7116759294513227
+
+Done: step counter - 166 , obs mag - 0.7056337939803394
+
+Done: step counter - 167 , obs mag - 0.7056337939803394
+
+Done: step counter - 168 , obs mag - 0.719347612085146
+
+Done: step counter - 169 , obs mag - 0.7474345182678663
+
+Done: step counter - 170 , obs mag - 0.763174336505152
+
+Done: step counter - 171 , obs mag - 0.7598685217550055
+
+Done: step counter - 172 , obs mag - 0.7598685217550055
+
+Done: step counter - 173 , obs mag - 0.742386962383549
+
+Done: step counter - 174 , obs mag - 0.7122781561397307
+
+Done: step counter - 175 , obs mag - 0.6981076140938459
+
+Done: step counter - 176 , obs mag - 0.7091866450434495
+
+Done: step counter - 177 , obs mag - 0.7091866450434495
+
+Done: step counter - 178 , obs mag - 0.7289204756665019
+
+Done: step counter - 179 , obs mag - 0.758825474508832
+
+Done: step counter - 180 , obs mag - 0.7725213994710819
+
+Done: step counter - 181 , obs mag - 0.7986035745308497
+
+Done: step counter - 182 , obs mag - 0.7986035745308497
+
+Done: step counter - 183 , obs mag - 0.8287657306048009
+
+Done: step counter - 184 , obs mag - 0.874825789056802
+
+Done: step counter - 185 , obs mag - 0.8980295214813412
+
+Done: step counter - 186 , obs mag - 0.9233753178104076
+
+Done: step counter - 187 , obs mag - 0.9527012196137183
+
+Done: step counter - 188 , obs mag - 0.9527012196137183
+
+Done: step counter - 189 , obs mag - 0.9789762419114992
+
+Done: step counter - 190 , obs mag - 0.9654401787232246
+
+Done: step counter - 191 , obs mag - 0.9414102875453881
+
+Done: step counter - 192 , obs mag - 0.9359924378280505
+
+Done: step counter - 193 , obs mag - 0.9390726078891025
+
+Done: step counter - 194 , obs mag - 0.9390726078891025
+
+Done: step counter - 195 , obs mag - 0.9490835243796863
+
+Done: step counter - 196 , obs mag - 0.9387403396923941
+
+Done: step counter - 197 , obs mag - 0.927897345685839
+
+Done: step counter - 198 , obs mag - 0.9340002956083714
+
+Done: step counter - 199 , obs mag - 0.932886050407722
+
+Done: step counter - 200 , obs mag - 0.932886050407722
+
+Done: step counter - 201 , obs mag - 0.9133153285669422
+
+Done: step counter - 202 , obs mag - 0.8846416906945934
+
+Done: step counter - 203 , obs mag - 0.8518940197029675
+
+Done: step counter - 204 , obs mag - 0.8246729397029474
+
+Done: step counter - 205 , obs mag - 0.8246729397029474
+
+Done: step counter - 206 , obs mag - 0.8002113881093715
+
+Done: step counter - 207 , obs mag - 0.7738805626592146
+
+Done: step counter - 208 , obs mag - 0.7448872752645959
+
+Done: step counter - 209 , obs mag - 0.7151051593954749
+
+Done: step counter - 210 , obs mag - 0.6807462225780695
+
+Done: step counter - 211 , obs mag - 0.6807462225780695
+
+Done: step counter - 212 , obs mag - 0.6646934274335327
+
+Done: step counter - 213 , obs mag - 0.6649995582467068
+
+Done: step counter - 214 , obs mag - 0.6711816012931616
+
+Done: step counter - 215 , obs mag - 0.6821134284656015
+
+Done: step counter - 216 , obs mag - 0.6808276977394523
+
+Done: step counter - 217 , obs mag - 0.6694792631108263
+
+Done: step counter - 218 , obs mag - 0.6781015535001076
+
+Done: step counter - 219 , obs mag - 0.6781015535001076
+
+Done: step counter - 220 , obs mag - 0.6897969957006849
+
+Done: step counter - 221 , obs mag - 0.6844337969660155
+
+Done: step counter - 222 , obs mag - 0.673655570481372
+
+Done: step counter - 223 , obs mag - 0.6740860441206298
+
+Done: step counter - 224 , obs mag - 0.6721601056758301
+
+Done: step counter - 225 , obs mag - 0.6721601056758301
+
+Done: step counter - 226 , obs mag - 0.6554399837042366
+
+Done: step counter - 227 , obs mag - 0.644399279208134
+
+Done: step counter - 228 , obs mag - 0.6406069689799743
+
+Done: step counter - 229 , obs mag - 0.647087054700364
+
+Done: step counter - 230 , obs mag - 0.647087054700364
+
+Done: step counter - 231 , obs mag - 0.6439651988400159
+
+Done: step counter - 232 , obs mag - 0.6228990627415755
+
+Done: step counter - 233 , obs mag - 0.5971212290554458
+
+Done: step counter - 234 , obs mag - 0.58236249793259
+
+Done: step counter - 235 , obs mag - 0.5780739230502967
+
+Done: step counter - 236 , obs mag - 0.5780739230502967
+
+Done: step counter - 237 , obs mag - 0.5717186535136694
+
+Done: step counter - 238 , obs mag - 0.5595414503755419
+
+Done: step counter - 239 , obs mag - 0.5520901295278967
+
+Done: step counter - 240 , obs mag - 0.5430102639485934
+
+Done: step counter - 241 , obs mag - 0.5430102639485934
+
+Done: step counter - 242 , obs mag - 0.5469283952001862
+
+Done: step counter - 243 , obs mag - 0.5528545865766363
+
+Done: step counter - 244 , obs mag - 0.5459034637787037
+
+Done: step counter - 245 , obs mag - 0.530195134193059
+
+Done: step counter - 246 , obs mag - 0.523714028429158
+
+Done: step counter - 247 , obs mag - 0.5283883600567946
+
+Done: step counter - 248 , obs mag - 0.5258471080237355
+
+Done: step counter - 249 , obs mag - 0.5258471080237355
+
+Done: step counter - 250 , obs mag - 0.5232921423955048
+
+Done: step counter - 251 , obs mag - 0.5270324298810276
+
+Done: step counter - 252 , obs mag - 0.5313270704207402
+
+Done: step counter - 253 , obs mag - 0.542596225742989
+
+Done: step counter - 254 , obs mag - 0.542596225742989
+
+Done: step counter - 255 , obs mag - 0.5484536232823327
+
+Done: step counter - 256 , obs mag - 0.557916606103537
+
+Done: step counter - 257 , obs mag - 0.5574514770469298
+
+Done: step counter - 258 , obs mag - 0.5519664001154522
+
+Done: step counter - 259 , obs mag - 0.5442270007424964
+
+Done: step counter - 260 , obs mag - 0.5442270007424964
+
+Done: step counter - 261 , obs mag - 0.5458079378512671
+
+Done: step counter - 262 , obs mag - 0.5432131260598664
+
+Done: step counter - 263 , obs mag - 0.5470580698242732
+
+Done: step counter - 264 , obs mag - 0.553608154505034
+
+Done: step counter - 265 , obs mag - 0.5631226689173537
+
+Done: step counter - 266 , obs mag - 0.578916990024276
+
+Done: step counter - 267 , obs mag - 0.6134685738673686
+
+Done: step counter - 268 , obs mag - 0.6134685738673686
+
+Done: step counter - 269 , obs mag - 0.6590911351354038
+
+Done: step counter - 270 , obs mag - 0.6956830569835986
+
+Done: step counter - 271 , obs mag - 0.718261921024374
+
+Done: step counter - 272 , obs mag - 0.718261921024374
+
+Done: step counter - 273 , obs mag - 0.7368349105684012
+
+Done: step counter - 274 , obs mag - 0.7475181386319936
+
+Done: step counter - 275 , obs mag - 0.7583007799871863
+
+Done: step counter - 276 , obs mag - 0.7622623984323703
+
+Done: step counter - 277 , obs mag - 0.758901726512241
+
+Done: step counter - 278 , obs mag - 0.7465048472963361
+
+Done: step counter - 279 , obs mag - 0.7465048472963361
+
+Done: step counter - 280 , obs mag - 0.7595870576580768
+
+Done: step counter - 281 , obs mag - 0.7757340399555832
+
+Done: step counter - 282 , obs mag - 0.7717633928347037
+
+Done: step counter - 283 , obs mag - 0.7735941247489377
+
+Done: step counter - 284 , obs mag - 0.7735941247489377
+
+Done: step counter - 285 , obs mag - 0.7764193419674552
+
+Done: step counter - 286 , obs mag - 0.7708301502596584
+
+Done: step counter - 287 , obs mag - 0.7596237389700509
+
+Done: step counter - 288 , obs mag - 0.7639438554799882
+
+Done: step counter - 289 , obs mag - 0.7639438554799882
+
+Done: step counter - 290 , obs mag - 0.7775951640260315
+
+Done: step counter - 291 , obs mag - 0.7913688009151391
+
+Done: step counter - 292 , obs mag - 0.8163827372122138
+
+Done: step counter - 293 , obs mag - 0.8310015588980848
+
+Done: step counter - 294 , obs mag - 0.8542167269494768
+
+Done: step counter - 295 , obs mag - 0.8542167269494768
+
+Done: step counter - 296 , obs mag - 0.8913346823479716
+
+Done: step counter - 297 , obs mag - 0.9085462842481026
+
+Done: step counter - 298 , obs mag - 0.9176130230239438
+
+Done: step counter - 299 , obs mag - 0.9324084949998444
+
+Episode 1	Frame 599 	Average Score: -350.87Reset: step counter - 300 , obs mag - 0.9324084949998444
+
+
+Best model saved at episode 2 with mean_100_rew -350.8687761120934
+
+Done: step counter - 0 , obs mag - 0.8251872996670256
+
+Done: step counter - 1 , obs mag - 0.8268751343677927
+
+Done: step counter - 2 , obs mag - 0.8400649627065921
+
+Done: step counter - 3 , obs mag - 0.8400649627065921
+
+Done: step counter - 4 , obs mag - 0.8487940946219084
+
+Done: step counter - 5 , obs mag - 0.8525000909526997
+
+Done: step counter - 6 , obs mag - 0.866574994130884
+
+Done: step counter - 7 , obs mag - 0.8943857275140599
+
+Done: step counter - 8 , obs mag - 0.9169499262770728
+
+Done: step counter - 9 , obs mag - 0.9169499262770728
+
+Done: step counter - 10 , obs mag - 0.9287627254021674
+
+Done: step counter - 11 , obs mag - 0.9328053593042556
+
+Done: step counter - 12 , obs mag - 0.9300429005122379
+
+Done: step counter - 13 , obs mag - 0.9231594861788845
+
+Done: step counter - 14 , obs mag - 0.9187487397953894
+
+Done: step counter - 15 , obs mag - 0.9187487397953894
+
+Done: step counter - 16 , obs mag - 0.9154781331151903
+
+Done: step counter - 17 , obs mag - 0.9196978296520196
+
+Done: step counter - 18 , obs mag - 0.933115521126075
+
+Done: step counter - 19 , obs mag - 0.9542637630346207
+
+Done: step counter - 20 , obs mag - 0.9542637630346207
+
+Done: step counter - 21 , obs mag - 0.9547104912027392
+
+Done: step counter - 22 , obs mag - 0.9512824083879614
+
+Done: step counter - 23 , obs mag - 0.9461155014085042
+
+Done: step counter - 24 , obs mag - 0.9529269502164943
+
+Done: step counter - 25 , obs mag - 0.955950255161848
+
+Done: step counter - 26 , obs mag - 0.955950255161848
+
+Done: step counter - 27 , obs mag - 0.950855545130036
+
+Done: step counter - 28 , obs mag - 0.9406227692979776
+
+Done: step counter - 29 , obs mag - 0.9246338050905976
+
+Done: step counter - 30 , obs mag - 0.9036670023209399
+
+Done: step counter - 31 , obs mag - 0.8942211674489468
+
+Done: step counter - 32 , obs mag - 0.8942211674489468
+
+Done: step counter - 33 , obs mag - 0.8964630661571513
+
+Done: step counter - 34 , obs mag - 0.9070523077045772
+
+Done: step counter - 35 , obs mag - 0.9095021085815836
+
+Done: step counter - 36 , obs mag - 0.9076372975713274
+
+Done: step counter - 37 , obs mag - 0.9196194688323811
+
+Done: step counter - 38 , obs mag - 0.9196194688323811
+
+Done: step counter - 39 , obs mag - 0.9298375158983017
+
+Done: step counter - 40 , obs mag - 0.9418381718808302
+
+Done: step counter - 41 , obs mag - 0.9418309506754533
+
+Done: step counter - 42 , obs mag - 0.9368499883171277
+
+Done: step counter - 43 , obs mag - 0.921687301818547
+
+Done: step counter - 44 , obs mag - 0.921687301818547
+
+Done: step counter - 45 , obs mag - 0.8980604489956446
+
+Done: step counter - 46 , obs mag - 0.8809178811219611
+
+Done: step counter - 47 , obs mag - 0.8668746261067007
+
+Done: step counter - 48 , obs mag - 0.8422381691667342
+
+Done: step counter - 49 , obs mag - 0.8422381691667342
+
+Done: step counter - 50 , obs mag - 0.8248590291096488
+
+Done: step counter - 51 , obs mag - 0.8074189864160054
+
+Done: step counter - 52 , obs mag - 0.7942056997147455
+
+Done: step counter - 53 , obs mag - 0.7787342533303525
+
+Done: step counter - 54 , obs mag - 0.7613678525075493
+
+Done: step counter - 55 , obs mag - 0.7613678525075493
+
+Done: step counter - 56 , obs mag - 0.7514210218927186
+
+Done: step counter - 57 , obs mag - 0.7546196170720664
+
+Done: step counter - 58 , obs mag - 0.751444538039167
+
+Done: step counter - 59 , obs mag - 0.7506409322404564
+
+Done: step counter - 60 , obs mag - 0.7448281107276947
+
+Done: step counter - 61 , obs mag - 0.7448281107276947
+
+Done: step counter - 62 , obs mag - 0.7485460418517887
+
+Done: step counter - 63 , obs mag - 0.7727486644702786
+
+Done: step counter - 64 , obs mag - 0.7897141954317194
+
+Done: step counter - 65 , obs mag - 0.7872102560481301
+
+Done: step counter - 66 , obs mag - 0.7851483140495676
+
+Done: step counter - 67 , obs mag - 0.7836166962773792
+
+Done: step counter - 68 , obs mag - 0.7836166962773792
+
+Done: step counter - 69 , obs mag - 0.7968989736341161
+
+Done: step counter - 70 , obs mag - 0.8068845947779744
+
+Done: step counter - 71 , obs mag - 0.8158428460504623
+
+Done: step counter - 72 , obs mag - 0.8072435439678723
+
+Done: step counter - 73 , obs mag - 0.8049421105717353
+
+Done: step counter - 74 , obs mag - 0.8049421105717353
+
+Done: step counter - 75 , obs mag - 0.7990004516160116
+
+Done: step counter - 76 , obs mag - 0.7966826033242992
+
+Done: step counter - 77 , obs mag - 0.7919907173213687
+
+Done: step counter - 78 , obs mag - 0.7898895004268249
+
+Done: step counter - 79 , obs mag - 0.7779029626147569
+
+Done: step counter - 80 , obs mag - 0.7779029626147569
+
+Done: step counter - 81 , obs mag - 0.7602437551603994
+
+Done: step counter - 82 , obs mag - 0.7260494190956616
+
+Done: step counter - 83 , obs mag - 0.6945915360442858
+
+Done: step counter - 84 , obs mag - 0.6798122723102904
+
+Done: step counter - 85 , obs mag - 0.656067361600813
+
+Done: step counter - 86 , obs mag - 0.6429831825999637
+
+Done: step counter - 87 , obs mag - 0.6429831825999637
+
+Done: step counter - 88 , obs mag - 0.6262276466552785
+
+Done: step counter - 89 , obs mag - 0.61790232958993
+
+Done: step counter - 90 , obs mag - 0.6070855165902249
+
+Done: step counter - 91 , obs mag - 0.5830423255253074
+
+Done: step counter - 92 , obs mag - 0.5489766795571822
+
+Done: step counter - 93 , obs mag - 0.5489766795571822
+
+Done: step counter - 94 , obs mag - 0.5190138016590956
+
+Done: step counter - 95 , obs mag - 0.5135672733891948
+
+Done: step counter - 96 , obs mag - 0.5202515099948041
+
+Done: step counter - 97 , obs mag - 0.5197389146462807
+
+Done: step counter - 98 , obs mag - 0.5330539475655204
+
+Done: step counter - 99 , obs mag - 0.5330539475655204
+
+Done: step counter - 100 , obs mag - 0.5553211534476414
+
+Done: step counter - 101 , obs mag - 0.5570500317227121
+
+Done: step counter - 102 , obs mag - 0.5403142948206296
+
+Done: step counter - 103 , obs mag - 0.5189434475625541
+
+Done: step counter - 104 , obs mag - 0.5082273040265051
+
+Done: step counter - 105 , obs mag - 0.5051489816267062
+
+Done: step counter - 106 , obs mag - 0.5040632819153417
+
+Done: step counter - 107 , obs mag - 0.5040632819153417
+
+Done: step counter - 108 , obs mag - 0.5104768840072745
+
+Done: step counter - 109 , obs mag - 0.52622839476983
+
+Done: step counter - 110 , obs mag - 0.549569188408025
+
+Done: step counter - 111 , obs mag - 0.580664980296348
+
+Done: step counter - 112 , obs mag - 0.580664980296348
+
+Done: step counter - 113 , obs mag - 0.608072673785626
+
+Done: step counter - 114 , obs mag - 0.6514932883821261
+
+Done: step counter - 115 , obs mag - 0.687718410165574
+
+Done: step counter - 116 , obs mag - 0.7346607888463611
+
+Done: step counter - 117 , obs mag - 0.7840057333763882
+
+Done: step counter - 118 , obs mag - 0.8063860377180689
+
+Done: step counter - 119 , obs mag - 0.8063860377180689
+
+Done: step counter - 120 , obs mag - 0.8013212084480753
+
+Done: step counter - 121 , obs mag - 0.7869560962695639
+
+Done: step counter - 122 , obs mag - 0.7869674420873657
+
+Done: step counter - 123 , obs mag - 0.7783148702452818
+
+Done: step counter - 124 , obs mag - 0.7783148702452818
+
+Done: step counter - 125 , obs mag - 0.7578744854194522
+
+Done: step counter - 126 , obs mag - 0.7510484701313939
+
+Done: step counter - 127 , obs mag - 0.7425967365759352
+
+Done: step counter - 128 , obs mag - 0.7388316163507951
+
+Done: step counter - 129 , obs mag - 0.7277972066372589
+
+Done: step counter - 130 , obs mag - 0.7272048107375931
+
+Done: step counter - 131 , obs mag - 0.7272048107375931
+
+Done: step counter - 132 , obs mag - 0.7455084574071084
+
+Done: step counter - 133 , obs mag - 0.7675595316751858
+
+Done: step counter - 134 , obs mag - 0.7991078619832173
+
+Done: step counter - 135 , obs mag - 0.8200669774148303
+
+Done: step counter - 136 , obs mag - 0.8508191948773542
+
+Done: step counter - 137 , obs mag - 0.8508191948773542
+
+Done: step counter - 138 , obs mag - 0.8666749148442057
+
+Done: step counter - 139 , obs mag - 0.8688381731605354
+
+Done: step counter - 140 , obs mag - 0.8546718831037884
+
+Done: step counter - 141 , obs mag - 0.8326417737211613
+
+Done: step counter - 142 , obs mag - 0.8133293612438258
+
+Done: step counter - 143 , obs mag - 0.8133293612438258
+
+Done: step counter - 144 , obs mag - 0.7908389705035301
+
+Done: step counter - 145 , obs mag - 0.7744286147944501
+
+Done: step counter - 146 , obs mag - 0.7677825618006829
+
+Done: step counter - 147 , obs mag - 0.7733328978358421
+
+Done: step counter - 148 , obs mag - 0.7646691965135162
+
+Done: step counter - 149 , obs mag - 0.7646691965135162
+
+Done: step counter - 150 , obs mag - 0.7606389737086529
+
+Done: step counter - 151 , obs mag - 0.762438196714343
+
+Done: step counter - 152 , obs mag - 0.7649721258955233
+
+Done: step counter - 153 , obs mag - 0.7750302108433043
+
+Done: step counter - 154 , obs mag - 0.7750302108433043
+
+Done: step counter - 155 , obs mag - 0.7997446095798079
+
+Done: step counter - 156 , obs mag - 0.8328325213022351
+
+Done: step counter - 157 , obs mag - 0.8619458740629926
+
+Done: step counter - 158 , obs mag - 0.8727134620044897
+
+Done: step counter - 159 , obs mag - 0.8869121082120797
+
+Done: step counter - 160 , obs mag - 0.8869121082120797
+
+Done: step counter - 161 , obs mag - 0.9095890053051595
+
+Done: step counter - 162 , obs mag - 0.9164521272347147
+
+Done: step counter - 163 , obs mag - 0.9218377784147503
+
+Done: step counter - 164 , obs mag - 0.9335240253395832
+
+Done: step counter - 165 , obs mag - 0.9335240253395832
+
+Done: step counter - 166 , obs mag - 0.921963531974157
+
+Done: step counter - 167 , obs mag - 0.9072580220261046
+
+Done: step counter - 168 , obs mag - 0.899415422855167
+
+Done: step counter - 169 , obs mag - 0.8966136667462532
+
+Done: step counter - 170 , obs mag - 0.8902781742203236
+
+Done: step counter - 171 , obs mag - 0.8923928480578739
+
+Done: step counter - 172 , obs mag - 0.8923928480578739
+
+Done: step counter - 173 , obs mag - 0.9037903617599194
+
+Done: step counter - 174 , obs mag - 0.9166221218511412
+
+Done: step counter - 175 , obs mag - 0.9276909469025758
+
+Done: step counter - 176 , obs mag - 0.9301113371392813
+
+Done: step counter - 177 , obs mag - 0.9301113371392813
+
+Done: step counter - 178 , obs mag - 0.9141354832264259
+
+Done: step counter - 179 , obs mag - 0.8857494570246428
+
+Done: step counter - 180 , obs mag - 0.8655002516773451
+
+Done: step counter - 181 , obs mag - 0.8377333446634203
+
+Done: step counter - 182 , obs mag - 0.8032844686051107
+
+Done: step counter - 183 , obs mag - 0.7842524725927583
+
+Done: step counter - 184 , obs mag - 0.7842524725927583
+
+Done: step counter - 185 , obs mag - 0.7884251890523543
+
+Done: step counter - 186 , obs mag - 0.8166842260466467
+
+Done: step counter - 187 , obs mag - 0.8524595824102965
+
+Done: step counter - 188 , obs mag - 0.8855999722979486
+
+Done: step counter - 189 , obs mag - 0.9091969774766279
+
+Done: step counter - 190 , obs mag - 0.9122778635306198
+
+Done: step counter - 191 , obs mag - 0.9122778635306198
+
+Done: step counter - 192 , obs mag - 0.9046290334554035
+
+Done: step counter - 193 , obs mag - 0.9080446531074134
+
+Done: step counter - 194 , obs mag - 0.8986217359339428
+
+Done: step counter - 195 , obs mag - 0.8906727252453053
+
+Done: step counter - 196 , obs mag - 0.9045780518546035
+
+Done: step counter - 197 , obs mag - 0.9045780518546035
+
+Done: step counter - 198 , obs mag - 0.90893121306604
+
+Done: step counter - 199 , obs mag - 0.9133171591463657
+
+Done: step counter - 200 , obs mag - 0.9183212388723926
+
+Done: step counter - 201 , obs mag - 0.9050740070630812
+
+Done: step counter - 202 , obs mag - 0.8875841983349573
+
+Done: step counter - 203 , obs mag - 0.8875841983349573
+
+Done: step counter - 204 , obs mag - 0.8763891716158915
+
+Done: step counter - 205 , obs mag - 0.8614050344394335
+
+Done: step counter - 206 , obs mag - 0.8614231179571771
+
+Done: step counter - 207 , obs mag - 0.8799278286689828
+
+Done: step counter - 208 , obs mag - 0.8879985872061418
+
+Done: step counter - 209 , obs mag - 0.8879985872061418
+
+Done: step counter - 210 , obs mag - 0.8924464847208725
+
+Done: step counter - 211 , obs mag - 0.8881319717928785
+
+Done: step counter - 212 , obs mag - 0.8690935094176158
+
+Done: step counter - 213 , obs mag - 0.8661140829529401
+
+Done: step counter - 214 , obs mag - 0.8600076878480535
+
+Done: step counter - 215 , obs mag - 0.8600076878480535
+
+Done: step counter - 216 , obs mag - 0.8539293303730556
+
+Done: step counter - 217 , obs mag - 0.8425995201286601
+
+Done: step counter - 218 , obs mag - 0.8305049126197325
+
+Done: step counter - 219 , obs mag - 0.8261409994421687
+
+Done: step counter - 220 , obs mag - 0.8265417525370826
+
+Done: step counter - 221 , obs mag - 0.8265417525370826
+
+Done: step counter - 222 , obs mag - 0.8235054966226776
+
+Done: step counter - 223 , obs mag - 0.8480131972070108
+
+Done: step counter - 224 , obs mag - 0.8695808088390378
+
+Done: step counter - 225 , obs mag - 0.8794479971411784
+
+Done: step counter - 226 , obs mag - 0.8852340287525694
+
+Done: step counter - 227 , obs mag - 0.8940433214713108
+
+Done: step counter - 228 , obs mag - 0.8940433214713108
+
+Done: step counter - 229 , obs mag - 0.9198259285692133
+
+Done: step counter - 230 , obs mag - 0.9497784015235495
+
+Done: step counter - 231 , obs mag - 0.96261930862211
+
+Done: step counter - 232 , obs mag - 0.961417994230347
+
+Done: step counter - 233 , obs mag - 0.9628041999830218
+
+Done: step counter - 234 , obs mag - 0.9628041999830218
+
+Done: step counter - 235 , obs mag - 0.9715404443910537
+
+Done: step counter - 236 , obs mag - 0.9690316506436902
+
+Done: step counter - 237 , obs mag - 0.9715260874622597
+
+Done: step counter - 238 , obs mag - 0.980180776987401
+
+Done: step counter - 239 , obs mag - 0.9895105683897525
+
+Done: step counter - 240 , obs mag - 1.008853134262279
+
+Done: step counter - 241 , obs mag - 1.008853134262279
+
+Done: step counter - 242 , obs mag - 1.0123443727816828
+
+Done: step counter - 243 , obs mag - 1.009976831239252
+
+Done: step counter - 244 , obs mag - 1.0221262505516198
+
+Done: step counter - 245 , obs mag - 1.0221262505516198
+
+Done: step counter - 246 , obs mag - 1.0136136211304227
+
+Done: step counter - 247 , obs mag - 0.9903682754697065
+
+Done: step counter - 248 , obs mag - 0.9993230419064056
+
+Done: step counter - 249 , obs mag - 1.0228292363481997
+
+Done: step counter - 250 , obs mag - 1.0420642902538972
+
+Done: step counter - 251 , obs mag - 1.0523145222397885
+
+Done: step counter - 252 , obs mag - 1.0523145222397885
+
+Done: step counter - 253 , obs mag - 1.0487935547433258
+
+Done: step counter - 254 , obs mag - 1.0366272036055038
+
+Done: step counter - 255 , obs mag - 1.0468919544160995
+
+Done: step counter - 256 , obs mag - 1.05949566655223
+
+Done: step counter - 257 , obs mag - 1.086064731156501
+
+Done: step counter - 258 , obs mag - 1.1040887967051252
+
+Done: step counter - 259 , obs mag - 1.1270668144669613
+
+Done: step counter - 260 , obs mag - 1.1270668144669613
+
+Done: step counter - 261 , obs mag - 1.1523711320546262
+
+Done: step counter - 262 , obs mag - 1.1593396705281043
+
+Done: step counter - 263 , obs mag - 1.1891063378622864
+
+Done: step counter - 264 , obs mag - 1.2071385406580215
+
+Done: step counter - 265 , obs mag - 1.2071385406580215
+
+Done: step counter - 266 , obs mag - 1.220908850108031
+
+Done: step counter - 267 , obs mag - 1.2370214265651946
+
+Done: step counter - 268 , obs mag - 1.2325311373710155
+
+Done: step counter - 269 , obs mag - 1.2148215351265719
+
+Done: step counter - 270 , obs mag - 1.2152976068265982
+
+Done: step counter - 271 , obs mag - 1.2152976068265982
+
+Done: step counter - 272 , obs mag - 1.244386391179534
+
+Done: step counter - 273 , obs mag - 1.273446265703961
+
+Done: step counter - 274 , obs mag - 1.3037059977104575
+
+Done: step counter - 275 , obs mag - 1.3235571663720598
+
+Done: step counter - 276 , obs mag - 1.3235571663720598
+
+Done: step counter - 277 , obs mag - 1.3266567657088406
+
+Done: step counter - 278 , obs mag - 1.344704173211073
+
+Done: step counter - 279 , obs mag - 1.3462603958647557
+
+Done: step counter - 280 , obs mag - 1.3310863157066695
+
+Done: step counter - 281 , obs mag - 1.304073831246905
+
+Done: step counter - 282 , obs mag - 1.2875020483084247
+
+Done: step counter - 283 , obs mag - 1.2875020483084247
+
+Done: step counter - 284 , obs mag - 1.2973423717257337
+
+Done: step counter - 285 , obs mag - 1.3177700054173833
+
+Done: step counter - 286 , obs mag - 1.3306203047379253
+
+Done: step counter - 287 , obs mag - 1.333746007290239
+
+Done: step counter - 288 , obs mag - 1.354299064905875
+
+Done: step counter - 289 , obs mag - 1.3641922473621177
+
+Done: step counter - 290 , obs mag - 1.3641922473621177
+
+Done: step counter - 291 , obs mag - 1.3754158362088347
+
+Done: step counter - 292 , obs mag - 1.3680774551058723
+
+Done: step counter - 293 , obs mag - 1.3706200949898568
+
+Done: step counter - 294 , obs mag - 1.3855081334224313
+
+Done: step counter - 295 , obs mag - 1.3857021735435249
+
+Done: step counter - 296 , obs mag - 1.3668935132845585
+
+Done: step counter - 297 , obs mag - 1.3668935132845585
+
+Done: step counter - 298 , obs mag - 1.3520387349566545
+
+Done: step counter - 299 , obs mag - 1.3552752141542899
+
+Episode 2	Frame 899 	Average Score: -332.83Reset: step counter - 300 , obs mag - 1.3552752141542899
+
+
+Best model saved at episode 3 with mean_100_rew -332.828990291328
+
+Done: step counter - 0 , obs mag - 0.8251558115964348
+
+Done: step counter - 1 , obs mag - 0.8286708147658848
+
+Done: step counter - 2 , obs mag - 0.8386810241837612
+
+Done: step counter - 3 , obs mag - 0.8530923438906468
+
+Done: step counter - 4 , obs mag - 0.8681887303869426
+
+Done: step counter - 5 , obs mag - 0.8681887303869426
+
+Done: step counter - 6 , obs mag - 0.8778166177520261
+
+Done: step counter - 7 , obs mag - 0.8829407216244304
+
+Done: step counter - 8 , obs mag - 0.8806801085799827
+
+Done: step counter - 9 , obs mag - 0.8698532559688987
+
+Done: step counter - 10 , obs mag - 0.8698532559688987
+
+Done: step counter - 11 , obs mag - 0.863171478432523
+
+Done: step counter - 12 , obs mag - 0.8543251298433776
+
+Done: step counter - 13 , obs mag - 0.8479732847702628
+
+Done: step counter - 14 , obs mag - 0.8334638235785136
+
+Done: step counter - 15 , obs mag - 0.8153162246707681
+
+Done: step counter - 16 , obs mag - 0.8153162246707681
+
+Done: step counter - 17 , obs mag - 0.8004410088018701
+
+Done: step counter - 18 , obs mag - 0.7967765915326231
+
+Done: step counter - 19 , obs mag - 0.8005077099710972
+
+Done: step counter - 20 , obs mag - 0.8034187806198805
+
+Done: step counter - 21 , obs mag - 0.7974444458902508
+
+Done: step counter - 22 , obs mag - 0.7974444458902508
+
+Done: step counter - 23 , obs mag - 0.7730001069075265
+
+Done: step counter - 24 , obs mag - 0.7420919678878454
+
+Done: step counter - 25 , obs mag - 0.7225809732010114
+
+Done: step counter - 26 , obs mag - 0.7173310956098136
+
+Done: step counter - 27 , obs mag - 0.7146900186426559
+
+Done: step counter - 28 , obs mag - 0.6979516634058702
+
+Done: step counter - 29 , obs mag - 0.6979516634058702
+
+Done: step counter - 30 , obs mag - 0.6826328772463024
+
+Done: step counter - 31 , obs mag - 0.6620128008930837
+
+Done: step counter - 32 , obs mag - 0.6449320329583876
+
+Done: step counter - 33 , obs mag - 0.634637940667856
+
+Done: step counter - 34 , obs mag - 0.6256920646909363
+
+Done: step counter - 35 , obs mag - 0.6256920646909363
+
+Done: step counter - 36 , obs mag - 0.6372076965378695
+
+Done: step counter - 37 , obs mag - 0.6560810082527533
+
+Done: step counter - 38 , obs mag - 0.665416589872201
+
+Done: step counter - 39 , obs mag - 0.6626736027691027
+
+Done: step counter - 40 , obs mag - 0.6802745685464742
+
+Done: step counter - 41 , obs mag - 0.6802745685464742
+
+Done: step counter - 42 , obs mag - 0.6909491104134565
+
+Done: step counter - 43 , obs mag - 0.6852782632377836
+
+Done: step counter - 44 , obs mag - 0.6807151367199371
+
+Done: step counter - 45 , obs mag - 0.6943722351459064
+
+Done: step counter - 46 , obs mag - 0.6943722351459064
+
+Done: step counter - 47 , obs mag - 0.7045905163057467
+
+Done: step counter - 48 , obs mag - 0.7131955595454479
+
+Done: step counter - 49 , obs mag - 0.7254524379226049
+
+Done: step counter - 50 , obs mag - 0.7252285904546304
+
+Done: step counter - 51 , obs mag - 0.7252285904546304
+
+Done: step counter - 52 , obs mag - 0.7321192393715963
+
+Done: step counter - 53 , obs mag - 0.7441960325299842
+
+Done: step counter - 54 , obs mag - 0.743909299789231
+
+Done: step counter - 55 , obs mag - 0.7618007809210499
+
+Done: step counter - 56 , obs mag - 0.7618007809210499
+
+Done: step counter - 57 , obs mag - 0.7867098963576142
+
+Done: step counter - 58 , obs mag - 0.8080213972731127
+
+Done: step counter - 59 , obs mag - 0.8455025982009956
+
+Done: step counter - 60 , obs mag - 0.8669346406511942
+
+Done: step counter - 61 , obs mag - 0.8768012317035228
+
+Done: step counter - 62 , obs mag - 0.8768012317035228
+
+Done: step counter - 63 , obs mag - 0.8889118902222165
+
+Done: step counter - 64 , obs mag - 0.8972556911179828
+
+Done: step counter - 65 , obs mag - 0.913594586968311
+
+Done: step counter - 66 , obs mag - 0.9287282315998614
+
+Done: step counter - 67 , obs mag - 0.9429676425209126
+
+Done: step counter - 68 , obs mag - 0.9429676425209126
+
+Done: step counter - 69 , obs mag - 0.9699489718836705
+
+Done: step counter - 70 , obs mag - 0.9956116492742145
+
+Done: step counter - 71 , obs mag - 1.0154228883149694
+
+Done: step counter - 72 , obs mag - 1.0379843806242348
+
+Done: step counter - 73 , obs mag - 1.0720279628673797
+
+Done: step counter - 74 , obs mag - 1.0720279628673797
+
+Done: step counter - 75 , obs mag - 1.108373819859652
+
+Done: step counter - 76 , obs mag - 1.122940473365123
+
+Done: step counter - 77 , obs mag - 1.113543563194538
+
+Done: step counter - 78 , obs mag - 1.103268436410084
+
+Done: step counter - 79 , obs mag - 1.0919972613778437
+
+Done: step counter - 80 , obs mag - 1.0919972613778437
+
+Done: step counter - 81 , obs mag - 1.0766240682795036
+
+Done: step counter - 82 , obs mag - 1.0717004299352109
+
+Done: step counter - 83 , obs mag - 1.080082672865089
+
+Done: step counter - 84 , obs mag - 1.0842152562319398
+
+Done: step counter - 85 , obs mag - 1.0888010237517478
+
+Done: step counter - 86 , obs mag - 1.0888010237517478
+
+Done: step counter - 87 , obs mag - 1.0924006867669476
+
+Done: step counter - 88 , obs mag - 1.0830309110375091
+
+Done: step counter - 89 , obs mag - 1.0798128590141656
+
+Done: step counter - 90 , obs mag - 1.0668309246417516
+
+Traceback (most recent call last):
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 148, in <module>
+    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 38, in run
+    next_state, reward, done, _ = env.step(action)
+  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 183, in step
+    self.gazebo.unpauseSim()
+  File "/home/dewe/ros_ws/src/drl_project/scripts/gazebo_connection.py", line 23, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 159, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

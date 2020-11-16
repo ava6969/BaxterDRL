@@ -1,404 +1,0 @@
-Using /home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
-  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
- cuda:0
-[INFO] [1605114016.358274, 0.000000]: Baxter Gym Created Successfully
-NAF(
-  (head_1): Linear(in_features=20, out_features=150, bias=True)
-  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (ff_1): Linear(in_features=150, out_features=100, bias=True)
-  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (ff_2): Linear(in_features=100, out_features=50, bias=True)
-  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-  (action_values): Linear(in_features=50, out_features=7, bias=True)
-  (value): Linear(in_features=50, out_features=1, bias=True)
-  (matrix_entries): Linear(in_features=50, out_features=28, bias=True)
-)
-Using Regular Experience Replay
-Episode 0	Frame 299 	Average Score: -250.10Episode 0	Frame 299	Average Score: -250.10
-
-Best model saved at episode 1 with mean_100_rew -250.09530000466665
-
-Episode 1	Frame 599 	Average Score: -270.87Episode 2	Frame 899 	Average Score: -293.93Episode 3	Frame 1199 	Average Score: -292.42Episode 4	Frame 1499 	Average Score: -314.22Episode 5	Frame 1799 	Average Score: -309.92Episode 6	Frame 2099 	Average Score: -308.93Episode 7	Frame 2399 	Average Score: -312.96Episode 8	Frame 2699 	Average Score: -307.57Episode 9	Frame 2999 	Average Score: -300.19Episode 10	Frame 3299 	Average Score: -303.26Episode 11	Frame 3599 	Average Score: -293.73Episode 12	Frame 3899 	Average Score: -293.53Episode 13	Frame 4199 	Average Score: -289.03Episode 14	Frame 4499 	Average Score: -282.81Episode 15	Frame 4799 	Average Score: -282.65Episode 16	Frame 5099 	Average Score: -285.61Episode 17	Frame 5399 	Average Score: -283.30Episode 18	Frame 5699 	Average Score: -282.56Episode 19	Frame 5999 	Average Score: -282.02Episode 20	Frame 6299 	Average Score: -281.33Episode 21	Frame 6599 	Average Score: -277.98Episode 22	Frame 6899 	Average Score: -278.89Episode 23	Frame 7199 	Average Score: -278.78Episode 24	Frame 7207 	Average Score: -267.69Episode 25	Frame 7507 	Average Score: -265.70Episode 26	Frame 7807 	Average Score: -266.73Episode 27	Frame 8107 	Average Score: -267.18Episode 28	Frame 8407 	Average Score: -267.56Episode 29	Frame 8707 	Average Score: -267.10Episode 30	Frame 9007 	Average Score: -264.65Episode 31	Frame 9307 	Average Score: -267.06Episode 32	Frame 9607 	Average Score: -266.35Episode 33	Frame 9907 	Average Score: -267.76Episode 34	Frame 10207 	Average Score: -266.99Episode 35	Frame 10507 	Average Score: -266.82Episode 36	Frame 10807 	Average Score: -265.78Episode 37	Frame 11107 	Average Score: -265.82Episode 38	Frame 11407 	Average Score: -265.47Episode 39	Frame 11707 	Average Score: -265.16Episode 40	Frame 12007 	Average Score: -265.17Episode 41	Frame 12307 	Average Score: -265.02Episode 42	Frame 12607 	Average Score: -265.05Episode 43	Frame 12907 	Average Score: -262.40Episode 44	Frame 13207 	Average Score: -262.43Episode 45	Frame 13507 	Average Score: -261.89Episode 46	Frame 13807 	Average Score: -262.60Episode 47	Frame 14107 	Average Score: -262.28Episode 48	Frame 14407 	Average Score: -262.71Episode 49	Frame 14707 	Average Score: -262.54Episode 50	Frame 15007 	Average Score: -261.91Episode 51	Frame 15307 	Average Score: -260.81Episode 52	Frame 15607 	Average Score: -259.88Episode 53	Frame 15907 	Average Score: -259.13Episode 54	Frame 16207 	Average Score: -258.96Episode 55	Frame 16507 	Average Score: -259.82Episode 56	Frame 16807 	Average Score: -259.62Episode 57	Frame 17107 	Average Score: -259.17Episode 58	Frame 17407 	Average Score: -258.49Episode 59	Frame 17707 	Average Score: -258.24Episode 60	Frame 18007 	Average Score: -258.18Episode 61	Frame 18307 	Average Score: -256.73Episode 62	Frame 18607 	Average Score: -256.94Episode 63	Frame 18907 	Average Score: -256.37Episode 64	Frame 19207 	Average Score: -256.35Episode 65	Frame 19507 	Average Score: -255.35Episode 66	Frame 19807 	Average Score: -256.46Episode 67	Frame 20107 	Average Score: -256.03Episode 68	Frame 20407 	Average Score: -254.93Episode 69	Frame 20423 	Average Score: -251.33Episode 70	Frame 20723 	Average Score: -251.73Episode 71	Frame 21023 	Average Score: -251.29Episode 72	Frame 21323 	Average Score: -250.54Episode 73	Frame 21623 	Average Score: -250.69Episode 74	Frame 21923 	Average Score: -251.20Episode 75	Frame 21932 	Average Score: -247.92
-Best model saved at episode 76 with mean_100_rew -247.9219527478445
-
-Episode 76	Frame 22232 	Average Score: -248.11Episode 77	Frame 22532 	Average Score: -249.14Episode 78	Frame 22832 	Average Score: -248.29Episode 79	Frame 23132 	Average Score: -248.69Episode 80	Frame 23432 	Average Score: -248.93Episode 81	Frame 23732 	Average Score: -248.46Episode 82	Frame 24032 	Average Score: -248.10Episode 83	Frame 24332 	Average Score: -248.47Episode 84	Frame 24632 	Average Score: -248.92Episode 85	Frame 24932 	Average Score: -248.77Episode 86	Frame 25232 	Average Score: -248.61Episode 87	Frame 25532 	Average Score: -249.19Episode 88	Frame 25832 	Average Score: -249.49Episode 89	Frame 26132 	Average Score: -249.48Episode 90	Frame 26432 	Average Score: -249.48Episode 91	Frame 26732 	Average Score: -249.57Episode 92	Frame 27032 	Average Score: -248.84Episode 93	Frame 27332 	Average Score: -248.39Episode 94	Frame 27632 	Average Score: -248.74Episode 95	Frame 27932 	Average Score: -248.98Episode 96	Frame 28232 	Average Score: -248.82Episode 97	Frame 28532 	Average Score: -248.62Episode 98	Frame 28832 	Average Score: -248.50Episode 99	Frame 29132 	Average Score: -248.01Episode 100	Frame 29432 	Average Score: -247.87Episode 100	Frame 29432	Average Score: -247.87
-
-Best model saved at episode 101 with mean_100_rew -247.8701393555299
-
-Episode 101	Frame 29732 	Average Score: -246.96
-Best model saved at episode 102 with mean_100_rew -246.95797034499824
-
-Episode 102	Frame 30032 	Average Score: -246.05
-Best model saved at episode 103 with mean_100_rew -246.04886234365867
-
-Episode 103	Frame 30332 	Average Score: -244.77
-Best model saved at episode 104 with mean_100_rew -244.77016992748918
-
-Episode 104	Frame 30632 	Average Score: -243.23
-Best model saved at episode 105 with mean_100_rew -243.23363628651043
-
-Episode 105	Frame 30932 	Average Score: -242.34
-Best model saved at episode 106 with mean_100_rew -242.3420766703725
-
-Episode 106	Frame 31232 	Average Score: -241.73
-Best model saved at episode 107 with mean_100_rew -241.73401862837272
-
-Episode 107	Frame 31532 	Average Score: -240.23
-Best model saved at episode 108 with mean_100_rew -240.23399421479596
-
-Episode 108	Frame 31832 	Average Score: -239.77
-Best model saved at episode 109 with mean_100_rew -239.76829813117016
-
-Episode 109	Frame 32132 	Average Score: -240.64Episode 110	Frame 32432 	Average Score: -240.04Episode 111	Frame 32732 	Average Score: -240.17Episode 112	Frame 33032 	Average Score: -238.77
-Best model saved at episode 113 with mean_100_rew -238.77355190391808
-
-Episode 113	Frame 33037 	Average Score: -236.48
-Best model saved at episode 114 with mean_100_rew -236.47619075897478
-
-Episode 114	Frame 33337 	Average Score: -237.16Episode 115	Frame 33637 	Average Score: -235.98
-Best model saved at episode 116 with mean_100_rew -235.97749236985214
-
-Episode 116	Frame 33937 	Average Score: -234.33
-Best model saved at episode 117 with mean_100_rew -234.33456957152598
-
-Episode 117	Frame 34237 	Average Score: -233.96
-Best model saved at episode 118 with mean_100_rew -233.96233875588453
-
-Episode 118	Frame 34238 	Average Score: -231.27
-Best model saved at episode 119 with mean_100_rew -231.2727065778016
-
-Episode 119	Frame 34538 	Average Score: -230.39
-Best model saved at episode 120 with mean_100_rew -230.3901469650235
-
-Episode 120	Frame 34838 	Average Score: -230.23
-Best model saved at episode 121 with mean_100_rew -230.2267989318561
-
-Episode 121	Frame 35138 	Average Score: -230.88Episode 122	Frame 35438 	Average Score: -231.16Episode 123	Frame 35738 	Average Score: -230.87Episode 124	Frame 36038 	Average Score: -233.16Episode 125	Frame 36338 	Average Score: -233.19Episode 126	Frame 36638 	Average Score: -232.15Episode 127	Frame 36698 	Average Score: -229.59
-Best model saved at episode 128 with mean_100_rew -229.58515306917266
-
-Episode 128	Frame 36998 	Average Score: -229.52
-Best model saved at episode 129 with mean_100_rew -229.5215262768175
-
-Episode 129	Frame 37298 	Average Score: -229.44
-Best model saved at episode 130 with mean_100_rew -229.43627486257824
-
-Episode 130	Frame 37598 	Average Score: -230.56Episode 131	Frame 37898 	Average Score: -228.80
-Best model saved at episode 132 with mean_100_rew -228.80429705472315
-
-Episode 132	Frame 38198 	Average Score: -227.67
-Best model saved at episode 133 with mean_100_rew -227.66812445094322
-
-Episode 133	Frame 38498 	Average Score: -227.10
-Best model saved at episode 134 with mean_100_rew -227.09693806059605
-
-Episode 134	Frame 38798 	Average Score: -226.01
-Best model saved at episode 135 with mean_100_rew -226.01212667004052
-
-Episode 135	Frame 39098 	Average Score: -225.29
-Best model saved at episode 136 with mean_100_rew -225.2867851056202
-
-Episode 136	Frame 39398 	Average Score: -224.69
-Best model saved at episode 137 with mean_100_rew -224.69336479332148
-
-Episode 137	Frame 39698 	Average Score: -223.89
-Best model saved at episode 138 with mean_100_rew -223.89481076180851
-
-Episode 138	Frame 39998 	Average Score: -224.16Episode 139	Frame 40298 	Average Score: -223.60
-Best model saved at episode 140 with mean_100_rew -223.6043436006746
-
-Episode 140	Frame 40320 	Average Score: -220.99
-Best model saved at episode 141 with mean_100_rew -220.99495396943487
-
-Episode 141	Frame 40620 	Average Score: -220.30
-Best model saved at episode 142 with mean_100_rew -220.29676584938534
-
-Episode 142	Frame 40920 	Average Score: -220.24
-Best model saved at episode 143 with mean_100_rew -220.24283897806552
-
-Episode 143	Frame 41220 	Average Score: -221.00Episode 144	Frame 41520 	Average Score: -220.43Episode 145	Frame 41820 	Average Score: -219.83
-Best model saved at episode 146 with mean_100_rew -219.83246198443857
-
-Episode 146	Frame 42120 	Average Score: -218.70
-Best model saved at episode 147 with mean_100_rew -218.69868517320756
-
-Episode 147	Frame 42420 	Average Score: -218.04
-Best model saved at episode 148 with mean_100_rew -218.04365521659292
-
-Episode 148	Frame 42720 	Average Score: -217.71
-Best model saved at episode 149 with mean_100_rew -217.7109131760331
-
-Episode 149	Frame 43020 	Average Score: -216.46
-Best model saved at episode 150 with mean_100_rew -216.46443138360047
-
-Episode 150	Frame 43320 	Average Score: -215.93
-Best model saved at episode 151 with mean_100_rew -215.9278114453511
-
-Episode 151	Frame 43620 	Average Score: -215.95Episode 152	Frame 43842 	Average Score: -215.57
-Best model saved at episode 153 with mean_100_rew -215.5717399019769
-
-Episode 153	Frame 44142 	Average Score: -215.91Episode 154	Frame 44442 	Average Score: -216.20Episode 155	Frame 44742 	Average Score: -215.01
-Best model saved at episode 156 with mean_100_rew -215.0115144390894
-
-Episode 156	Frame 45042 	Average Score: -214.27
-Best model saved at episode 157 with mean_100_rew -214.27065857945274
-
-Episode 157	Frame 45342 	Average Score: -213.68
-Best model saved at episode 158 with mean_100_rew -213.6754208272872
-
-Episode 158	Frame 45351 	Average Score: -211.50
-Best model saved at episode 159 with mean_100_rew -211.50491353254603
-
-Episode 159	Frame 45651 	Average Score: -210.33
-Best model saved at episode 160 with mean_100_rew -210.3341913272924
-
-Episode 160	Frame 45951 	Average Score: -210.11
-Best model saved at episode 161 with mean_100_rew -210.11309033258746
-
-Episode 161	Frame 46251 	Average Score: -210.87Episode 162	Frame 46551 	Average Score: -209.97
-Best model saved at episode 163 with mean_100_rew -209.9742357635228
-
-Episode 163	Frame 46851 	Average Score: -209.81
-Best model saved at episode 164 with mean_100_rew -209.80514456762296
-
-Episode 164	Frame 47151 	Average Score: -209.58
-Best model saved at episode 165 with mean_100_rew -209.58106518382473
-
-Episode 165	Frame 47451 	Average Score: -209.90Episode 166	Frame 47751 	Average Score: -208.61
-Best model saved at episode 167 with mean_100_rew -208.60986078534316
-
-Episode 167	Frame 48051 	Average Score: -208.83Episode 168	Frame 48351 	Average Score: -209.14Episode 169	Frame 48651 	Average Score: -211.54Episode 170	Frame 48951 	Average Score: -211.15Episode 171	Frame 49251 	Average Score: -212.05Episode 172	Frame 49551 	Average Score: -212.23Episode 173	Frame 49851 	Average Score: -212.23Episode 174	Frame 50151 	Average Score: -211.96Episode 175	Frame 50451 	Average Score: -213.35Episode 176	Frame 50751 	Average Score: -212.91Episode 177	Frame 51051 	Average Score: -211.70Episode 178	Frame 51351 	Average Score: -212.05Episode 179	Frame 51651 	Average Score: -211.16Episode 180	Frame 51951 	Average Score: -210.52Episode 181	Frame 52251 	Average Score: -210.88Episode 182	Frame 52551 	Average Score: -210.52Episode 183	Frame 52851 	Average Score: -210.25Episode 184	Frame 53151 	Average Score: -209.32Episode 185	Frame 53451 	Average Score: -209.09Episode 186	Frame 53751 	Average Score: -209.04Episode 187	Frame 54051 	Average Score: -208.57
-Best model saved at episode 188 with mean_100_rew -208.57103908694535
-
-Episode 188	Frame 54351 	Average Score: -208.14
-Best model saved at episode 189 with mean_100_rew -208.13568841635137
-
-Episode 189	Frame 54362 	Average Score: -205.67
-Best model saved at episode 190 with mean_100_rew -205.66832827596053
-
-Episode 190	Frame 54662 	Average Score: -205.12
-Best model saved at episode 191 with mean_100_rew -205.11899010254874
-
-Episode 191	Frame 54962 	Average Score: -205.01
-Best model saved at episode 192 with mean_100_rew -205.00558710275024
-
-Episode 192	Frame 55262 	Average Score: -205.02Episode 193	Frame 55562 	Average Score: -204.43
-Best model saved at episode 194 with mean_100_rew -204.4326003051714
-
-Episode 194	Frame 55862 	Average Score: -203.92
-Best model saved at episode 195 with mean_100_rew -203.91778526242607
-
-Episode 195	Frame 56162 	Average Score: -203.65
-Best model saved at episode 196 with mean_100_rew -203.6528206844554
-
-Episode 196	Frame 56346 	Average Score: -202.20
-Best model saved at episode 197 with mean_100_rew -202.1978760467938
-
-Episode 197	Frame 56646 	Average Score: -201.76
-Best model saved at episode 198 with mean_100_rew -201.75988002453983
-
-Episode 198	Frame 56946 	Average Score: -201.53
-Best model saved at episode 199 with mean_100_rew -201.52644657313584
-
-Episode 199	Frame 57246 	Average Score: -201.56Episode 200	Frame 57546 	Average Score: -201.14Episode 200	Frame 57546	Average Score: -201.14
-
-Best model saved at episode 201 with mean_100_rew -201.1445581181403
-
-Episode 201	Frame 57846 	Average Score: -201.19Episode 202	Frame 58146 	Average Score: -200.45
-Best model saved at episode 203 with mean_100_rew -200.44732913562785
-
-Episode 203	Frame 58446 	Average Score: -200.49Episode 204	Frame 58746 	Average Score: -200.06
-Best model saved at episode 205 with mean_100_rew -200.0571322491375
-
-Episode 205	Frame 59046 	Average Score: -199.96
-Best model saved at episode 206 with mean_100_rew -199.961639754481
-
-Episode 206	Frame 59346 	Average Score: -200.14Episode 207	Frame 59546 	Average Score: -199.09
-Best model saved at episode 208 with mean_100_rew -199.09330266409776
-
-Episode 208	Frame 59846 	Average Score: -198.73
-Best model saved at episode 209 with mean_100_rew -198.73040958338007
-
-Episode 209	Frame 60146 	Average Score: -197.16
-Best model saved at episode 210 with mean_100_rew -197.16089710062658
-
-Episode 210	Frame 60446 	Average Score: -196.11
-Best model saved at episode 211 with mean_100_rew -196.11266957062733
-
-Episode 211	Frame 60453 	Average Score: -194.11
-Best model saved at episode 212 with mean_100_rew -194.10663367022656
-
-Episode 212	Frame 60753 	Average Score: -194.77Episode 213	Frame 61053 	Average Score: -196.71Episode 214	Frame 61353 	Average Score: -195.85Episode 215	Frame 61653 	Average Score: -196.23Episode 216	Frame 61953 	Average Score: -196.56Episode 217	Frame 62253 	Average Score: -196.73Episode 218	Frame 62553 	Average Score: -198.30Episode 219	Frame 62853 	Average Score: -198.37Episode 220	Frame 63153 	Average Score: -197.82Episode 221	Frame 63453 	Average Score: -196.41Episode 222	Frame 63753 	Average Score: -195.94Episode 223	Frame 64053 	Average Score: -195.52Episode 224	Frame 64353 	Average Score: -195.33Episode 225	Frame 64653 	Average Score: -195.73Episode 226	Frame 64953 	Average Score: -195.99Episode 227	Frame 65253 	Average Score: -198.82Episode 228	Frame 65553 	Average Score: -197.62Episode 229	Frame 65853 	Average Score: -196.34Episode 230	Frame 66153 	Average Score: -196.00Episode 231	Frame 66453 	Average Score: -196.64Episode 232	Frame 66753 	Average Score: -196.80Episode 233	Frame 67053 	Average Score: -197.00Episode 234	Frame 67353 	Average Score: -198.42Episode 235	Frame 67653 	Average Score: -197.85Episode 236	Frame 67953 	Average Score: -198.32Episode 237	Frame 68253 	Average Score: -198.75Episode 238	Frame 68553 	Average Score: -197.54Episode 239	Frame 68853 	Average Score: -197.50Episode 240	Frame 69153 	Average Score: -199.92Episode 241	Frame 69453 	Average Score: -199.66Episode 242	Frame 69753 	Average Score: -199.18Episode 243	Frame 70053 	Average Score: -198.41Episode 244	Frame 70353 	Average Score: -197.66Episode 245	Frame 70653 	Average Score: -197.38Episode 246	Frame 70672 	Average Score: -195.61Episode 247	Frame 70972 	Average Score: -195.26Episode 248	Frame 71272 	Average Score: -194.27Episode 249	Frame 71572 	Average Score: -194.85Episode 250	Frame 71872 	Average Score: -195.62Episode 251	Frame 72172 	Average Score: -195.47Episode 252	Frame 72182 	Average Score: -193.76
-Best model saved at episode 253 with mean_100_rew -193.75972609433043
-
-Episode 253	Frame 72482 	Average Score: -192.87
-Best model saved at episode 254 with mean_100_rew -192.87057108956859
-
-Episode 254	Frame 72495 	Average Score: -190.10
-Best model saved at episode 255 with mean_100_rew -190.10355295988796
-
-Episode 255	Frame 72795 	Average Score: -189.65
-Best model saved at episode 256 with mean_100_rew -189.64825630467513
-
-Episode 256	Frame 73095 	Average Score: -189.64
-Best model saved at episode 257 with mean_100_rew -189.6417480193476
-
-Episode 257	Frame 73395 	Average Score: -189.99Episode 258	Frame 73695 	Average Score: -192.78Episode 259	Frame 73995 	Average Score: -193.11Episode 260	Frame 74295 	Average Score: -192.41Episode 261	Frame 74595 	Average Score: -192.01Episode 262	Frame 74895 	Average Score: -191.90Episode 263	Frame 75195 	Average Score: -191.71Episode 264	Frame 75495 	Average Score: -190.80Episode 265	Frame 75795 	Average Score: -190.18Episode 266	Frame 76095 	Average Score: -190.49Episode 267	Frame 76395 	Average Score: -189.43
-Best model saved at episode 268 with mean_100_rew -189.42859038095386
-
-Episode 268	Frame 76695 	Average Score: -189.19
-Best model saved at episode 269 with mean_100_rew -189.18755227196118
-
-Episode 269	Frame 76995 	Average Score: -188.45
-Best model saved at episode 270 with mean_100_rew -188.44555572942983
-
-Episode 270	Frame 77295 	Average Score: -188.48Episode 271	Frame 77595 	Average Score: -187.19
-Best model saved at episode 272 with mean_100_rew -187.1932183704209
-
-Episode 272	Frame 77895 	Average Score: -187.59Episode 273	Frame 78195 	Average Score: -186.51
-Best model saved at episode 274 with mean_100_rew -186.51266627803415
-
-Episode 274	Frame 78495 	Average Score: -185.70
-Best model saved at episode 275 with mean_100_rew -185.69919993853
-
-Episode 275	Frame 78795 	Average Score: -186.33Episode 276	Frame 78869 	Average Score: -184.34
-Best model saved at episode 277 with mean_100_rew -184.34034427171082
-
-Episode 277	Frame 79169 	Average Score: -184.18
-Best model saved at episode 278 with mean_100_rew -184.18150916768445
-
-Episode 278	Frame 79469 	Average Score: -184.45Episode 279	Frame 79769 	Average Score: -184.70Episode 280	Frame 80069 	Average Score: -184.86Episode 281	Frame 80369 	Average Score: -184.07
-Best model saved at episode 282 with mean_100_rew -184.07181410270695
-
-Episode 282	Frame 80669 	Average Score: -183.83
-Best model saved at episode 283 with mean_100_rew -183.8332215748264
-
-Episode 283	Frame 80940 	Average Score: -182.41
-Best model saved at episode 284 with mean_100_rew -182.4072417845884
-
-Episode 284	Frame 81240 	Average Score: -181.82
-Best model saved at episode 285 with mean_100_rew -181.8238814074474
-
-Episode 285	Frame 81540 	Average Score: -181.64
-Best model saved at episode 286 with mean_100_rew -181.63937797280892
-
-Episode 286	Frame 81840 	Average Score: -182.23Episode 287	Frame 82140 	Average Score: -181.23
-Best model saved at episode 288 with mean_100_rew -181.22532990223732
-
-Episode 288	Frame 82440 	Average Score: -181.84Episode 289	Frame 82740 	Average Score: -184.23Episode 290	Frame 83040 	Average Score: -184.26Episode 291	Frame 83340 	Average Score: -183.51Episode 292	Frame 83640 	Average Score: -184.15Episode 293	Frame 83940 	Average Score: -184.35Episode 294	Frame 84240 	Average Score: -184.61Episode 295	Frame 84540 	Average Score: -184.93Episode 296	Frame 84840 	Average Score: -185.67Episode 297	Frame 85140 	Average Score: -185.71Episode 298	Frame 85440 	Average Score: -185.46Episode 299	Frame 85740 	Average Score: -185.13Episode 300	Frame 86040 	Average Score: -184.72Episode 300	Frame 86040	Average Score: -184.72
-Episode 301	Frame 86340 	Average Score: -184.71Episode 302	Frame 86640 	Average Score: -185.74Episode 303	Frame 86940 	Average Score: -185.63Episode 304	Frame 87240 	Average Score: -185.10Episode 305	Frame 87540 	Average Score: -184.87Episode 306	Frame 87554 	Average Score: -182.30Episode 307	Frame 87854 	Average Score: -184.23Episode 308	Frame 88154 	Average Score: -184.59Episode 309	Frame 88454 	Average Score: -184.53Episode 310	Frame 88754 	Average Score: -184.32Episode 311	Frame 89054 	Average Score: -186.33Episode 312	Frame 89354 	Average Score: -186.09Episode 313	Frame 89654 	Average Score: -186.62Episode 314	Frame 89954 	Average Score: -186.36Episode 315	Frame 90254 	Average Score: -186.65Episode 316	Frame 90554 	Average Score: -186.09Episode 317	Frame 90854 	Average Score: -185.89Episode 318	Frame 91154 	Average Score: -186.68Episode 319	Frame 91454 	Average Score: -186.79Episode 320	Frame 91754 	Average Score: -186.94Episode 321	Frame 91766 	Average Score: -185.65Episode 322	Frame 92066 	Average Score: -184.92Episode 323	Frame 92366 	Average Score: -185.16Episode 324	Frame 92666 	Average Score: -185.16Episode 325	Frame 92966 	Average Score: -184.10Episode 326	Frame 92967 	Average Score: -181.94Episode 327	Frame 93267 	Average Score: -181.19
-Best model saved at episode 328 with mean_100_rew -181.19253353659124
-
-Episode 328	Frame 93302 	Average Score: -179.81
-Best model saved at episode 329 with mean_100_rew -179.8137380772723
-
-Episode 329	Frame 93602 	Average Score: -179.98Episode 330	Frame 93610 	Average Score: -177.30
-Best model saved at episode 331 with mean_100_rew -177.3036305318043
-
-Episode 331	Frame 93910 	Average Score: -176.70
-Best model saved at episode 332 with mean_100_rew -176.6999487509251
-
-Episode 332	Frame 94210 	Average Score: -177.02Episode 333	Frame 94213 	Average Score: -174.25
-Best model saved at episode 334 with mean_100_rew -174.25349928251023
-
-Episode 334	Frame 94214 	Average Score: -171.52
-Best model saved at episode 335 with mean_100_rew -171.5193879002404
-
-Episode 335	Frame 94514 	Average Score: -172.30Episode 336	Frame 94814 	Average Score: -171.77Episode 337	Frame 95114 	Average Score: -172.16Episode 338	Frame 95414 	Average Score: -172.46Episode 339	Frame 95714 	Average Score: -173.01Episode 340	Frame 96014 	Average Score: -172.82Episode 341	Frame 96314 	Average Score: -173.54Episode 342	Frame 96614 	Average Score: -173.74Episode 343	Frame 96914 	Average Score: -174.18Episode 344	Frame 97214 	Average Score: -174.45Episode 345	Frame 97514 	Average Score: -175.22Episode 346	Frame 97814 	Average Score: -177.39Episode 347	Frame 97821 	Average Score: -175.94Episode 348	Frame 98121 	Average Score: -176.12Episode 349	Frame 98421 	Average Score: -175.66Episode 350	Frame 98721 	Average Score: -174.67Episode 351	Frame 99021 	Average Score: -174.65Episode 352	Frame 99251 	Average Score: -175.73Episode 353	Frame 99551 	Average Score: -175.50Episode 354	Frame 99851 	Average Score: -177.63Episode 355	Frame 100151 	Average Score: -177.94Episode 356	Frame 100386 	Average Score: -177.25Episode 357	Frame 100491 	Average Score: -175.62Episode 358	Frame 100791 	Average Score: -174.32Episode 359	Frame 101091 	Average Score: -175.21Episode 360	Frame 101391 	Average Score: -175.23Episode 361	Frame 101691 	Average Score: -174.77Episode 362	Frame 101991 	Average Score: -174.92Episode 363	Frame 102000 	Average Score: -173.10Episode 364	Frame 102300 	Average Score: -173.77Episode 365	Frame 102600 	Average Score: -173.39Episode 366	Frame 102900 	Average Score: -173.46Episode 367	Frame 103200 	Average Score: -173.58Episode 368	Frame 103211 	Average Score: -171.74Episode 369	Frame 103511 	Average Score: -172.14Episode 370	Frame 103811 	Average Score: -171.73Episode 371	Frame 104111 	Average Score: -171.76Episode 372	Frame 104411 	Average Score: -170.74
-Best model saved at episode 373 with mean_100_rew -170.74206549298077
-
-Episode 373	Frame 104711 	Average Score: -170.39
-Best model saved at episode 374 with mean_100_rew -170.39183378349546
-
-Episode 374	Frame 104816 	Average Score: -169.04
-Best model saved at episode 375 with mean_100_rew -169.0358909614075
-
-Episode 375	Frame 105116 	Average Score: -168.96
-Best model saved at episode 376 with mean_100_rew -168.95673251004814
-
-Episode 376	Frame 105416 	Average Score: -171.17Episode 377	Frame 105716 	Average Score: -170.71Episode 378	Frame 106016 	Average Score: -170.15Episode 379	Frame 106316 	Average Score: -169.97Episode 380	Frame 106616 	Average Score: -169.69Episode 381	Frame 106916 	Average Score: -169.53Episode 382	Frame 107216 	Average Score: -169.60Episode 383	Frame 107516 	Average Score: -170.70Episode 384	Frame 107746 	Average Score: -170.56Episode 385	Frame 108046 	Average Score: -170.73Episode 386	Frame 108346 	Average Score: -169.39Episode 387	Frame 108646 	Average Score: -169.98Episode 388	Frame 108946 	Average Score: -169.21Episode 389	Frame 109246 	Average Score: -168.31
-Best model saved at episode 390 with mean_100_rew -168.30830882564146
-
-Episode 390	Frame 109546 	Average Score: -168.07
-Best model saved at episode 391 with mean_100_rew -168.06762640960807
-
-Episode 391	Frame 109846 	Average Score: -168.30Episode 392	Frame 109944 	Average Score: -166.35
-Best model saved at episode 393 with mean_100_rew -166.34752209067577
-
-Episode 393	Frame 110244 	Average Score: -166.60Episode 394	Frame 110544 	Average Score: -165.52
-Best model saved at episode 395 with mean_100_rew -165.51940279687472
-
-Episode 395	Frame 110844 	Average Score: -165.08
-Best model saved at episode 396 with mean_100_rew -165.07872293864315
-
-Episode 396	Frame 111144 	Average Score: -165.24Episode 397	Frame 111444 	Average Score: -165.12Episode 398	Frame 111744 	Average Score: -165.30Episode 399	Frame 111748 	Average Score: -163.62
-Best model saved at episode 400 with mean_100_rew -163.6189196078289
-
-Episode 400	Frame 112048 	Average Score: -164.12Episode 400	Frame 112048	Average Score: -164.12
-Episode 401	Frame 112348 	Average Score: -163.91Episode 402	Frame 112648 	Average Score: -163.35
-Best model saved at episode 403 with mean_100_rew -163.35454745512814
-
-Episode 403	Frame 112948 	Average Score: -164.13Episode 404	Frame 113248 	Average Score: -164.24Episode 405	Frame 113548 	Average Score: -164.54Episode 406	Frame 113848 	Average Score: -166.28Episode 407	Frame 113856 	Average Score: -163.50Episode 408	Frame 114156 	Average Score: -162.59
-Best model saved at episode 409 with mean_100_rew -162.5889067395175
-
-Episode 409	Frame 114456 	Average Score: -163.14Episode 410	Frame 114756 	Average Score: -163.35Episode 411	Frame 115056 	Average Score: -162.89Episode 412	Frame 115356 	Average Score: -163.08Episode 413	Frame 115656 	Average Score: -161.96
-Best model saved at episode 414 with mean_100_rew -161.95626848222423
-
-Episode 414	Frame 115956 	Average Score: -162.16Episode 415	Frame 116256 	Average Score: -162.07Episode 416	Frame 116556 	Average Score: -161.80
-Best model saved at episode 417 with mean_100_rew -161.8032839597714
-
-Episode 417	Frame 116856 	Average Score: -161.05
-Best model saved at episode 418 with mean_100_rew -161.05420422209704
-
-Episode 418	Frame 117156 	Average Score: -161.36Episode 419	Frame 117456 	Average Score: -161.02
-Best model saved at episode 420 with mean_100_rew -161.0249794032985
-
-Episode 420	Frame 117756 	Average Score: -161.26Episode 421	Frame 118056 	Average Score: -162.62Episode 422	Frame 118356 	Average Score: -162.53Episode 423	Frame 118656 	Average Score: -161.92Episode 424	Frame 118956 	Average Score: -161.72Episode 425	Frame 119256 	Average Score: -162.40Episode 426	Frame 119556 	Average Score: -164.12Episode 427	Frame 119856 	Average Score: -163.65Episode 428	Frame 120156 	Average Score: -165.50Episode 429	Frame 120456 	Average Score: -165.94Episode 430	Frame 120466 	Average Score: -165.94Episode 431	Frame 120766 	Average Score: -165.77Episode 432	Frame 121066 	Average Score: -165.38Episode 433	Frame 121366 	Average Score: -167.67Episode 434	Frame 121666 	Average Score: -169.39Episode 435	Frame 121966 	Average Score: -169.30Episode 436	Frame 122105 	Average Score: -168.40Episode 437	Frame 122405 	Average Score: -167.82Episode 438	Frame 122705 	Average Score: -167.64Episode 439	Frame 123005 	Average Score: -166.68Episode 440	Frame 123190 	Average Score: -165.26Episode 441	Frame 123490 	Average Score: -164.70Episode 442	Frame 123534 	Average Score: -162.53Episode 443	Frame 123834 	Average Score: -161.96Episode 444	Frame 124134 	Average Score: -162.01Episode 445	Frame 124434 	Average Score: -162.10Episode 446	Frame 124734 	Average Score: -161.27Episode 447	Frame 125034 	Average Score: -162.60Episode 448	Frame 125334 	Average Score: -162.71Episode 449	Frame 125634 	Average Score: -163.59Episode 450	Frame 125934 	Average Score: -164.44Episode 451	Frame 126234 	Average Score: -164.38Episode 452	Frame 126534 	Average Score: -164.98Episode 453	Frame 126834 	Average Score: -164.81Episode 454	Frame 127134 	Average Score: -164.96Episode 455	Frame 127434 	Average Score: -165.41Episode 456	Frame 127734 	Average Score: -166.41Episode 457	Frame 128034 	Average Score: -167.66Episode 458	Frame 128334 	Average Score: -167.74Episode 459	Frame 128634 	Average Score: -166.81Episode 460	Frame 128934 	Average Score: -166.50Episode 461	Frame 129234 	Average Score: -167.04Episode 462	Frame 129534 	Average Score: -167.31Episode 463	Frame 129834 	Average Score: -169.00Episode 464	Frame 130134 	Average Score: -168.25Episode 465	Frame 130434 	Average Score: -169.44Episode 466	Frame 130734 	Average Score: -168.60Episode 467	Frame 131034 	Average Score: -168.33Episode 468	Frame 131334 	Average Score: -170.43Episode 469	Frame 131634 	Average Score: -170.05Episode 470	Frame 131934 	Average Score: -169.55Episode 471	Frame 132234 	Average Score: -169.55Episode 472	Frame 132408 	Average Score: -168.75Episode 473	Frame 132708 	Average Score: -169.67Episode 474	Frame 133008 	Average Score: -170.97Episode 475	Frame 133308 	Average Score: -170.07Episode 476	Frame 133608 	Average Score: -169.81Episode 477	Frame 133908 	Average Score: -169.95Episode 478	Frame 134208 	Average Score: -169.87Episode 479	Frame 134211 	Average Score: -167.91Episode 480	Frame 134511 	Average Score: -167.42Episode 481	Frame 134811 	Average Score: -167.45Episode 482	Frame 135111 	Average Score: -167.28Episode 483	Frame 135411 	Average Score: -166.77Episode 484	Frame 135711 	Average Score: -166.93Episode 485	Frame 136011 	Average Score: -166.37Episode 486	Frame 136311 	Average Score: -167.36Episode 487	Frame 136611 	Average Score: -167.23Episode 488	Frame 136627 	Average Score: -165.10Episode 489	Frame 136927 	Average Score: -165.03Episode 490	Frame 137227 	Average Score: -165.32Episode 491	Frame 137527 	Average Score: -165.36Episode 492	Frame 137827 	Average Score: -166.35Episode 493	Frame 138127 	Average Score: -165.95Episode 494	Frame 138427 	Average Score: -166.62Episode 495	Frame 138727 	Average Score: -165.86Episode 496	Frame 139027 	Average Score: -166.05Episode 497	Frame 139327 	Average Score: -165.96Episode 498	Frame 139627 	Average Score: -166.34Episode 499	Frame 139927 	Average Score: -167.96Episode 500	Frame 140227 	Average Score: -167.45Episode 500	Frame 140227	Average Score: -167.45
-Episode 501	Frame 140527 	Average Score: -167.41Episode 502	Frame 140556 	Average Score: -165.28Episode 503	Frame 140856 	Average Score: -164.44Episode 504	Frame 141156 	Average Score: -164.61Episode 505	Frame 141456 	Average Score: -164.44Episode 506	Frame 141756 	Average Score: -164.41Episode 507	Frame 142056 	Average Score: -165.94Episode 508	Frame 142356 	Average Score: -166.60Episode 509	Frame 142656 	Average Score: -166.55Episode 510	Frame 142880 	Average Score: -165.82Episode 511	Frame 142895 	Average Score: -164.32Episode 512	Frame 143195 	Average Score: -163.23Episode 513	Frame 143495 	Average Score: -164.28Episode 514	Frame 143795 	Average Score: -163.87Episode 515	Frame 144095 	Average Score: -163.01Episode 516	Frame 144395 	Average Score: -163.45Episode 517	Frame 144695 	Average Score: -164.37Episode 518	Frame 144995 	Average Score: -163.43Episode 519	Frame 145295 	Average Score: -163.59Episode 520	Frame 145595 	Average Score: -163.08Episode 521	Frame 145895 	Average Score: -162.98Episode 522	Frame 146195 	Average Score: -162.58Episode 523	Frame 146495 	Average Score: -162.05Episode 524	Frame 146795 	Average Score: -162.61Episode 525	Frame 147095 	Average Score: -162.19Episode 526	Frame 147395 	Average Score: -162.01Episode 527	Frame 147695 	Average Score: -162.56Episode 528	Frame 147995 	Average Score: -162.31Episode 529	Frame 148007 	Average Score: -160.57
-Best model saved at episode 530 with mean_100_rew -160.56668879133863
-
-Episode 530	Frame 148307 	Average Score: -162.69Episode 531	Frame 148607 	Average Score: -163.06Episode 532	Frame 148907 	Average Score: -163.21Episode 533	Frame 149207 	Average Score: -162.25Episode 534	Frame 149507 	Average Score: -162.65Episode 535	Frame 149807 	Average Score: -162.14Episode 536	Frame 150107 	Average Score: -162.53Episode 537	Frame 150407 	Average Score: -161.83Episode 538	Frame 150707 	Average Score: -162.77Episode 539	Frame 151007 	Average Score: -162.93Episode 540	Frame 151307 	Average Score: -163.32Episode 541	Frame 151607 	Average Score: -163.48Episode 542	Frame 151907 	Average Score: -164.72Episode 543	Frame 152207 	Average Score: -165.42Episode 544	Frame 152507 	Average Score: -165.78Episode 545	Frame 152807 	Average Score: -164.97Episode 546	Frame 153107 	Average Score: -165.08Episode 547	Frame 153407 	Average Score: -165.65Episode 548	Frame 153707 	Average Score: -165.31Episode 549	Frame 154007 	Average Score: -164.47Episode 550	Frame 154307 	Average Score: -163.98Episode 551	Frame 154607 	Average Score: -163.81Episode 552	Frame 154907 	Average Score: -164.24Episode 553	Frame 155207 	Average Score: -164.62Episode 554	Frame 155507 	Average Score: -164.13Episode 555	Frame 155807 	Average Score: -163.28Episode 556	Frame 156107 	Average Score: -162.64Episode 557	Frame 156407 	Average Score: -162.40Episode 558	Frame 156707 	Average Score: -163.14Episode 559	Frame 156712 	Average Score: -161.59Episode 560	Frame 157012 	Average Score: -161.53Episode 561	Frame 157312 	Average Score: -160.90Episode 562	Frame 157612 	Average Score: -160.31
-Best model saved at episode 563 with mean_100_rew -160.30884041889124
-
-Episode 563	Frame 157912 	Average Score: -160.24
-Best model saved at episode 564 with mean_100_rew -160.23831900841174
-
-Episode 564	Frame 158212 	Average Score: -160.60Episode 565	Frame 158512 	Average Score: -159.97
-Best model saved at episode 566 with mean_100_rew -159.96667413562955
-
-Episode 566	Frame 158812 	Average Score: -159.97Episode 567	Frame 159112 	Average Score: -160.22Episode 568	Frame 159412 	Average Score: -159.52
-Best model saved at episode 569 with mean_100_rew -159.52349925171194
-
-Episode 569	Frame 159712 	Average Score: -159.77Episode 570	Frame 160012 	Average Score: -160.07Episode 571	Frame 160312 	Average Score: -160.32Episode 572	Frame 160612 	Average Score: -161.08Episode 573	Frame 160912 	Average Score: -160.74Episode 574	Frame 161212 	Average Score: -160.68Episode 575	Frame 161512 	Average Score: -161.16Episode 576	Frame 161516 	Average Score: -159.02
-Best model saved at episode 577 with mean_100_rew -159.02460981104886
-
-Episode 577	Frame 161816 	Average Score: -159.12Episode 578	Frame 162116 	Average Score: -159.54Episode 579	Frame 162416 	Average Score: -161.66Episode 580	Frame 162716 	Average Score: -161.64Episode 581	Frame 163016 	Average Score: -161.58Episode 582	Frame 163316 	Average Score: -161.75Episode 583	Frame 163616 	Average Score: -161.49Episode 584	Frame 163916 	Average Score: -161.90Episode 585	Frame 164216 	Average Score: -162.08Episode 586	Frame 164516 	Average Score: -161.78Episode 587	Frame 164677 	Average Score: -160.56Episode 588	Frame 164977 	Average Score: -162.13Episode 589	Frame 165277 	Average Score: -162.77Episode 590	Frame 165577 	Average Score: -162.67Episode 591	Frame 165877 	Average Score: -162.80Episode 592	Frame 166177 	Average Score: -162.69Episode 593	Frame 166477 	Average Score: -163.26Episode 594	Frame 166777 	Average Score: -163.14Episode 595	Frame 167077 	Average Score: -163.81Episode 596	Frame 167108 	Average Score: -161.91Episode 597	Frame 167408 	Average Score: -162.12Episode 598	Frame 167708 	Average Score: -161.40Episode 599	Frame 167949 	Average Score: -160.86Episode 600	Frame 168249 	Average Score: -161.70Episode 600	Frame 168249	Average Score: -161.70
-Episode 601	Frame 168255 	Average Score: -159.91Episode 602	Frame 168555 	Average Score: -161.90Episode 603	Frame 168855 	Average Score: -162.99Episode 604	Frame 169155 	Average Score: -162.58Episode 605	Frame 169455 	Average Score: -162.29Episode 606	Frame 169621 	Average Score: -161.45Episode 607	Frame 169921 	Average Score: -161.18Episode 608	Frame 170221 	Average Score: -160.86Episode 609	Frame 170521 	Average Score: -160.24Episode 610	Frame 170821 	Average Score: -160.79Episode 611	Frame 171054 	Average Score: -162.47Episode 612	Frame 171354 	Average Score: -163.16Episode 613	Frame 171654 	Average Score: -162.03Episode 614	Frame 171954 	Average Score: -162.58Episode 615	Frame 172254 	Average Score: -162.83Episode 616	Frame 172554 	Average Score: -163.48Episode 617	Frame 172854 	Average Score: -163.10Episode 618	Frame 173154 	Average Score: -162.70Episode 619	Frame 173454 	Average Score: -161.98Episode 620	Frame 173754 	Average Score: -162.33Episode 621	Frame 174054 	Average Score: -163.12Episode 622	Frame 174354 	Average Score: -163.80Episode 623	Frame 174654 	Average Score: -164.42Episode 624	Frame 174954 	Average Score: -164.28Episode 625	Frame 175254 	Average Score: -164.75Episode 626	Frame 175554 	Average Score: -165.36Episode 627	Frame 175854 	Average Score: -164.61Episode 628	Frame 175860 	Average Score: -162.89Episode 629	Frame 176160 	Average Score: -164.53Episode 630	Frame 176460 	Average Score: -164.85Episode 631	Frame 176760 	Average Score: -165.38Episode 632	Frame 177060 	Average Score: -165.48Episode 633	Frame 177085 	Average Score: -164.20Episode 634	Frame 177385 	Average Score: -163.61Episode 635	Frame 177685 	Average Score: -163.80Episode 636	Frame 177874 	Average Score: -163.42Episode 637	Frame 178174 	Average Score: -163.91Episode 638	Frame 178474 	Average Score: -163.42Episode 639	Frame 178774 	Average Score: -163.01Episode 640	Frame 179074 	Average Score: -163.44Episode 641	Frame 179097 	Average Score: -161.56Episode 642	Frame 179397 	Average Score: -161.81Episode 643	Frame 179697 	Average Score: -160.89Episode 644	Frame 179997 	Average Score: -160.37Episode 645	Frame 180297 	Average Score: -161.23Episode 646	Frame 180597 	Average Score: -162.13Episode 647	Frame 180897 	Average Score: -161.83Episode 648	Frame 181197 	Average Score: -161.99Episode 649	Frame 181205 	Average Score: -160.55Episode 650	Frame 181505 	Average Score: -160.95Episode 651	Frame 181805 	Average Score: -160.92Episode 652	Frame 182105 	Average Score: -160.11Episode 653	Frame 182239 	Average Score: -159.04Episode 654	Frame 182539 	Average Score: -158.60
-Best model saved at episode 655 with mean_100_rew -158.60467676148653
-
-Episode 655	Frame 182839 	Average Score: -159.11Episode 656	Frame 183139 	Average Score: -159.58Episode 657	Frame 183439 	Average Score: -159.83Episode 658	Frame 183739 	Average Score: -159.26Episode 659	Frame 184039 	Average Score: -160.64Episode 660	Frame 184339 	Average Score: -160.91Episode 661	Frame 184639 	Average Score: -161.34Episode 662	Frame 184939 	Average Score: -162.33Episode 663	Frame 185239 	Average Score: -162.20Episode 664	Frame 185539 	Average Score: -161.90Episode 665	Frame 185839 	Average Score: -161.74Episode 666	Frame 186139 	Average Score: -161.64Episode 667	Frame 186439 	Average Score: -162.05Episode 668	Frame 186739 	Average Score: -162.11Episode 669	Frame 187039 	Average Score: -161.71Episode 670	Frame 187339 	Average Score: -161.46Episode 671	Frame 187639 	Average Score: -160.85Episode 672	Frame 187939 	Average Score: -161.51Episode 673	Frame 188217 	Average Score: -161.32Episode 674	Frame 188517 	Average Score: -161.22Episode 675	Frame 188817 	Average Score: -161.09Episode 676	Frame 189117 	Average Score: -162.74Episode 677	Frame 189417 	Average Score: -162.58Episode 678	Frame 189717 	Average Score: -162.13Episode 679	Frame 190017 	Average Score: -161.84Episode 680	Frame 190030 	Average Score: -160.44Episode 681	Frame 190330 	Average Score: -160.62Episode 682	Frame 190630 	Average Score: -160.65Episode 683	Frame 190930 	Average Score: -161.21Episode 684	Frame 191230 	Average Score: -160.93Episode 685	Frame 191530 	Average Score: -161.20Episode 686	Frame 191830 	Average Score: -160.91Episode 687	Frame 191851 	Average Score: -160.21Episode 688	Frame 192151 	Average Score: -159.90Episode 689	Frame 192451 	Average Score: -159.29Episode 690	Frame 192751 	Average Score: -158.88Episode 691	Frame 193051 	Average Score: -158.56
-Best model saved at episode 692 with mean_100_rew -158.5601603747039
-
-Episode 692	Frame 193351 	Average Score: -159.55Episode 693	Frame 193651 	Average Score: -158.78Episode 694	Frame 193951 	Average Score: -158.37
-Best model saved at episode 695 with mean_100_rew -158.3656535593609
-
-Episode 695	Frame 194251 	Average Score: -157.27
-Best model saved at episode 696 with mean_100_rew -157.26817569628068
-
-Episode 696	Frame 194551 	Average Score: -158.73Episode 697	Frame 194851 	Average Score: -158.79Episode 698	Frame 195151 	Average Score: -158.93Episode 699	Frame 195451 	Average Score: -159.23Episode 700	Frame 195751 	Average Score: -158.40Episode 700	Frame 195751	Average Score: -158.40
-Episode 701	Frame 195976 	Average Score: -159.37Episode 702	Frame 196276 	Average Score: -159.03Episode 703	Frame 196576 	Average Score: -158.72Episode 704	Frame 196876 	Average Score: -159.43Episode 705	Frame 197176 	Average Score: -159.83Episode 706	Frame 197476 	Average Score: -160.50Episode 707	Frame 197633 	Average Score: -159.80Episode 708	Frame 197933 	Average Score: -160.87Episode 709	Frame 198233 	Average Score: -160.99Episode 710	Frame 198533 	Average Score: -161.12Episode 711	Frame 198833 	Average Score: -161.16Episode 712	Frame 199133 	Average Score: -161.06Episode 713	Frame 199433 	Average Score: -161.44Episode 714	Frame 199733 	Average Score: -161.12Episode 715	Frame 200033 	Average Score: -161.29Episode 716	Frame 200333 	Average Score: -160.61Episode 717	Frame 200633 	Average Score: -161.75Episode 718	Frame 200933 	Average Score: -161.76Episode 719	Frame 201233 	Average Score: -161.75Episode 720	Frame 201533 	Average Score: -161.09Episode 721	Frame 201540 	Average Score: -159.02Episode 722	Frame 201840 	Average Score: -158.54Episode 723	Frame 202140 	Average Score: -158.14Episode 724	Frame 202440 	Average Score: -158.25Episode 725	Frame 202740 	Average Score: -157.45Episode 726	Frame 203040 	Average Score: -157.75Episode 727	Frame 203134 	Average Score: -156.50
-Best model saved at episode 728 with mean_100_rew -156.50389084618712
-
-Episode 728	Frame 203434 	Average Score: -158.47Episode 729	Frame 203734 	Average Score: -158.04Episode 730	Frame 204034 	Average Score: -157.57Episode 731	Frame 204334 	Average Score: -156.58Episode 732	Frame 204634 	Average Score: -156.55Episode 733	Frame 204934 	Average Score: -159.40Episode 734	Frame 205234 	Average Score: -159.28Episode 735	Frame 205534 	Average Score: -159.35Episode 736	Frame 205834 	Average Score: -160.43Episode 737	Frame 206134 	Average Score: -159.84Episode 738	Frame 206434 	Average Score: -159.32Episode 739	Frame 206455 	Average Score: -158.11Episode 740	Frame 206755 	Average Score: -158.49Episode 741	Frame 207055 	Average Score: -160.06Episode 742	Frame 207355 	Average Score: -160.02Episode 743	Frame 207655 	Average Score: -161.01Episode 744	Frame 207955 	Average Score: -161.42Episode 745	Frame 208255 	Average Score: -160.67Episode 746	Frame 208555 	Average Score: -159.62Episode 747	Frame 208855 	Average Score: -159.73Episode 748	Frame 209155 	Average Score: -159.70Episode 749	Frame 209455 	Average Score: -161.61Episode 750	Frame 209755 	Average Score: -161.14Episode 751	Frame 210055 	Average Score: -161.18Episode 752	Frame 210355 	Average Score: -162.72Episode 753	Frame 210655 	Average Score: -164.38Episode 754	Frame 210955 	Average Score: -164.50Episode 755	Frame 211255 	Average Score: -164.97Episode 756	Frame 211555 	Average Score: -164.74Episode 757	Frame 211855 	Average Score: -164.72Episode 758	Frame 212155 	Average Score: -165.08Episode 759	Frame 212455 	Average Score: -165.75Episode 760	Frame 212755 	Average Score: -165.92Episode 761	Frame 212919 	Average Score: -164.77Episode 762	Frame 213219 	Average Score: -163.97Episode 763	Frame 213519 	Average Score: -164.30Episode 764	Frame 213819 	Average Score: -164.45Episode 765	Frame 214119 	Average Score: -164.22Episode 766	Frame 214419 	Average Score: -164.92Episode 767	Frame 214719 	Average Score: -164.27Episode 768	Frame 215019 	Average Score: -164.26Episode 769	Frame 215319 	Average Score: -163.97Episode 770	Frame 215619 	Average Score: -164.04Episode 771	Frame 215919 	Average Score: -164.52Episode 772	Frame 216219 	Average Score: -164.00Episode 773	Frame 216519 	Average Score: -164.39Episode 774	Frame 216819 	Average Score: -164.39Episode 775	Frame 217119 	Average Score: -164.75Episode 776	Frame 217419 	Average Score: -164.69Episode 777	Frame 217719 	Average Score: -164.87Episode 778	Frame 218019 	Average Score: -165.27Episode 779	Frame 218319 	Average Score: -165.73Episode 780	Frame 218619 	Average Score: -167.26Episode 781	Frame 218919 	Average Score: -166.92Episode 782	Frame 219219 	Average Score: -168.66Episode 783	Frame 219252 	Average Score: -166.76Episode 784	Frame 219552 	Average Score: -167.12Episode 785	Frame 219852 	Average Score: -166.53Episode 786	Frame 220152 	Average Score: -166.69Episode 787	Frame 220452 	Average Score: -168.16Episode 788	Frame 220752 	Average Score: -168.47Episode 789	Frame 221052 	Average Score: -169.06Episode 790	Frame 221352 	Average Score: -169.19Episode 791	Frame 221652 	Average Score: -168.95Episode 792	Frame 221952 	Average Score: -167.96Episode 793	Frame 222252 	Average Score: -168.27Episode 794	Frame 222492 	Average Score: -167.94Episode 795	Frame 222792 	Average Score: -168.76Episode 796	Frame 223092 	Average Score: -168.90Episode 797	Frame 223392 	Average Score: -168.69Episode 798	Frame 223692 	Average Score: -169.00Episode 799	Frame 223992 	Average Score: -169.04Episode 800	Frame 224292 	Average Score: -169.49Episode 800	Frame 224292	Average Score: -169.49
-set_torque failed:  service [/set_torque] returned no response
-Traceback (most recent call last):
-  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 147, in <module>
-    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
-  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 37, in run
-    next_state, reward, done, _ = env.step(action)
-  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 16, in step
-    observation, reward, done, info = self.env.step(action)
-  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 188, in step
-    rospy.sleep(self.running_step) # figure out what running step
-  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/timer.py", line 166, in sleep
-    raise rospy.exceptions.ROSInterruptException("ROS shutdown request")
-rospy.exceptions.ROSInterruptException: ROS shutdown request

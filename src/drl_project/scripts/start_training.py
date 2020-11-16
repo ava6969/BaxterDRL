@@ -27,6 +27,7 @@ import rospkg
 
 # import our training environment
 from mybaxter_env import BaxterEnv
+from pnp_baxter_env import PnPBaxterEnv
 from stable_baselines3.common.env_checker import check_env
 class SaveOnBestTrainingRewardCallback(BaseCallback):
     """
@@ -76,7 +77,8 @@ class SaveOnBestTrainingRewardCallback(BaseCallback):
 if __name__ == '__main__':
     rospy.init_node('baxter_gym', anonymous=True)
     # Create the Gym environment
-    env = gym.make('BaxterGym-v0')
+    # env = gym.make('BaxterGym-v0')
+    env = gym.make('PnPBaxter-v0')
     rospy.loginfo ( "Gym environment done")
     # Create log dir
     log_dir = "./log/gym/"
@@ -93,17 +95,16 @@ if __name__ == '__main__':
     # Custom MLP policy of two layers of size 100 each with tanh activation function
     policy_kwargs = dict(net_arch=dict(pi=[400, 300], qf=[400, 300]), activation_fn=th.nn.Tanh)
     model = DDPG('MlpPolicy', env, batch_size=128, policy_kwargs=policy_kwargs,verbose=1,tensorboard_log="./log/tensor_board/")
-    # model.load(save_path)
-    print("loaded model")
-    model.learn(total_timesteps=1000000, tb_log_name="first_run", reset_num_timesteps=False, callback=callback)
+  
+    #model = DDPG.load("/home/dewe/Documents/DDPGReacher/gym/best_model",env)
+    #print("loaded model")
+
+    model.learn(total_timesteps=1000000, callback=callback)
 
     # Evaluate the agent
-
-    # Load the trained agent
-    
-
     mean_reward, std_reward = evaluate_policy(model, model.get_env(), n_eval_episodes=100)
     print(f"Eval mean_reward={mean_reward:.2f} +/- {std_reward}")
+
     model.save("DDPG-baxter")
 
     env.close()

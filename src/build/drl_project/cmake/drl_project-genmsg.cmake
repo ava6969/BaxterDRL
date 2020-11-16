@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "drl_project: 0 messages, 7 services")
+message(STATUS "drl_project: 0 messages, 10 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg;-Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg")
 
@@ -37,9 +37,24 @@ add_custom_target(_drl_project_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drl_project" "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv" ""
 )
 
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" NAME_WE)
+add_custom_target(_drl_project_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drl_project" "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" ""
+)
+
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" NAME_WE)
+add_custom_target(_drl_project_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drl_project" "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" ""
+)
+
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" NAME_WE)
 add_custom_target(_drl_project_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drl_project" "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" ""
+)
+
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" NAME_WE)
+add_custom_target(_drl_project_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drl_project" "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" ""
 )
 
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv" NAME_WE)
@@ -85,13 +100,31 @@ _generate_srv_cpp(drl_project
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drl_project
 )
 _generate_srv_cpp(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drl_project
+)
+_generate_srv_cpp(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drl_project
+)
+_generate_srv_cpp(drl_project
   "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drl_project
 )
 _generate_srv_cpp(drl_project
-  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drl_project
+)
+_generate_srv_cpp(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drl_project
@@ -123,7 +156,13 @@ get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/GetObs.s
 add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_cpp _drl_project_generate_messages_check_deps_${_filename})
@@ -166,13 +205,31 @@ _generate_srv_eus(drl_project
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/drl_project
 )
 _generate_srv_eus(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/drl_project
+)
+_generate_srv_eus(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/drl_project
+)
+_generate_srv_eus(drl_project
   "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/drl_project
 )
 _generate_srv_eus(drl_project
-  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/drl_project
+)
+_generate_srv_eus(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/drl_project
@@ -204,7 +261,13 @@ get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/GetObs.s
 add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_eus _drl_project_generate_messages_check_deps_${_filename})
@@ -247,13 +310,31 @@ _generate_srv_lisp(drl_project
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drl_project
 )
 _generate_srv_lisp(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drl_project
+)
+_generate_srv_lisp(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drl_project
+)
+_generate_srv_lisp(drl_project
   "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drl_project
 )
 _generate_srv_lisp(drl_project
-  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drl_project
+)
+_generate_srv_lisp(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drl_project
@@ -285,7 +366,13 @@ get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/GetObs.s
 add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_lisp _drl_project_generate_messages_check_deps_${_filename})
@@ -328,13 +415,31 @@ _generate_srv_nodejs(drl_project
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/drl_project
 )
 _generate_srv_nodejs(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/drl_project
+)
+_generate_srv_nodejs(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/drl_project
+)
+_generate_srv_nodejs(drl_project
   "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/drl_project
 )
 _generate_srv_nodejs(drl_project
-  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/drl_project
+)
+_generate_srv_nodejs(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/drl_project
@@ -366,7 +471,13 @@ get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/GetObs.s
 add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_nodejs _drl_project_generate_messages_check_deps_${_filename})
@@ -409,13 +520,31 @@ _generate_srv_py(drl_project
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drl_project
 )
 _generate_srv_py(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drl_project
+)
+_generate_srv_py(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drl_project
+)
+_generate_srv_py(drl_project
   "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drl_project
 )
 _generate_srv_py(drl_project
-  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
+  "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drl_project
+)
+_generate_srv_py(drl_project
+  "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drl_project
@@ -447,7 +576,13 @@ get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/GetObs.s
 add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv" NAME_WE)
+add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv" NAME_WE)
 add_dependencies(drl_project_generate_messages_py _drl_project_generate_messages_check_deps_${_filename})

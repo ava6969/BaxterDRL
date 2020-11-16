@@ -38,6 +38,9 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/dewe/ros_ws/src/drl_project/srv/GetObs.srv"
     "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModels.srv"
     "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv"
+    "/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv"
+    "/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv"
+    "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv"
     "/home/dewe/ros_ws/src/drl_project/srv/Reset.srv"
     "/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv"
     "/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
@@ -96,6 +99,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/drl_project" TYPE PROGRAM FILES "/home/dewe/ros_ws/src/build/drl_project/catkin_generated/installspace/baxter_gym.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/drl_project" TYPE PROGRAM FILES "/home/dewe/ros_ws/src/build/drl_project/catkin_generated/installspace/mybaxter_env.py")
 endif()
 

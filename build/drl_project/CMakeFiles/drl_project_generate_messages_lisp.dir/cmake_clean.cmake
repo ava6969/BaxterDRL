@@ -4,8 +4,11 @@ file(REMOVE_RECURSE
   "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModels.lisp"
   "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/GetObs.lisp"
   "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/Reset.lisp"
-  "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp"
   "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp"
+  "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModelsWithTarget.lisp"
+  "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp"
+  "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocksWithTarget.lisp"
+  "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModelsWithTarget.lisp"
   "/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModels.lisp"
 )
 

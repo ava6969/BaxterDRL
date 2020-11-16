@@ -4,8 +4,11 @@ file(REMOVE_RECURSE
   "/home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModels.h"
   "/home/dewe/ros_ws/devel/include/drl_project/GetObs.h"
   "/home/dewe/ros_ws/devel/include/drl_project/Reset.h"
-  "/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h"
   "/home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h"
+  "/home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h"
+  "/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h"
+  "/home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h"
+  "/home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h"
   "/home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h"
 )
 

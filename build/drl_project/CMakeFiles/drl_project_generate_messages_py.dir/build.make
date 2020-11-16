@@ -57,8 +57,11 @@ drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel
 drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModels.py
 drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_GetObs.py
 drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_Reset.py
-drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
 drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py
+drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModelsWithTarget.py
+drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
+drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocksWithTarget.py
+drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModelsWithTarget.py
 drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModels.py
 drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py
 
@@ -83,19 +86,34 @@ drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python code from SRV drl_project/Reset"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/Reset.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
 
-/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
-/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py: /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV drl_project/SetTorque"
-	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
-
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py: /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python code from SRV drl_project/SpawnBlocks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python code from SRV drl_project/SpawnBlocks"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
+
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModelsWithTarget.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModelsWithTarget.py: /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Python code from SRV drl_project/LoadGazeboModelsWithTarget"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
+
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py: /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python code from SRV drl_project/SetTorque"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
+
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocksWithTarget.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocksWithTarget.py: /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python code from SRV drl_project/SpawnBlocksWithTarget"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
+
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModelsWithTarget.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModelsWithTarget.py: /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Python code from SRV drl_project/DeleteGazeboModelsWithTarget"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
 
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModels.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModels.py: /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Python code from SRV drl_project/LoadGazeboModels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Python code from SRV drl_project/LoadGazeboModels"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv
 
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
@@ -103,10 +121,13 @@ drl_project/CMakeFiles/drl_project_generate_messages_py: /home/dewe/ros_ws/devel
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModels.py
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_GetObs.py
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_Reset.py
-/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModelsWithTarget.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocksWithTarget.py
+/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModelsWithTarget.py
 /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModels.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python srv __init__.py for drl_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python srv __init__.py for drl_project"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv --initpy
 
 drl_project_generate_messages_py: drl_project/CMakeFiles/drl_project_generate_messages_py
@@ -114,8 +135,11 @@ drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-pac
 drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModels.py
 drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_GetObs.py
 drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_Reset.py
-drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
 drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py
+drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModelsWithTarget.py
+drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py
+drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocksWithTarget.py
+drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModelsWithTarget.py
 drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModels.py
 drl_project_generate_messages_py: /home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py
 drl_project_generate_messages_py: drl_project/CMakeFiles/drl_project_generate_messages_py.dir/build.make

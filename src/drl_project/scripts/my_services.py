@@ -49,7 +49,6 @@ class Services():
         self._verbose = verbose # bool
         self._limb = baxter_interface.Limb(limb)
         self._gripper = baxter_interface.Gripper(limb)
-        self.obj_sub = rospy.Subscriber("/gazebo/link_states", LinkStates, self.ls_callback)
 
         ns = "ExternalTools/" + limb + "/PositionKinematicsNode/IKService"
         self._iksvc = rospy.ServiceProxy(ns, SolvePositionIK)
@@ -59,6 +58,7 @@ class Services():
         self._rs = baxter_interface.RobotEnable(baxter_interface.CHECK_VERSION)
         self._init_state = self._rs.state().enabled
         print("Enabling robot... ")
+        
         #self.pre_proc_sub = rospy.Subscriber("/preproc",JointState,self.update_state)
         self._rs.enable()
         self.block_state = []
@@ -100,13 +100,13 @@ class Services():
         rand = self.np_random.uniform(-0.02, 0.02, size=7)
         sample2 = self.np_random.uniform(-0.1, 0.1, size=7)
 
-        starting_joint_angles = {'left_w0': 0.6699952259595108 + rand[0],
-                                'left_w1': 1.030009435085784 + rand[1],
+        starting_joint_angles = {'left_w0': 1.75 + rand[0],
+                                'left_w1': 1.50 + rand[1],
                                 'left_w2': -0.4999997247485215 + rand[2],
-                                'left_e0': -1.189968899785275 + rand[3],
-                                'left_e1': 1.9400238130755056 + rand[4],
-                                'left_s0': -0.08000397926829805 + rand[5],
-                                'left_s1': -0.9999781166910306+ rand[6]}
+                                'left_e0': -1.5 + rand[3],
+                                'left_e1': 1.80 + rand[4],
+                                'left_s0': 0.1 + rand[5],
+                                'left_s1': 0 + rand[6]}
         
         self.move_to_start(starting_joint_angles)
 
@@ -119,6 +119,8 @@ class Services():
     def spawn_blocks(self, req ):
         
         b_p , block_reference_frame =  req.block_pose, req.block_reference_frame
+       # goal_p = b_p
+       # goal_p[2] += 0.3 
         # b_p = [0.6725, 0.1265, 0.7825],
         # block_reference_frame = "world"
         block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=0.7825))
@@ -145,27 +147,15 @@ class Services():
         
         t_p, table_reference_frame, b_p, block_reference_frame = req.table_pose, req.table_reference_frame, \
                                                                     req.block_pose, req.block_reference_frame
-        table_pose = Pose(position=Point(x=t_p[0],y=t_p[1],z=t_p[2]))
-        block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=b_p[2]))
+
+        block_pose = Pose(position=Point(x=b_p[0],y=b_p[1],z=0.7825))
         # Get Models' Path
-        table_pose = Pose(position=Point(x=t_p[0], y=t_p[1], z=t_p[2]))
         model_path = rospkg.RosPack().get_path('drl_project')+"/models/"
-        # Load Table SDF
-        table_xml = ''
-        with open (model_path + "cafe_table/model.sdf", "r") as table_file:
-            table_xml=table_file.read().replace('\n', '')
+
         # Load Block URDF
         block_xml = ''
         with open (model_path + "block/model.urdf", "r") as block_file:
             block_xml=block_file.read().replace('\n', '')
-        # Spawn Table SDF
-        # rospy.wait_for_service('/gazebo/spawn_sdf_model')
-        # try:
-        #     spawn_sdf = rospy.ServiceProxy('/gazebo/spawn_sdf_model', SpawnModel)
-        #     resp_sdf = spawn_sdf("cafe_table", table_xml, "/",
-        #                         table_pose, table_reference_frame)
-        # except rospy.ServiceException as e:
-        #     rospy.logerr("Spawn SDF service call failed: {0}".format(e))
         # Spawn Block URDF
         rospy.wait_for_service('/gazebo/spawn_urdf_model')
         try:
@@ -189,7 +179,7 @@ class Services():
             if OnlyBlocks:
                 resp_delete = delete_model("block")
             else:
-                #resp_delete = delete_model("cafe_table")
+
                 resp_delete = delete_model("block")
         except rospy.ServiceException as e:
             rospy.loginfo("Delete Model service call failed:ee {0}".format(e))
@@ -205,25 +195,12 @@ class Services():
 
         try:
             delete_model = rospy.ServiceProxy('/gazebo/delete_model', DeleteModel)
-            #resp_delete = delete_model("cafe_table")
             resp_delete = delete_model("block")
         except rospy.ServiceException as e:
             rospy.loginfo("Delete Model service call failed:ee {0}".format(e))
         
         response = DeleteGazeboModelsResponse()
         return response
-
-    def ls_callback(self, msg):
-        # get object infor from gazebo
-        gripper_l_finger = "baxter::l_gripper_l_finger"
-        gripper_r_finger = "baxter::l_gripper_r_finger"
-        block = "block::block"
-        lf = 10
-        rf = 11
-        if block in msg.name:
-            self.block_state = [msg.pose[-1].position, msg.pose[-1].orientation, msg.twist[-1].linear, msg.twist[-1].angular]
-        else:
-            self.block_state = []
 
     def move_to_start(self, start_angles=None):
         print("Moving the {0} arm to start pose...".format(self._limb_name))

@@ -4,8 +4,11 @@ file(REMOVE_RECURSE
   "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModels.js"
   "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/GetObs.js"
   "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/Reset.js"
-  "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/SetTorque.js"
   "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js"
+  "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModelsWithTarget.js"
+  "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/SetTorque.js"
+  "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/SpawnBlocksWithTarget.js"
+  "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModelsWithTarget.js"
   "/home/dewe/ros_ws/devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModels.js"
 )
 

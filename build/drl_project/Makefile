@@ -100,6 +100,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -121,17 +132,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule
+.PHONY : drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+drl_project_generate_messages_eus: drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule
+
+.PHONY : drl_project_generate_messages_eus
+
+# fast build rule for target.
+drl_project_generate_messages_eus/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/build
+.PHONY : drl_project_generate_messages_eus/fast
+
+# Convenience name for target.
+drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget.dir/rule
+.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget.dir/rule
+
+# Convenience name for target.
+_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget.dir/rule
+
+.PHONY : _drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget
+
+# fast build rule for target.
+_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget.dir/build
+.PHONY : _drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget/fast
+
+# Convenience name for target.
 drl_project/CMakeFiles/drl_project_genlisp.dir/rule:
 	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_genlisp.dir/rule
 .PHONY : drl_project/CMakeFiles/drl_project_genlisp.dir/rule
@@ -179,6 +209,21 @@ drl_project_genlisp: drl_project/CMakeFiles/drl_project_genlisp.dir/rule
 drl_project_genlisp/fast:
 	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_genlisp.dir/build.make drl_project/CMakeFiles/drl_project_genlisp.dir/build
 .PHONY : drl_project_genlisp/fast
+
+# Convenience name for target.
+drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget.dir/rule
+.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget.dir/rule
+
+# Convenience name for target.
+_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget.dir/rule
+
+.PHONY : _drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget
+
+# fast build rule for target.
+_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget.dir/build
+.PHONY : _drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget/fast
 
 # Convenience name for target.
 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_GetObs.dir/rule:
@@ -241,19 +286,34 @@ _drl_project_generate_messages_check_deps_SetTorque/fast:
 .PHONY : _drl_project_generate_messages_check_deps_SetTorque/fast
 
 # Convenience name for target.
-drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule
-.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule
+drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule
+.PHONY : drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule
 
 # Convenience name for target.
-_drl_project_generate_messages_check_deps_SpawnBlocks: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule
+drl_project_generate_messages_py: drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule
 
-.PHONY : _drl_project_generate_messages_check_deps_SpawnBlocks
+.PHONY : drl_project_generate_messages_py
 
 # fast build rule for target.
-_drl_project_generate_messages_check_deps_SpawnBlocks/fast:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/build
-.PHONY : _drl_project_generate_messages_check_deps_SpawnBlocks/fast
+drl_project_generate_messages_py/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages_py.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages_py.dir/build
+.PHONY : drl_project_generate_messages_py/fast
+
+# Convenience name for target.
+drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule
+.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule
+
+# Convenience name for target.
+_drl_project_generate_messages_check_deps_AddTwoInts: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule
+
+.PHONY : _drl_project_generate_messages_check_deps_AddTwoInts
+
+# fast build rule for target.
+_drl_project_generate_messages_check_deps_AddTwoInts/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/build
+.PHONY : _drl_project_generate_messages_check_deps_AddTwoInts/fast
 
 # Convenience name for target.
 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_LoadGazeboModels.dir/rule:
@@ -284,36 +344,6 @@ drl_project_generate_messages: drl_project/CMakeFiles/drl_project_generate_messa
 drl_project_generate_messages/fast:
 	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages.dir/build
 .PHONY : drl_project_generate_messages/fast
-
-# Convenience name for target.
-drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule
-.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule
-
-# Convenience name for target.
-_drl_project_generate_messages_check_deps_Reset: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule
-
-.PHONY : _drl_project_generate_messages_check_deps_Reset
-
-# fast build rule for target.
-_drl_project_generate_messages_check_deps_Reset/fast:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/build
-.PHONY : _drl_project_generate_messages_check_deps_Reset/fast
-
-# Convenience name for target.
-drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule
-.PHONY : drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-drl_project_generate_messages_cpp: drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule
-
-.PHONY : drl_project_generate_messages_cpp
-
-# fast build rule for target.
-drl_project_generate_messages_cpp/fast:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/build
-.PHONY : drl_project_generate_messages_cpp/fast
 
 # Convenience name for target.
 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_DeleteGazeboModels.dir/rule:
@@ -361,49 +391,64 @@ drl_project_genpy/fast:
 .PHONY : drl_project_genpy/fast
 
 # Convenience name for target.
-drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule
-.PHONY : drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule
+drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget.dir/rule
+.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget.dir/rule
 
 # Convenience name for target.
-drl_project_generate_messages_eus: drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/rule
+_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget.dir/rule
 
-.PHONY : drl_project_generate_messages_eus
+.PHONY : _drl_project_generate_messages_check_deps_SpawnBlocksWithTarget
 
 # fast build rule for target.
-drl_project_generate_messages_eus/fast:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages_eus.dir/build
-.PHONY : drl_project_generate_messages_eus/fast
+_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocksWithTarget.dir/build
+.PHONY : _drl_project_generate_messages_check_deps_SpawnBlocksWithTarget/fast
 
 # Convenience name for target.
-drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule
-.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule
+drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule
+.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule
 
 # Convenience name for target.
-_drl_project_generate_messages_check_deps_AddTwoInts: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/rule
+_drl_project_generate_messages_check_deps_SpawnBlocks: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/rule
 
-.PHONY : _drl_project_generate_messages_check_deps_AddTwoInts
+.PHONY : _drl_project_generate_messages_check_deps_SpawnBlocks
 
 # fast build rule for target.
-_drl_project_generate_messages_check_deps_AddTwoInts/fast:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_AddTwoInts.dir/build
-.PHONY : _drl_project_generate_messages_check_deps_AddTwoInts/fast
+_drl_project_generate_messages_check_deps_SpawnBlocks/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_SpawnBlocks.dir/build
+.PHONY : _drl_project_generate_messages_check_deps_SpawnBlocks/fast
 
 # Convenience name for target.
-drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule
-.PHONY : drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule
+drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule
+.PHONY : drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule
 
 # Convenience name for target.
-drl_project_generate_messages_py: drl_project/CMakeFiles/drl_project_generate_messages_py.dir/rule
+_drl_project_generate_messages_check_deps_Reset: drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/rule
 
-.PHONY : drl_project_generate_messages_py
+.PHONY : _drl_project_generate_messages_check_deps_Reset
 
 # fast build rule for target.
-drl_project_generate_messages_py/fast:
-	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages_py.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages_py.dir/build
-.PHONY : drl_project_generate_messages_py/fast
+_drl_project_generate_messages_check_deps_Reset/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/build.make drl_project/CMakeFiles/_drl_project_generate_messages_check_deps_Reset.dir/build
+.PHONY : _drl_project_generate_messages_check_deps_Reset/fast
+
+# Convenience name for target.
+drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule
+.PHONY : drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+drl_project_generate_messages_cpp: drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/rule
+
+.PHONY : drl_project_generate_messages_cpp
+
+# fast build rule for target.
+drl_project_generate_messages_cpp/fast:
+	cd /home/dewe/ros_ws/build && $(MAKE) -f drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/build.make drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/build
+.PHONY : drl_project_generate_messages_cpp/fast
 
 # Convenience name for target.
 drl_project/CMakeFiles/drl_project_geneus.dir/rule:
@@ -460,28 +505,31 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... drl_project_generate_messages_eus"
+	@echo "... _drl_project_generate_messages_check_deps_LoadGazeboModelsWithTarget"
 	@echo "... drl_project_genlisp"
+	@echo "... _drl_project_generate_messages_check_deps_DeleteGazeboModelsWithTarget"
 	@echo "... _drl_project_generate_messages_check_deps_GetObs"
 	@echo "... drl_project_xacro_generated_to_devel_space_"
 	@echo "... drl_project_generate_messages_nodejs"
 	@echo "... _drl_project_generate_messages_check_deps_SetTorque"
-	@echo "... _drl_project_generate_messages_check_deps_SpawnBlocks"
-	@echo "... install/local"
+	@echo "... drl_project_generate_messages_py"
+	@echo "... _drl_project_generate_messages_check_deps_AddTwoInts"
 	@echo "... _drl_project_generate_messages_check_deps_LoadGazeboModels"
 	@echo "... drl_project_generate_messages"
-	@echo "... _drl_project_generate_messages_check_deps_Reset"
-	@echo "... drl_project_generate_messages_cpp"
 	@echo "... _drl_project_generate_messages_check_deps_DeleteGazeboModels"
 	@echo "... drl_project_gennodejs"
 	@echo "... drl_project_genpy"
-	@echo "... drl_project_generate_messages_eus"
-	@echo "... _drl_project_generate_messages_check_deps_AddTwoInts"
-	@echo "... drl_project_generate_messages_py"
+	@echo "... _drl_project_generate_messages_check_deps_SpawnBlocksWithTarget"
+	@echo "... _drl_project_generate_messages_check_deps_SpawnBlocks"
+	@echo "... _drl_project_generate_messages_check_deps_Reset"
+	@echo "... drl_project_generate_messages_cpp"
 	@echo "... drl_project_geneus"
 	@echo "... drl_project_gencpp"
 	@echo "... drl_project_generate_messages_lisp"
-	@echo "... install/strip"
-	@echo "... test"
 .PHONY : help
 
 

@@ -57,8 +57,11 @@ drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/deve
 drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModels.h
 drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/GetObs.h
 drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/Reset.h
-drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SetTorque.h
 drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h
+drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h
+drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SetTorque.h
+drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h
+drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h
 drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h
 
 
@@ -90,25 +93,46 @@ drl_project/CMakeFiles/drl_project_generate_messages_cpp: /home/dewe/ros_ws/deve
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from drl_project/Reset.srv"
 	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/Reset.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv
-/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from drl_project/SetTorque.srv"
-	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
-
 /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h: /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv
 /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from drl_project/SpawnBlocks.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from drl_project/SpawnBlocks.srv"
 	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h: /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv
+/home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from drl_project/LoadGazeboModelsWithTarget.srv"
+	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv
+/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/dewe/ros_ws/devel/include/drl_project/SetTorque.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from drl_project/SetTorque.srv"
+	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h: /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv
+/home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from drl_project/SpawnBlocksWithTarget.srv"
+	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
+
+/home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h: /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv
+/home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from drl_project/DeleteGazeboModelsWithTarget.srv"
+	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h: /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv
 /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from drl_project/LoadGazeboModels.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from drl_project/LoadGazeboModels.srv"
 	cd /home/dewe/ros_ws/src/drl_project && /home/dewe/ros_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/include/drl_project -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 drl_project_generate_messages_cpp: drl_project/CMakeFiles/drl_project_generate_messages_cpp
@@ -116,8 +140,11 @@ drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/A
 drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModels.h
 drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/GetObs.h
 drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/Reset.h
-drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SetTorque.h
 drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocks.h
+drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModelsWithTarget.h
+drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SetTorque.h
+drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/SpawnBlocksWithTarget.h
+drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/DeleteGazeboModelsWithTarget.h
 drl_project_generate_messages_cpp: /home/dewe/ros_ws/devel/include/drl_project/LoadGazeboModels.h
 drl_project_generate_messages_cpp: drl_project/CMakeFiles/drl_project_generate_messages_cpp.dir/build.make
 

@@ -4,8 +4,11 @@ file(REMOVE_RECURSE
   "../devel/share/roseus/ros/drl_project/srv/DeleteGazeboModels.l"
   "../devel/share/roseus/ros/drl_project/srv/GetObs.l"
   "../devel/share/roseus/ros/drl_project/srv/Reset.l"
-  "../devel/share/roseus/ros/drl_project/srv/SetTorque.l"
   "../devel/share/roseus/ros/drl_project/srv/SpawnBlocks.l"
+  "../devel/share/roseus/ros/drl_project/srv/LoadGazeboModelsWithTarget.l"
+  "../devel/share/roseus/ros/drl_project/srv/SetTorque.l"
+  "../devel/share/roseus/ros/drl_project/srv/SpawnBlocksWithTarget.l"
+  "../devel/share/roseus/ros/drl_project/srv/DeleteGazeboModelsWithTarget.l"
   "../devel/share/roseus/ros/drl_project/srv/LoadGazeboModels.l"
   "../devel/share/roseus/ros/drl_project/manifest.l"
 )

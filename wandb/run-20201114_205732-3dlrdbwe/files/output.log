@@ -1,0 +1,35 @@
+Using  cuda:0
+/home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[INFO] [1605405453.879754, 0.000000]: Baxter Gym Created Successfully
+NAF(
+  (head_1): Linear(in_features=20, out_features=150, bias=True)
+  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_1): Linear(in_features=150, out_features=100, bias=True)
+  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_2): Linear(in_features=100, out_features=50, bias=True)
+  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (action_values): Linear(in_features=50, out_features=7, bias=True)
+  (value): Linear(in_features=50, out_features=1, bias=True)
+  (matrix_entries): Linear(in_features=50, out_features=28, bias=True)
+)
+Using Regular Experience Replay
+Episode 0	Frame 299 	Average Score: -299.28Episode 0	Frame 299	Average Score: -299.28
+
+Best model saved at episode 1 with mean_100_rew -299.27725741048073
+
+Episode 1	Frame 599 	Average Score: -306.56reset failed:  service [/reset] returned no response
+Traceback (most recent call last):
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 147, in <module>
+    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 53, in run
+    state = env.reset()
+  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 25, in reset
+    return self.env.reset(**kwargs)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 237, in reset
+    self.delete_gazebo_models_client(True)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 156, in delete_gazebo_models_client
+    rospy.wait_for_service('delete_gazebo_models')
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 159, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

@@ -29,7 +29,8 @@ def run(agent, max_episode=5000, save_freq=100):
     state = env.reset()
     score = 0
     mean_100_rew = 0
-    best_rew = -np.inf                  
+    best_rew = -np.inf
+    agent.qnetwork_local.load_state_dict(torch.load("NAF_Baxter_2.pth"))                  
     while i_episode < max_episode:
 
         action = agent.act(state)

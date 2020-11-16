@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/dewe/ros_ws/src/drl_project/srv/AddTwoInts.srv;/home/dewe/ros_ws/src/drl_project/srv/GetObs.srv;/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModels.srv;/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv;/home/dewe/ros_ws/src/drl_project/srv/Reset.srv;/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv;/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
+services_str = "/home/dewe/ros_ws/src/drl_project/srv/AddTwoInts.srv;/home/dewe/ros_ws/src/drl_project/srv/GetObs.srv;/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModels.srv;/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv;/home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv;/home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv;/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv;/home/dewe/ros_ws/src/drl_project/srv/Reset.srv;/home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv;/home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv"
 pkg_name = "drl_project"
 dependencies_str = "std_msgs;geometry_msgs;baxter_core_msgs;control_msgs;sensor_msgs;trajectory_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

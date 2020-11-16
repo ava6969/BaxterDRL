@@ -57,8 +57,11 @@ drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennode
 drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModels.js
 drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/GetObs.js
 drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/Reset.js
-drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SetTorque.js
 drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js
+drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModelsWithTarget.js
+drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SetTorque.js
+drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SpawnBlocksWithTarget.js
+drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModelsWithTarget.js
 drl_project/CMakeFiles/drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModels.js
 
 
@@ -82,19 +85,34 @@ devel/share/gennodejs/ros/drl_project/srv/Reset.js: ../drl_project/srv/Reset.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from drl_project/Reset.srv"
 	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/Reset.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
 
-devel/share/gennodejs/ros/drl_project/srv/SetTorque.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
-devel/share/gennodejs/ros/drl_project/srv/SetTorque.js: ../drl_project/srv/SetTorque.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from drl_project/SetTorque.srv"
-	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
-
 devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js: ../drl_project/srv/SpawnBlocks.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from drl_project/SpawnBlocks.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from drl_project/SpawnBlocks.srv"
 	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
+
+devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModelsWithTarget.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModelsWithTarget.js: ../drl_project/srv/LoadGazeboModelsWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from drl_project/LoadGazeboModelsWithTarget.srv"
+	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
+
+devel/share/gennodejs/ros/drl_project/srv/SetTorque.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/drl_project/srv/SetTorque.js: ../drl_project/srv/SetTorque.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from drl_project/SetTorque.srv"
+	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
+
+devel/share/gennodejs/ros/drl_project/srv/SpawnBlocksWithTarget.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/drl_project/srv/SpawnBlocksWithTarget.js: ../drl_project/srv/SpawnBlocksWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from drl_project/SpawnBlocksWithTarget.srv"
+	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
+
+devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModelsWithTarget.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModelsWithTarget.js: ../drl_project/srv/DeleteGazeboModelsWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Javascript code from drl_project/DeleteGazeboModelsWithTarget.srv"
+	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
 
 devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModels.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModels.js: ../drl_project/srv/LoadGazeboModels.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Javascript code from drl_project/LoadGazeboModels.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Javascript code from drl_project/LoadGazeboModels.srv"
 	cd /home/dewe/ros_ws/src/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/src/build/devel/share/gennodejs/ros/drl_project/srv
 
 drl_project_generate_messages_nodejs: drl_project/CMakeFiles/drl_project_generate_messages_nodejs
@@ -102,8 +120,11 @@ drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/
 drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModels.js
 drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/GetObs.js
 drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/Reset.js
-drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SetTorque.js
 drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SpawnBlocks.js
+drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModelsWithTarget.js
+drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SetTorque.js
+drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/SpawnBlocksWithTarget.js
+drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/DeleteGazeboModelsWithTarget.js
 drl_project_generate_messages_nodejs: devel/share/gennodejs/ros/drl_project/srv/LoadGazeboModels.js
 drl_project_generate_messages_nodejs: drl_project/CMakeFiles/drl_project_generate_messages_nodejs.dir/build.make
 

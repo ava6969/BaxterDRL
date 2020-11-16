@@ -1,0 +1,43 @@
+Using /home/dewe/.local/lib/python3.6/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32[0m
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+ cuda:0
+[INFO] [1605409521.912715, 0.000000]: Baxter Gym Created Successfully
+NAF(
+  (head_1): Linear(in_features=20, out_features=150, bias=True)
+  (bn1): BatchNorm1d(150, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_1): Linear(in_features=150, out_features=100, bias=True)
+  (bn2): BatchNorm1d(100, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (ff_2): Linear(in_features=100, out_features=50, bias=True)
+  (bn3): BatchNorm1d(50, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (action_values): Linear(in_features=50, out_features=7, bias=True)
+  (value): Linear(in_features=50, out_features=1, bias=True)
+  (matrix_entries): Linear(in_features=50, out_features=28, bias=True)
+)
+Using Regular Experience Replay
+Reset: step counter - 0 , obs mag - 0
+
+Episode 0	Frame 299 	Average Score: -300.69Episode 0	Frame 299	Average Score: -300.69
+Reset: step counter - 300 , obs mag - 0.9832563403224238
+
+
+Best model saved at episode 1 with mean_100_rew -300.6868088215509
+
+Episode 1	Frame 599 	Average Score: -316.42Reset: step counter - 300 , obs mag - 1.3329998826606435
+
+Episode 2	Frame 899 	Average Score: -347.08reset failed:  service [/reset] returned no response
+Reset: step counter - 300 , obs mag - 1.1846973209816958
+
+Traceback (most recent call last):
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 148, in <module>
+    final_average100 = run(max_episode=MAX_EPISODE, agent=agent)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/test.py", line 54, in run
+    state = env.reset()
+  File "/home/dewe/.local/lib/python3.6/site-packages/gym/wrappers/time_limit.py", line 25, in reset
+    return self.env.reset(**kwargs)
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 237, in reset
+    # delete only blocks
+  File "/home/dewe/ros_ws/src/drl_project/scripts/mybaxter_env.py", line 156, in delete_gazebo_models_client
+    rospy.wait_for_service('delete_gazebo_models')
+  File "/opt/ros/kinetic/lib/python2.7/dist-packages/rospy/impl/tcpros_service.py", line 159, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

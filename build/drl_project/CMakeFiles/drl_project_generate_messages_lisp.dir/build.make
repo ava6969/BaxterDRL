@@ -57,8 +57,11 @@ drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/dev
 drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModels.lisp
 drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/GetObs.lisp
 drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/Reset.lisp
-drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp
 drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp
+drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModelsWithTarget.lisp
+drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp
+drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocksWithTarget.lisp
+drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModelsWithTarget.lisp
 drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModels.lisp
 
 
@@ -82,19 +85,34 @@ drl_project/CMakeFiles/drl_project_generate_messages_lisp: /home/dewe/ros_ws/dev
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Lisp code from drl_project/Reset.srv"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/Reset.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
 
-/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
-/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp: /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from drl_project/SetTorque.srv"
-	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
-
 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp: /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from drl_project/SpawnBlocks.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Lisp code from drl_project/SpawnBlocks.srv"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocks.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
+
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModelsWithTarget.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModelsWithTarget.lisp: /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Lisp code from drl_project/LoadGazeboModelsWithTarget.srv"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
+
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp: /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from drl_project/SetTorque.srv"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/SetTorque.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
+
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocksWithTarget.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocksWithTarget.lisp: /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Lisp code from drl_project/SpawnBlocksWithTarget.srv"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/SpawnBlocksWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
+
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModelsWithTarget.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModelsWithTarget.lisp: /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating Lisp code from drl_project/DeleteGazeboModelsWithTarget.srv"
+	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/DeleteGazeboModelsWithTarget.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
 
 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModels.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModels.lisp: /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating Lisp code from drl_project/LoadGazeboModels.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dewe/ros_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating Lisp code from drl_project/LoadGazeboModels.srv"
 	cd /home/dewe/ros_ws/build/drl_project && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/dewe/ros_ws/src/drl_project/srv/LoadGazeboModels.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Ibaxter_core_msgs:/home/dewe/ros_ws/src/baxter_common/baxter_core_msgs/msg -Icontrol_msgs:/opt/ros/kinetic/share/control_msgs/cmake/../msg -Isensor_msgs:/opt/ros/kinetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/kinetic/share/trajectory_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -p drl_project -o /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv
 
 drl_project_generate_messages_lisp: drl_project/CMakeFiles/drl_project_generate_messages_lisp
@@ -102,8 +120,11 @@ drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ro
 drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModels.lisp
 drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/GetObs.lisp
 drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/Reset.lisp
-drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp
 drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocks.lisp
+drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModelsWithTarget.lisp
+drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SetTorque.lisp
+drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/SpawnBlocksWithTarget.lisp
+drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/DeleteGazeboModelsWithTarget.lisp
 drl_project_generate_messages_lisp: /home/dewe/ros_ws/devel/share/common-lisp/ros/drl_project/srv/LoadGazeboModels.lisp
 drl_project_generate_messages_lisp: drl_project/CMakeFiles/drl_project_generate_messages_lisp.dir/build.make
 

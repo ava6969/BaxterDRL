@@ -4,8 +4,11 @@ file(REMOVE_RECURSE
   "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModels.py"
   "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_GetObs.py"
   "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_Reset.py"
-  "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py"
   "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocks.py"
+  "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModelsWithTarget.py"
+  "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SetTorque.py"
+  "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_SpawnBlocksWithTarget.py"
+  "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_DeleteGazeboModelsWithTarget.py"
   "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/_LoadGazeboModels.py"
   "/home/dewe/ros_ws/devel/lib/python2.7/dist-packages/drl_project/srv/__init__.py"
 )

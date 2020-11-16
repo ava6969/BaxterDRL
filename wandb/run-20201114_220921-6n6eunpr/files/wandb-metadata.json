@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.15.0-122-generic-x86_64-with-Ubuntu-16.04-xenial",
+    "python": "3.6.12",
+    "heartbeatAt": "2020-11-15T03:09:22.825334",
+    "startedAt": "2020-11-15T03:09:21.948007",
+    "docker": null,
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 32,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "src/drl_project/scripts/test.py",
+    "program": "/home/dewe/ros_ws/src/drl_project/scripts/test.py",
+    "git": {
+        "remote": "https://github.com/ava6969/BaxterDRL.git",
+        "commit": "32bc3bcf56926e77d91db4059358c6d4c6dc0746"
+    },
+    "email": "ava6969@rit.edu",
+    "root": "/home/dewe/ros_ws",
+    "host": "dewe-System-Product-Name",
+    "username": "dewe",
+    "executable": "/usr/bin/python3"
+}

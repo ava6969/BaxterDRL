@@ -71,8 +71,12 @@ find_package(catkin REQUIRED COMPONENTS
    GetObs.srv
    DeleteGazeboModels.srv
    LoadGazeboModels.srv
+   DeleteGazeboModelsWithTarget.srv
+   LoadGazeboModelsWithTarget.srv
+   SpawnBlocksWithTarget.srv
    Reset.srv
    SpawnBlocks.srv
+   Logger.srv
   SetTorque.srv
  )
 
@@ -228,6 +232,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-catkin_install_python(PROGRAMS scripts/gazebo_connection.py scripts/baxter_gym.py
+catkin_install_python(PROGRAMS scripts/gazebo_connection.py scripts/mybaxter_env.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )

@@ -4,8 +4,11 @@ file(REMOVE_RECURSE
   "../devel/include/drl_project/DeleteGazeboModels.h"
   "../devel/include/drl_project/GetObs.h"
   "../devel/include/drl_project/Reset.h"
-  "../devel/include/drl_project/SetTorque.h"
   "../devel/include/drl_project/SpawnBlocks.h"
+  "../devel/include/drl_project/LoadGazeboModelsWithTarget.h"
+  "../devel/include/drl_project/SetTorque.h"
+  "../devel/include/drl_project/SpawnBlocksWithTarget.h"
+  "../devel/include/drl_project/DeleteGazeboModelsWithTarget.h"
   "../devel/include/drl_project/LoadGazeboModels.h"
 )
 
